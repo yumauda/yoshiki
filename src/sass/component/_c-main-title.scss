@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.c-main-title {
+  font-size: rem(30);
+  font-weight: 700;
+  color: #000;
+  position: relative;
+  display: inline-block;
+}
+.c-main-title::before {
+  position: absolute;
+  content: "";
+  background: #ffff00;
+  width: rem(100);
+  height: rem(2);
+  bottom: rem(-16);
+  left: 50%;
+  transform: translateX(-50%);
+}

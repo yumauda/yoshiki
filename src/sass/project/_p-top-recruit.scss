@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.p-top-recruit {
+  padding-top: rem(110);
+  padding-bottom: rem(108);
+}
+
+.p-top-recruit__title {
+  text-align: center;
+}
+
+.p-top-recruit__content {
+}
+
+.p-top-recruit__text-wrapper {
+  margin-top: rem(45);
+  text-align: center;
+}
+
+.p-top-recruit__text {
+  font-size: rem(16);
+  color: #000;
+  line-height: calc(28 / 16);
+}
