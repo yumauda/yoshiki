@@ -426,8 +426,13 @@ select::-ms-expand {
 .p-top-choose {
   padding-top: 113px;
   padding-top: 7.0625rem;
-  padding-bottom: 120px;
-  padding-bottom: 7.5rem;
+  padding-bottom: 42px;
+  padding-bottom: 2.625rem;
+}
+@media screen and (min-width: 768px) {
+  .p-top-choose {
+    padding-bottom: 7.5rem;
+  }
 }
 
 .p-top-choose__title {
@@ -529,6 +534,8 @@ select::-ms-expand {
   padding-top: 0.8125rem;
   padding-bottom: 13px;
   padding-bottom: 0.8125rem;
+  position: relative;
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .p-top-choose__btn {
@@ -539,6 +546,37 @@ select::-ms-expand {
   }
 }
 
+.p-top-choose__btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, .5), transparent);
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+  -webkit-animation: sparkle 2s infinite linear;
+          animation: sparkle 2s infinite linear;
+}
+
+@-webkit-keyframes sparkle {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 300%;
+  }
+}
+
+@keyframes sparkle {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 300%;
+  }
+}
 .p-top-choose__btn:hover {
   background: #d00303;
   color: #fff;
@@ -701,12 +739,33 @@ select::-ms-expand {
 }
 
 .p-top-room {
+  padding-top: 100px;
+  padding-top: 6.25rem;
   padding-bottom: 100px;
   padding-bottom: 6.25rem;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .p-top-room {
+    padding-top: 0;
+    padding-top: initial;
     padding-bottom: 7.5rem;
+  }
+}
+
+.p-top-room::before {
+  position: absolute;
+  content: "";
+  background: #f8f8f8;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  top: 0;
+}
+@media screen and (min-width: 768px) {
+  .p-top-room::before {
+    top: -25rem;
   }
 }
 

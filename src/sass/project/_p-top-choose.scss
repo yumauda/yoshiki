@@ -2,7 +2,10 @@
 
 .p-top-choose {
   padding-top: rem(113);
-  padding-bottom: rem(120);
+  padding-bottom: rem(42);
+  @include mq(md) {
+    padding-bottom: rem(120);
+  }
 }
 
 .p-top-choose__content {
@@ -84,12 +87,37 @@
   margin-right: auto;
   padding-top: rem(13);
   padding-bottom: rem(13);
-  @include mq(md){
+  position: relative;
+  overflow: hidden;
+  @include mq(md) {
     padding-top: rem(18);
     padding-bottom: rem(18);
     margin-top: rem(21);
     width: 100%;
-    
+  }
+}
+.p-top-choose__btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.5),
+    transparent
+  );
+  transform: translateY(-50%) rotate(45deg);
+  animation: sparkle 2s infinite linear;
+}
+@keyframes sparkle {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 300%;
   }
 }
 

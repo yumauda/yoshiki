@@ -1,9 +1,25 @@
 @use "global" as *;
 
 .p-top-room {
+  padding-top: rem(100);
   padding-bottom: rem(100);
+  position: relative;
   @include mq(md) {
+    padding-top: initial;
     padding-bottom: rem(120);
+  }
+}
+.p-top-room::before {
+  position: absolute;
+  content: "";
+  background: #f8f8f8;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  top: 0;
+  @include mq(md) {
+    top: rem(-400);
   }
 }
 

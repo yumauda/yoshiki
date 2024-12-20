@@ -3,13 +3,13 @@
   <section class="p-top-choose">
     <div class="l-inner">
       <div class="p-top-choose__content">
-        <div class="p-top-choose__title">
+        <div class="p-top-choose__title js-choose-title">
           <h3 class="c-main-title">
             小学校から高校まで<br class="u-mobile">一貫して通える
           </h3>
         </div>
         <ul class="p-top-choose__lists">
-          <li class="p-top-choose__list">
+          <li class="p-top-choose__list js-choose-cards">
 
             <figure class="p-top-choose__img">
               <picture>
@@ -25,7 +25,7 @@
               </div>
             </div>
           </li>
-          <li class="p-top-choose__list">
+          <li class="p-top-choose__list js-choose-cards">
             <figure class="p-top-choose__img">
               <picture>
                 <source srcset="<?php echo get_template_directory_uri() ?>/images/common/top_recruit_2.webp" media="(min-width: 768px)" width="350" height="350" />
@@ -40,7 +40,7 @@
               </div>
             </div>
           </li>
-          <li class="p-top-choose__list">
+          <li class="p-top-choose__list js-choose-cards">
             <figure class="p-top-choose__img">
               <picture>
                 <source srcset="<?php echo get_template_directory_uri() ?>/images/common/top_recruit_3.webp" media="(min-width: 768px)" width="350" height="350" />
@@ -61,12 +61,12 @@
   </section>
   <section class="p-top-room">
     <div class="l-inner">
-      <div class="p-top-room__title">
+      <div class="p-top-room__title js-room-title">
         <h3 class="c-main-title">教室を選ぶ</h3>
       </div>
       <div class="p-top-room__content">
         <ul class="p-top-room__lists">
-          <li class="p-top-room__list">
+          <li class="p-top-room__list js-room-cards">
             <a href="#" class="p-top-room__link">
               <figure class="p-top-room__img">
                 <picture>
@@ -77,7 +77,7 @@
               <p class="p-top-room__text">服部塾水口校</p>
             </a>
           </li>
-          <li class="p-top-room__list">
+          <li class="p-top-room__list js-room-cards">
             <a href="#" class="p-top-room__link">
               <figure class="p-top-room__img">
                 <picture>
@@ -88,7 +88,7 @@
               <p class="p-top-room__text">服部塾甲西駅前校</p>
             </a>
           </li>
-          <li class="p-top-room__list">
+          <li class="p-top-room__list js-room-cards">
             <a href="#" class="p-top-room__link">
               <figure class="p-top-room__img">
                 <picture>
@@ -99,7 +99,7 @@
               <p class="p-top-room__text">よしき塾日野校</p>
             </a>
           </li>
-          <li class="p-top-room__list">
+          <li class="p-top-room__list js-room-cards">
             <a href="#" class="p-top-room__link">
               <figure class="p-top-room__img">
                 <picture>
@@ -116,19 +116,19 @@
   </section>
   <section class="p-top-recruit">
     <div class="l-inner">
-      <div class="p-top-recruit__title">
+      <div class="p-top-recruit__title js-recruit-title">
         <h3 class="c-main-title">
           求人情報
         </h3>
       </div>
       <div class="p-top-recruit__content">
-        <div class="p-top-recruit__text-wrapper">
+        <div class="p-top-recruit__text-wrapper js-recruit-title">
           <p class="p-top-recruit__text">
             服部塾・よしき塾では一緒に働いて<br class="u-mobile">いただける方を<br class="u-desktop">
             随時募集しております。
           </p>
         </div>
-        <div class="p-top-recruit__btn-wrapper">
+        <div class="p-top-recruit__btn-wrapper js-recruit-title">
           <a href="tel:0748634588" class="p-top-recruit__btn">
             <div class="p-top-recruit__btn-row">
               <svg xmlns="http://www.w3.org/2000/svg" width="38.013" height="40.299">
@@ -151,7 +151,7 @@
       </div>
     </div>
   </section>
-  <figure class="p-top-future">
+  <figure class="p-top-future js-top-future">
     <picture>
       <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/top_future.png" media="(min-width: 768px)" width="1238" height="570" />
       <img src="<?php echo get_template_directory_uri(); ?>/images/common/top_future_sp.png" alt="君の輝く未来はここから始まる" width="376" height="397">
