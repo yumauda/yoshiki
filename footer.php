@@ -10,8 +10,8 @@
     <?php if (is_page('search')) : ?>
         <figure class="p-top-future">
             <picture>
-                <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/top_future.png" media="(min-width: 768px)" width="1238" height="570" />
-                <img src="<?php echo get_template_directory_uri(); ?>/images/common/top_future_sp.png" alt="君の輝く未来はここから始まる" width="376" height="397">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/top_future_search.png" media="(min-width: 768px)" width="1238" height="570" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/common/top_future_sp_search.png" alt="君の輝く未来はここから始まる" width="376" height="397">
             </picture>
         </figure>
     <?php endif; ?>

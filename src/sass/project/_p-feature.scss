@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.p-feature {
+  background: #f8f8f8;
+  padding-top: rem(88);
+}
+
+.p-feature__title {
+  text-align: center;
+}
+
+.p-feature__content {
+  margin-top: rem(56);
+}
+
+.p-feature__block {
+}

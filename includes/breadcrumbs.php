@@ -16,6 +16,22 @@
             </p>
         </li>
     </ul>
+<?php elseif (is_page('feature')) : ?>
+    <ul class="p-breadcrumbs">
+        <li class="p-breadcrumbs__list">
+            <a href="<?php echo home_url(); ?>" class="p-breadcrumbs__link">
+                トップ
+            </a>
+        </li>
+        <li class="p-breadcrumbs__list">
+            <span class="p-breadcrumbs__line">/</span>
+        </li>
+        <li class="p-breadcrumbs__list">
+            <p class="p-breadcrumbs__now">
+                服部塾・よしき塾の特長
+            </p>
+        </li>
+    </ul>
 <?php elseif (is_page('privacy')) : ?>
     <ul class="p-breadcrumbs">
         <li class="p-breadcrumbs__list">

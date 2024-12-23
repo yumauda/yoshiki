@@ -1,0 +1,42 @@
+@use "global" as *;
+
+.p-block-top__top {
+}
+
+.p-block-top__title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.p-block-top__title-logo {
+  max-width: rem(31);
+  width: 100%;
+}
+.p-block-top__title-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-block-top__title {
+  text-align: center;
+  font-size: rem(24);
+  font-weight: 700;
+  color: #000;
+  line-height: calc(28 / 24);
+}
+
+.p-block-top__subTitle {
+  margin-top: rem(10);
+  text-align: center;
+  color: #fff;
+  background: #1676a8;
+  padding-top: rem(7);
+  padding-bottom: rem(7);
+  font-size: rem(18);
+  line-height: calc(28 / 18);
+  font-weight: 700;
+}
