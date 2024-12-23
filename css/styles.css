@@ -659,6 +659,132 @@ select::-ms-expand {
   line-height: 1.75;
 }
 
+.p-privacy {
+  padding-top: 88px;
+  padding-top: 5.5rem;
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
+  background: #f8f8f8;
+}
+
+.p-privacy__content {
+  max-width: 900px;
+  max-width: 56.25rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-privacy__title {
+  text-align: center;
+}
+
+.p-privacy__text-top {
+  margin-top: 86px;
+  margin-top: 5.375rem;
+}
+
+.p-privacy__text {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #000;
+}
+
+.p-privacy__block {
+  margin-top: 71px;
+  margin-top: 4.4375rem;
+}
+
+.p-privacy__detail + .p-privacy__detail {
+  margin-top: 30px;
+  margin-top: 1.875rem;
+}
+
+.p-privacy__block-title {
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.5555555556;
+  color: #000;
+  padding-left: 20px;
+  padding-left: 1.25rem;
+  padding-top: 7px;
+  padding-top: 0.4375rem;
+  padding-bottom: 7px;
+  padding-bottom: 0.4375rem;
+  background: #fff;
+}
+
+.p-privacy__block-text {
+  margin-top: 10px;
+  margin-top: 0.625rem;
+}
+
+.p-privacy__box {
+  margin-top: 72px;
+  margin-top: 4.5rem;
+  background: #fff;
+  padding: 22px 32px;
+  padding: 1.375rem 2rem;
+  border: 1px solid #707070;
+}
+
+.p-privacy__box-text {
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 2;
+  color: #000;
+}
+
+.p-privacy__img {
+  margin-top: 8px;
+  margin-top: 0.5rem;
+  max-width: 200px;
+  max-width: 12.5rem;
+  width: 100%;
+}
+
+.p-privacy__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.p-privacy__dl {
+  margin-top: 8px;
+  margin-top: 0.5rem;
+}
+
+.p-privacy__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.p-privacy__dt {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 2;
+  color: #000;
+  width: 72px;
+  width: 4.5rem;
+}
+
+.p-privacy__tel {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 2;
+  color: #000;
+}
+
 .p-thanks {
   background: #f8f8f8;
   padding-top: 88px;
