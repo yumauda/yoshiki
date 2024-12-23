@@ -21,7 +21,7 @@
             <a href="<?php the_permalink(); ?>" class="p-top-news__link">
               <time datetime="2024-12-23" class="p-top-news__time">2024.12.23</time>
               <p class="p-top-news__text">
-               テキストテキストテキストテキストテキストテキストテキストテキスト…
+                テキストテキストテキストテキストテキストテキストテキストテキスト…
               </p>
             </a>
           </li>
@@ -59,6 +59,96 @@
               </svg>
             </span>
           </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="p-top-achieve">
+    <div class="l-inner">
+      <div class="p-top-achieve__content">
+        <div class="p-top-achieve__title">
+          <h3 class="c-main-title">
+            合格指導実績
+          </h3>
+        </div>
+        <div class="p-top-achieve__row">
+          <div class="p-top-achieve__block">
+            <h4 class="p-top-achieve__block-title">▼&emsp;大学受験&emsp;▼</h4>
+            <div class="p-top-achieve__blockRow">
+              <div class="p-top-achieve__univ">
+                <p class="p-top-achieve__univ-title">国公立大学</p>
+                <div class="p-top-achieve__univ-wrapper">
+                  <p class="p-top-achieve__name">神戸大学</p>
+                  <p class="p-top-achieve__name">滋賀大学</p>
+                  <p class="p-top-achieve__name">三重大学</p>
+                  <p class="p-top-achieve__name">京都教育大学</p>
+                  <p class="p-top-achieve__name">滋賀県立大学</p>
+                  <p class="p-top-achieve__name">福井大学</p>
+                  <p class="p-top-achieve__name">新潟大学</p>
+                  <p class="p-top-achieve__name">高知大学</p>
+                  <p class="p-top-achieve__name">広島県立大学</p>
+                </div>
+              </div>
+              <div class="p-top-achieve__univ">
+                <p class="p-top-achieve__univ-title">私立大学</p>
+                <div class="p-top-achieve__univ-wrapper">
+                  <p class="p-top-achieve__name">同志社大学</p>
+                  <p class="p-top-achieve__name">立命館大学</p>
+                  <p class="p-top-achieve__name">関西大学</p>
+                  <p class="p-top-achieve__name">京都産業大学</p>
+                  <p class="p-top-achieve__name">龍谷大学</p>
+                  <p class="p-top-achieve__name">近畿大学</p>
+                  <p class="p-top-achieve__name">京都薬科大学</p>
+                  <p class="p-top-achieve__name">佛教大学</p>
+                  <p class="p-top-achieve__name">京都橘大学</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-top-achieve__block">
+            <h4 class="p-top-achieve__block-title">▼&emsp;高校受験&emsp;▼</h4>
+            <div class="p-top-achieve__high">
+              <div class="p-top-achieve__blockRow">
+                <div class="p-top-achieve__univ">
+                  <p class="p-top-achieve__univ-title">高校</p>
+                  <div class="p-top-achieve__univ-wrapper">
+                    <p class="p-top-achieve__name">神戸大学</p>
+                    <p class="p-top-achieve__name">滋賀大学</p>
+                    <p class="p-top-achieve__name">三重大学</p>
+                    <p class="p-top-achieve__name">京都教育大学</p>
+                    <p class="p-top-achieve__name">滋賀県立大学</p>
+                    <p class="p-top-achieve__name">福井大学</p>
+                    <p class="p-top-achieve__name">新潟大学</p>
+                    <p class="p-top-achieve__name">高知大学</p>
+                    <p class="p-top-achieve__name">広島県立大学</p>
+                  </div>
+                </div>
+                <div class="p-top-achieve__univ">
+                  <p class="p-top-achieve__univ-title">私立大学</p>
+                  <div class="p-top-achieve__univ-wrapper">
+                    <p class="p-top-achieve__name">同志社大学</p>
+                    <p class="p-top-achieve__name">立命館大学</p>
+                    <p class="p-top-achieve__name">関西大学</p>
+                    <p class="p-top-achieve__name">京都産業大学</p>
+                    <p class="p-top-achieve__name">龍谷大学</p>
+                    <p class="p-top-achieve__name">近畿大学</p>
+                    <p class="p-top-achieve__name">京都薬科大学</p>
+                    <p class="p-top-achieve__name">佛教大学</p>
+                    <p class="p-top-achieve__name">京都橘大学</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-top-achieve__univ">
+                <p class="p-top-achieve__univ-title">高校専門学校</p>
+                <div class="p-top-achieve__univ-wrapper">
+                  <p class="p-top-achieve__name">鈴鹿高等専門学校</p>
+                  <p class="p-top-achieve__name">舞鶴高等専門学校</p>
+                  <p class="p-top-achieve__name">岐阜高等専門学校</p>
+                  <p class="p-top-achieve__name">富山高等専門学校</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
