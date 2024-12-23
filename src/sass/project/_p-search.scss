@@ -1,0 +1,128 @@
+@use "global" as *;
+
+.p-search {
+  background: #f8f8f8;
+  padding-top: rem(88);
+}
+
+.p-search__content {
+  margin-top: rem(60);
+}
+
+.p-search__title {
+  text-align: center;
+}
+
+.p-search__block {
+  margin-top: rem(56);
+  max-width: rem(1010);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-search__lists {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: rem(10);
+}
+
+.p-search__list {
+  filter: drop-shadow(3px 3px 0px rgba(#000, 0.16));
+  background: #fff;
+  padding-top: rem(22);
+  padding-bottom: rem(19);
+  padding-left: rem(25);
+  padding-right: rem(25);
+}
+
+.p-search__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.p-search__detail {
+}
+
+.p-search__list-title {
+  font-size: rem(24);
+  font-weight: 700;
+  line-height: calc(28 / 24);
+  color: #000;
+}
+
+.p-search__list-text {
+  font-size: rem(16);
+  line-height: calc(28 / 16);
+  color: #000;
+}
+
+.p-search__smallImg {
+  max-width: rem(150);
+  flex: 1;
+}
+.p-search__smallImg img {
+  aspect-ratio: 150 / 84;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.p-search__map {
+  margin-top: rem(10);
+}
+.p-search__map iframe {
+  aspect-ratio: 450 / 300;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.p-search__btn-row {
+  margin-top: rem(15);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: rem(10);
+}
+
+.p-search__tel-link {
+  background: #ffff00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(5);
+  align-items: center;
+  border-radius: rem(10);
+  height: rem(50);
+}
+.p-search__tel-link svg {
+  max-width: rem(19);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.p-search__tel-number {
+  font-size: rem(24);
+  font-weight: 700;
+  line-height: calc(31 / 24);
+  color: #000;
+}
+
+.p-search__line-btn {
+  display: flex;
+  align-items: center;
+  background: #70c55e;
+  gap: rem(5);
+  border-radius: rem(10);
+  justify-content: center;
+  height: rem(50);
+}
+
+.p-search__line-text {
+  font-size: rem(16);
+  font-weight: 700;
+  line-height: calc(28 / 16);
+  color: #fff;
+}

@@ -1,9 +1,17 @@
 <footer class="l-footer p-footer p-footer--down">
-    <?php if (!is_front_page()) : ?>
+    <?php if (!is_front_page() && !is_page('search')) : ?>
         <figure class="p-top-future">
             <picture>
                 <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/footer_top.png" media="(min-width: 768px)" width="1440" height="196" />
                 <img src="<?php echo get_template_directory_uri(); ?>/images/common/footer_top_sp.png" alt="" width="375" height="95">
+            </picture>
+        </figure>
+    <?php endif; ?>
+    <?php if (is_page('search')) : ?>
+        <figure class="p-top-future">
+            <picture>
+                <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/top_future.png" media="(min-width: 768px)" width="1238" height="570" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/common/top_future_sp.png" alt="君の輝く未来はここから始まる" width="376" height="397">
             </picture>
         </figure>
     <?php endif; ?>
