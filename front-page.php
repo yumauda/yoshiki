@@ -1,5 +1,68 @@
 <?php get_header(); ?>
 <main>
+  <section class="p-top-news">
+    <div class="l-inner">
+      <div class="p-top-news__content">
+        <div class="p-top-news__title">
+          <h3 class="c-main-title">
+            当教室からのお知らせ
+          </h3>
+        </div>
+        <ul class="p-top-news__lists">
+          <li class="p-top-news__list">
+            <a href="<?php the_permalink(); ?>" class="p-top-news__link">
+              <time datetime="2024-12-23" class="p-top-news__time">2024/9/23</time>
+              <p class="p-top-news__text">
+                テキストテキストテキストテキストテキストテキストテキストテキスト…
+              </p>
+            </a>
+          </li>
+          <li class="p-top-news__list">
+            <a href="<?php the_permalink(); ?>" class="p-top-news__link">
+              <time datetime="2024-12-23" class="p-top-news__time">2024.12.23</time>
+              <p class="p-top-news__text">
+               テキストテキストテキストテキストテキストテキストテキストテキスト…
+              </p>
+            </a>
+          </li>
+          <li class="p-top-news__list">
+            <a href="<?php the_permalink(); ?>" class="p-top-news__link">
+              <time datetime="2024-12-23" class="p-top-news__time">2024.12.23</time>
+              <p class="p-top-news__text">
+                テキストテキストテキストテキストテキストテキストテキストテキスト…
+              </p>
+            </a>
+          </li>
+          <li class="p-top-news__list">
+            <a href="<?php the_permalink(); ?>" class="p-top-news__link">
+              <time datetime="2024-12-23" class="p-top-news__time">2024.12.23</time>
+              <p class="p-top-news__text">
+                テキストテキストテキストテキストテキストテキストテキストテキスト…
+              </p>
+            </a>
+          </li>
+          <li class="p-top-news__list">
+            <a href="<?php the_permalink(); ?>" class="p-top-news__link">
+              <time datetime="2024-12-23" class="p-top-news__time">2024.12.23</time>
+              <p class="p-top-news__text">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキスト…
+              </p>
+            </a>
+          </li>
+        </ul>
+        <div class="p-top-news__btn-wrapper">
+          <a href="#" class="p-top-news__btn">
+            <p class="p-top-news__btn-text">お知らせ一覧を見る</p>
+            <span class="p-top-news__bg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12.385" height="13.033" viewBox="0 0 12.385 13.033">
+                <path d="M5.868,0,4.836,1.032,9.591,5.787H0V7.246H9.591L4.836,12l1.032,1.032,6.517-6.517Z" transform="translate(0 0)" />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="p-top-choose">
     <div class="l-inner">
       <div class="p-top-choose__content">
@@ -70,7 +133,7 @@
             <a href="#" class="p-top-room__link">
               <figure class="p-top-room__img">
                 <picture>
-                  <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/top_room_1.jpg" media="(min-width: 768px)" width="1238" height="570"/>
+                  <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/top_room_1.jpg" media="(min-width: 768px)" width="1238" height="570" />
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_room_1_sp.jpg" alt="服部塾水口校" width="400" height="144">
                 </picture>
               </figure>
@@ -81,7 +144,7 @@
             <a href="#" class="p-top-room__link">
               <figure class="p-top-room__img">
                 <picture>
-                  <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/top_room_2.jpg" media="(min-width: 768px)" width="1238" height="570"/>
+                  <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/top_room_2.jpg" media="(min-width: 768px)" width="1238" height="570" />
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_room_2_sp.jpg" alt="服部塾甲西駅前校" width="400" height="144">
                 </picture>
               </figure>
@@ -92,7 +155,7 @@
             <a href="#" class="p-top-room__link">
               <figure class="p-top-room__img">
                 <picture>
-                  <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/top_room_3.jpg" media="(min-width: 768px)" width="1238" height="570"/>
+                  <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/top_room_3.jpg" media="(min-width: 768px)" width="1238" height="570" />
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_room_3_sp.jpg" alt="よしき塾日野校" width="400" height="144">
                 </picture>
               </figure>
@@ -103,7 +166,7 @@
             <a href="#" class="p-top-room__link">
               <figure class="p-top-room__img">
                 <picture>
-                  <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/top_room_4.jpg" media="(min-width: 768px)" width="1238" height="570"/>
+                  <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/top_room_4.jpg" media="(min-width: 768px)" width="1238" height="570" />
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_room_4_sp.jpg" alt="服部塾甲南校" width="400" height="144">
                 </picture>
               </figure>
