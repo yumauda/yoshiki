@@ -6,14 +6,12 @@ window.addEventListener("DOMContentLoaded", function () {
     ".js-choose-title",
     {
       opacity: 0,
-      y: 30,
-      clipPath: "inset(0% 100% 0% 0%)",
+      x: -30,
     },
     {
       duration: 1.5,
       opacity: 1,
-      y: 0,
-      clipPath: "inset(0% 0% 0% 0%)",
+      x: 0,
       stagger: 0.3,
       scrollTrigger: {
         trigger: ".p-top-choose",
@@ -44,14 +42,12 @@ window.addEventListener("DOMContentLoaded", function () {
     ".js-room-title",
     {
       opacity: 0,
-      y: 30,
-      clipPath: "inset(0% 100% 0% 0%)",
+      x: -30,
     },
     {
       duration: 1.5,
       opacity: 1,
-      y: 0,
-      clipPath: "inset(0% 0% 0% 0%)",
+      x: 0,
       stagger: 0.3,
       scrollTrigger: {
         trigger: ".p-top-room",
@@ -82,10 +78,12 @@ window.addEventListener("DOMContentLoaded", function () {
     ".js-recruit-title",
     {
       opacity: 0,
+      x: -30,
     },
     {
       duration: 1.5,
       opacity: 1,
+      x: 0,
       stagger: 0.2,
       scrollTrigger: {
         trigger: ".p-top-recruit",

@@ -1,0 +1,145 @@
+@use "global" as *;
+
+.p-footer {
+  padding-top: rem(28);
+  padding-bottom: rem(41);
+  background: #000000;
+  overflow: hidden;
+}
+
+.p-footer__content {
+  text-align: center;
+}
+
+.p-footer__img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  @include mq(md) {
+    max-width: rem(394);
+  }
+}
+.p-footer__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-footer__block {
+  margin-top: rem(23);
+}
+
+.p-footer__address-wrapper {
+}
+
+.p-footer__address {
+  font-size: rem(16);
+  color: #fff;
+  line-height: calc(28 / 16);
+}
+
+.p-footer__tel {
+  margin-top: rem(2);
+}
+
+.p-footer__tel-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(8);
+}
+.p-footer__tel-logo img {
+  max-width: rem(38);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.p-footer__number {
+  font-size: rem(50);
+  color: #fff;
+  font-weight: 700;
+}
+
+.p-footer__time {
+  margin-top: rem(4);
+  color: #fff;
+  font-size: rem(16);
+  line-height: calc(28 / 16);
+}
+
+.p-footer__icon-lists {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(38);
+  margin-top: rem(36);
+}
+
+.p-footer__icon-list {
+}
+
+.p-footer__icon-link {
+  max-width: rem(30);
+}
+.p-footer__icon-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-footer__lists {
+  margin-top: rem(60);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(30);
+}
+
+.p-footer__list {
+}
+
+.p-footer__link {
+  color: #fff;
+  font-size: rem(16);
+  line-height: calc(28 / 16);
+}
+
+.p-footer__line {
+  color: #fff;
+  font-size: rem(16);
+  line-height: calc(28 / 16);
+}
+
+.p-footer__small {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: rem(41);
+  position: relative;
+  margin-top: rem(22);
+}
+.p-footer__small::before {
+  position: absolute;
+  content: "";
+  background: #fff;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
+  height: 1px;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.p-footer__small small {
+  font-size: rem(16);
+  color: #fff;
+  line-height: calc(28 / 16);
+}
+.p-footer__privacy {
+  font-size: rem(16);
+  color: #fff;
+  line-height: calc(28 / 16);
+}
