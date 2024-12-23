@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.p-breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: rem(15);
+  padding-left: rem(17);
+}
+
+.p-breadcrumbs__list {
+}
+
+.p-breadcrumbs__link {
+  font-size: rem(12);
+  color: #9d9898;
+  line-height: calc(28 / 12);
+  font-weight: 400;
+}
+
+.p-breadcrumbs__line {
+  font-size: rem(12);
+  color: #9d9898;
+  line-height: calc(28 / 12);
+}
+
+.p-breadcrumbs__now {
+  color: #000;
+  font-size: rem(12);
+  line-height: calc(28 / 12);
+  font-weight: 700;
+}

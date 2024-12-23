@@ -1,4 +1,12 @@
-<footer class="l-footer p-footer">
+<footer class="l-footer p-footer p-footer--down">
+    <?php if (!is_front_page()) : ?>
+        <figure class="p-top-future">
+            <picture>
+                <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/footer_top.png" media="(min-width: 768px)" width="1440" height="196" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/common/footer_top_sp.png" alt="" width="375" height="95">
+            </picture>
+        </figure>
+    <?php endif; ?>
     <div class="l-inner">
         <div class="p-footer__content">
             <figure class="p-footer__img">
