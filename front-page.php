@@ -1,5 +1,41 @@
 <?php get_header(); ?>
 <main>
+  <div class="p-swiper">
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <a href="<?php the_permalink() ?>" class="p-swiper__link">
+            <figure class="p-swiper__img">
+              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/swiper_1.jpg" alt="<?php the_title(); ?>" width="750" height="390">
+            </figure>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="<?php the_permalink() ?>" class="p-swiper__link">
+            <figure class="p-swiper__img">
+              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/swiper_1.jpg" alt="<?php the_title(); ?>" width="750" height="390">
+            </figure>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="<?php the_permalink() ?>" class="p-swiper__link">
+            <figure class="p-swiper__img">
+              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/swiper_1.jpg" alt="<?php the_title(); ?>" width="750" height="390">
+            </figure>
+          </a>
+        </div>
+       
+      </div>
+  
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+  
+    </div>
+  </div>
   <section class="p-top-news">
     <div class="l-inner">
       <div class="p-top-news__content">
@@ -63,6 +99,7 @@
       </div>
     </div>
   </section>
+
   <section class="p-top-achieve">
     <div class="l-inner">
       <div class="p-top-achieve__content">
@@ -78,9 +115,57 @@
               <div class="p-top-achieve__univ">
                 <p class="p-top-achieve__univ-title">国公立大学</p>
                 <div class="p-top-achieve__univ-wrapper">
-                  <p class="p-top-achieve__name">神戸大学</p>
-                  <p class="p-top-achieve__name">滋賀大学</p>
-                  <p class="p-top-achieve__name">三重大学</p>
+                  <div class="p-top-achieve__univ-row">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18.778" height="17.89" viewBox="0 0 18.778 17.89">
+                      <defs>
+                        <clipPath id="clip-path">
+                          <rect width="18.778" height="17.89" fill="#d00303" />
+                        </clipPath>
+                      </defs>
+                      <g transform="translate(0 0)" clip-path="url(#clip-path)">
+                        <path d="M50.832,3.292A4.554,4.554,0,0,0,49.509.079a.332.332,0,0,0-.521.127c-.168.286-.631,1.006-.631,1.006a.307.307,0,0,1-.52,0s-.463-.72-.631-1.006a.332.332,0,0,0-.521-.127,4.57,4.57,0,0,0,1.412,7.4,4.572,4.572,0,0,0,2.734-4.186" transform="translate(-38.708 0)" fill="#d00303" />
+                        <path d="M7.5,36.374a4.57,4.57,0,0,0-6.6-3.63.332.332,0,0,0-.04.535c.22.249.762.911.762.911a.307.307,0,0,1-.16.494s-.827.218-1.152.289a.332.332,0,0,0-.282.456,4.57,4.57,0,0,0,7.474.944" transform="translate(0 -27.523)" fill="#d00303" />
+                        <path d="M19.119,76.637a4.553,4.553,0,0,0-.819,3.377.332.332,0,0,0,.5.2c.3-.133,1.1-.443,1.1-.443a.307.307,0,0,1,.42.306s-.048.854-.081,1.185a.332.332,0,0,0,.347.409,4.57,4.57,0,0,0,3.207-6.817,4.571,4.571,0,0,0-4.673,1.78" transform="translate(-15.57 -63.786)" fill="#d00303" />
+                        <path d="M68.325,74.858a4.57,4.57,0,0,0,3.207,6.817.332.332,0,0,0,.347-.409c-.033-.331-.081-1.185-.081-1.185a.307.307,0,0,1,.42-.306s.8.31,1.1.443a.332.332,0,0,0,.5-.2,4.57,4.57,0,0,0-5.492-5.156" transform="translate(-57.769 -63.787)" fill="#d00303" />
+                        <path d="M84.065,34.974c-.325-.071-1.152-.289-1.152-.289a.307.307,0,0,1-.161-.494s.541-.663.762-.911a.333.333,0,0,0-.04-.535,4.57,4.57,0,0,0-6.6,3.63,4.569,4.569,0,0,0,7.474-.944.332.332,0,0,0-.282-.456" transform="translate(-65.595 -27.523)" fill="#d00303" />
+                      </g>
+                    </svg>
+                    <p class="p-top-achieve__name">神戸大学</p>
+                  </div>
+                  <div class="p-top-achieve__univ-row">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18.778" height="17.89" viewBox="0 0 18.778 17.89">
+                      <defs>
+                        <clipPath id="clip-path">
+                          <rect width="18.778" height="17.89" fill="#d00303" />
+                        </clipPath>
+                      </defs>
+                      <g transform="translate(0 0)" clip-path="url(#clip-path)">
+                        <path d="M50.832,3.292A4.554,4.554,0,0,0,49.509.079a.332.332,0,0,0-.521.127c-.168.286-.631,1.006-.631,1.006a.307.307,0,0,1-.52,0s-.463-.72-.631-1.006a.332.332,0,0,0-.521-.127,4.57,4.57,0,0,0,1.412,7.4,4.572,4.572,0,0,0,2.734-4.186" transform="translate(-38.708 0)" fill="#d00303" />
+                        <path d="M7.5,36.374a4.57,4.57,0,0,0-6.6-3.63.332.332,0,0,0-.04.535c.22.249.762.911.762.911a.307.307,0,0,1-.16.494s-.827.218-1.152.289a.332.332,0,0,0-.282.456,4.57,4.57,0,0,0,7.474.944" transform="translate(0 -27.523)" fill="#d00303" />
+                        <path d="M19.119,76.637a4.553,4.553,0,0,0-.819,3.377.332.332,0,0,0,.5.2c.3-.133,1.1-.443,1.1-.443a.307.307,0,0,1,.42.306s-.048.854-.081,1.185a.332.332,0,0,0,.347.409,4.57,4.57,0,0,0,3.207-6.817,4.571,4.571,0,0,0-4.673,1.78" transform="translate(-15.57 -63.786)" fill="#d00303" />
+                        <path d="M68.325,74.858a4.57,4.57,0,0,0,3.207,6.817.332.332,0,0,0,.347-.409c-.033-.331-.081-1.185-.081-1.185a.307.307,0,0,1,.42-.306s.8.31,1.1.443a.332.332,0,0,0,.5-.2,4.57,4.57,0,0,0-5.492-5.156" transform="translate(-57.769 -63.787)" fill="#d00303" />
+                        <path d="M84.065,34.974c-.325-.071-1.152-.289-1.152-.289a.307.307,0,0,1-.161-.494s.541-.663.762-.911a.333.333,0,0,0-.04-.535,4.57,4.57,0,0,0-6.6,3.63,4.569,4.569,0,0,0,7.474-.944.332.332,0,0,0-.282-.456" transform="translate(-65.595 -27.523)" fill="#d00303" />
+                      </g>
+                    </svg>
+                    <p class="p-top-achieve__name">滋賀大学</p>
+                  </div>
+                  <div class="p-top-achieve__univ-row">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18.778" height="17.89" viewBox="0 0 18.778 17.89">
+                      <defs>
+                        <clipPath id="clip-path">
+                          <rect width="18.778" height="17.89" fill="#d00303" />
+                        </clipPath>
+                      </defs>
+                      <g transform="translate(0 0)" clip-path="url(#clip-path)">
+                        <path d="M50.832,3.292A4.554,4.554,0,0,0,49.509.079a.332.332,0,0,0-.521.127c-.168.286-.631,1.006-.631,1.006a.307.307,0,0,1-.52,0s-.463-.72-.631-1.006a.332.332,0,0,0-.521-.127,4.57,4.57,0,0,0,1.412,7.4,4.572,4.572,0,0,0,2.734-4.186" transform="translate(-38.708 0)" fill="#d00303" />
+                        <path d="M7.5,36.374a4.57,4.57,0,0,0-6.6-3.63.332.332,0,0,0-.04.535c.22.249.762.911.762.911a.307.307,0,0,1-.16.494s-.827.218-1.152.289a.332.332,0,0,0-.282.456,4.57,4.57,0,0,0,7.474.944" transform="translate(0 -27.523)" fill="#d00303" />
+                        <path d="M19.119,76.637a4.553,4.553,0,0,0-.819,3.377.332.332,0,0,0,.5.2c.3-.133,1.1-.443,1.1-.443a.307.307,0,0,1,.42.306s-.048.854-.081,1.185a.332.332,0,0,0,.347.409,4.57,4.57,0,0,0,3.207-6.817,4.571,4.571,0,0,0-4.673,1.78" transform="translate(-15.57 -63.786)" fill="#d00303" />
+                        <path d="M68.325,74.858a4.57,4.57,0,0,0,3.207,6.817.332.332,0,0,0,.347-.409c-.033-.331-.081-1.185-.081-1.185a.307.307,0,0,1,.42-.306s.8.31,1.1.443a.332.332,0,0,0,.5-.2,4.57,4.57,0,0,0-5.492-5.156" transform="translate(-57.769 -63.787)" fill="#d00303" />
+                        <path d="M84.065,34.974c-.325-.071-1.152-.289-1.152-.289a.307.307,0,0,1-.161-.494s.541-.663.762-.911a.333.333,0,0,0-.04-.535,4.57,4.57,0,0,0-6.6,3.63,4.569,4.569,0,0,0,7.474-.944.332.332,0,0,0-.282-.456" transform="translate(-65.595 -27.523)" fill="#d00303" />
+                      </g>
+                    </svg>
+                    <p class="p-top-achieve__name">三重大学</p>
+                  </div>
                   <p class="p-top-achieve__name">京都教育大学</p>
                   <p class="p-top-achieve__name">滋賀県立大学</p>
                   <p class="p-top-achieve__name">福井大学</p>

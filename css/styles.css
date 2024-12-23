@@ -1247,6 +1247,22 @@ select::-ms-expand {
   color: #fff;
 }
 
+.p-swiper {
+  padding-top: 30px;
+  padding-top: 1.875rem;
+  padding-bottom: 30px;
+  padding-bottom: 1.875rem;
+  background: #383636;
+}
+
+.p-swiper__img img {
+  aspect-ratio: 750/390;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
 .p-thanks {
   background: #f8f8f8;
   padding-top: 88px;
@@ -1407,6 +1423,27 @@ select::-ms-expand {
 .p-top-achieve__univ-wrapper {
   margin-top: 9px;
   margin-top: 0.5625rem;
+}
+
+.p-top-achieve__univ-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 19px;
+  padding-left: 1.1875rem;
+  gap: 12px;
+  gap: 0.75rem;
+}
+
+.p-top-achieve__name {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2.25;
+  color: #000;
 }
 
 .p-top-choose {

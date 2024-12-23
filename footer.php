@@ -39,7 +39,7 @@
                 <ul class="p-footer__icon-lists">
                     <li class="p-footer__icon-list">
                         <a href="#" class="p-footer__icon-link">
-                            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/footer_instagram.svg" alt="インスタグラム" width="30" height="30">
+                            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/footer_instagram.png" alt="インスタグラム" width="30" height="30">
                         </a>
                     </li>
                     <li class="p-footer__icon-list">

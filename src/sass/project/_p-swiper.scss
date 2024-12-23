@@ -1,0 +1,29 @@
+@use "global" as *;
+
+.p-swiper {
+  padding-top: rem(30);
+  padding-bottom: rem(30);
+  background: #383636;
+}
+
+.swiper-wrapper {
+}
+
+.swiper-slide {
+}
+
+.p-swiper__link {
+}
+
+.p-swiper__img img {
+  aspect-ratio: 750 / 390;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.swiper-button-prev {
+}
+
+.swiper-button-next {
+}

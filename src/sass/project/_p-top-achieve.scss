@@ -68,8 +68,18 @@
 .p-top-achieve__univ-wrapper {
   margin-top: rem(9);
 }
+.p-top-achieve__univ-row {
+  display: flex;
+  align-items: center;
+  padding-left: rem(19);
+  gap: rem(12);
+}
 
 .p-top-achieve__name {
+  font-size: rem(16);
+  font-weight: 400;
+  line-height: calc(36 / 16);
+  color: #000;
 }
 
 .p-top-achieve__high {
