@@ -32,7 +32,7 @@
 
 .p-top-choose__img {
 }
-.p-top-choose__img {
+.p-top-choose__img img {
   object-fit: cover;
   width: 100%;
   height: auto;
@@ -65,6 +65,7 @@
   color: #000;
   line-height: calc(28 / 16);
   margin-top: rem(6);
+  text-align: center;
   @include mq(md) {
     margin-top: rem(8);
   }
@@ -97,27 +98,26 @@
   }
 }
 .p-top-choose__btn::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
+  animation: 4s 0s shine linear infinite;
   background: linear-gradient(
-    120deg,
-    transparent,
-    rgba(255, 255, 255, 0.5),
-    transparent
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.7) 100%
   );
-  transform: translateY(-50%) rotate(45deg);
-  animation: sparkle 2s infinite linear;
+  content: "";
+  height: 100%;
+  left: -100%;
+  position: absolute;
+  top: 0;
+  transform: skewX(-25deg);
+  width: 50%;
 }
-@keyframes sparkle {
-  0% {
-    left: -50%;
+@keyframes shine {
+  20% {
+    left: 150%;
   }
   100% {
-    left: 300%;
+    left: 150%;
   }
 }
 

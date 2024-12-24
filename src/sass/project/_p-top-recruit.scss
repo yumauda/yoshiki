@@ -3,6 +3,7 @@
 .p-top-recruit {
   padding-top: rem(90);
   padding-bottom: rem(75);
+  overflow: hidden;
   @include mq(md) {
     padding-top: rem(110);
     padding-bottom: rem(108);

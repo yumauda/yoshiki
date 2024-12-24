@@ -1,0 +1,14 @@
+<svg id="コンポーネント_65_2" data-name="コンポーネント 65 – 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="66.211" viewBox="0 0 70 66.211">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_24649" data-name="長方形 24649" width="70" height="66.211" fill="#ff0"/>
+    </clipPath>
+  </defs>
+  <g id="グループ_61247" data-name="グループ 61247">
+    <g id="グループ_61246" data-name="グループ 61246" clip-path="url(#clip-path)">
+      <path id="パス_152955" data-name="パス 152955" d="M65.753,20.555A140.277,140.277,0,0,0,45.112,3.105a17.858,17.858,0,0,0-20.507.268A177.036,177.036,0,0,0,4.39,20.624a14.646,14.646,0,0,0,.132,21.04A194.944,194.944,0,0,0,26.5,59.762a14.717,14.717,0,0,0,16.876.048l.032-.022a21.051,21.051,0,0,0,14.018,6.424S50.113,61.977,49,55.728a171.433,171.433,0,0,0,16.675-14.45,14.664,14.664,0,0,0,.082-20.723" transform="translate(0 0)" fill="#ff0"/>
+    </g>
+  </g>
+  <text id="STEP" transform="translate(15 24.752)" font-size="16" font-family="NotoSansJP-Bold, Noto Sans JP" font-weight="700"><tspan x="0" y="0">STEP</tspan></text>
+  <text id="_02" data-name="02" transform="translate(21 49.294)" font-size="24" font-family="NotoSansJP-Bold, Noto Sans JP" font-weight="700"><tspan x="0" y="0">02</tspan></text>
+</svg>

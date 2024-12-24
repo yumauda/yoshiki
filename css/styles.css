@@ -655,6 +655,176 @@ select::-ms-expand {
   font-weight: 700;
 }
 
+.p-course {
+  background: #f8f8f8;
+  padding-top: 88px;
+  padding-top: 5.5rem;
+}
+
+.p-course__title {
+  margin-top: 60px;
+  margin-top: 3.75rem;
+  text-align: center;
+}
+
+.p-course__sub {
+  text-align: center;
+  margin-top: 48px;
+  margin-top: 3rem;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.5555555556;
+}
+
+.p-course__content {
+  margin-top: 68px;
+  margin-top: 4.25rem;
+}
+
+.p-course__pageLinks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  gap: 1.875rem;
+  max-width: 900px;
+  max-width: 56.25rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-course__pageLink {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="0" /><feOffset dx="4" dy="4" result="offsetblur" /><feFlood flood-color="rgba(216,216,216,1)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
+  -webkit-filter: drop-shadow(3px 3px 0px #D8D8D8);
+          filter: drop-shadow(3px 3px 0px #D8D8D8);
+}
+
+.p-course__pageLink-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff;
+}
+
+.p-course__linkImg {
+  max-width: 130px;
+  max-width: 8.125rem;
+  width: 100%;
+}
+
+.p-course__linkImg img {
+  aspect-ratio: 130/130;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.p-course__linkText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 17px;
+  padding-left: 1.0625rem;
+  padding-right: 25px;
+  padding-right: 1.5625rem;
+  height: 100%;
+}
+
+.p-course__linkText svg {
+  margin-top: 12px;
+  margin-top: 0.75rem;
+}
+
+.p-course__linkTitle {
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.5555555556;
+  color: #000;
+}
+
+.p-course__block {
+  margin-top: 61px;
+  margin-top: 3.8125rem;
+}
+
+.p-detail__title-wrapper {
+  text-align: center;
+}
+
+.p-detail__title {
+  font-size: 18px;
+  font-size: 1.125rem;
+  color: #000;
+  font-weight: 700;
+  line-height: 1.5555555556;
+}
+
+.p-detail__slider {
+  margin-top: 30px;
+  margin-top: 1.875rem;
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-detail .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+.p-detail__img {
+  aspect-ratio: 250/175;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.p-detail__block {
+  padding-top: 18px;
+  padding-top: 1.125rem;
+}
+
+.p-detail__title {
+  font-size: 18px;
+  font-size: 1.125rem;
+  color: #000;
+  font-weight: 700;
+  line-height: 1.5555555556;
+  text-align: center;
+}
+
+.p-detail__text {
+  margin-top: 20px;
+  margin-top: 1.25rem;
+  padding-top: 20px;
+  padding-top: 1.25rem;
+  border-top: 1px solid #707070;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #000;
+}
+
 .p-feature {
   background: #f8f8f8;
   padding-top: 88px;
@@ -668,6 +838,78 @@ select::-ms-expand {
 .p-feature__content {
   margin-top: 56px;
   margin-top: 3.5rem;
+}
+
+.p-flow {
+  padding-top: 50px;
+  padding-top: 3.125rem;
+  background: #f8f8f8;
+}
+
+.p-flow__title {
+  text-align: center;
+}
+
+.p-flow__lists {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 45px;
+  gap: 2.8125rem;
+  margin-top: 68px;
+  margin-top: 4.25rem;
+}
+
+.p-flow__img {
+  max-width: 150px;
+  max-width: 9.375rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-flow__img img {
+  aspect-ratio: 150/150;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.p-flow__detail {
+  padding-top: 8px;
+  padding-top: 0.5rem;
+}
+
+.p-flow__subTitle {
+  text-align: center;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.5555555556;
+  color: #000;
+}
+
+.p-flow__text {
+  font-size: 16px;
+  font-size: 1rem;
+  color: #000;
+  line-height: 1.75;
+  font-weight: 400;
+  margin-top: 6px;
+  margin-top: 0.375rem;
+}
+
+.p-flow__bottom {
+  text-align: center;
+  margin-top: 50px;
+  margin-top: 3.125rem;
+}
+
+.p-flow__bottom-text {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.75;
+  font-weight: 400;
 }
 
 .p-footer {
@@ -1069,6 +1311,61 @@ select::-ms-expand {
   font-size: 0.75rem;
   line-height: 2;
   color: #000;
+}
+
+.p-school {
+  background: #fff;
+  padding-top: 55px;
+  padding-top: 3.4375rem;
+  padding-bottom: 66px;
+  padding-bottom: 4.125rem;
+  padding-left: 22px;
+  padding-left: 1.375rem;
+  padding-right: 22px;
+  padding-right: 1.375rem;
+}
+
+.p-school__title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  gap: 0.625rem;
+}
+
+.p-school__icon {
+  max-width: 56px;
+  max-width: 3.5rem;
+  width: 100%;
+}
+
+.p-school__icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.p-school__title {
+  text-align: center;
+  font-size: 30px;
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+}
+
+.p-school__detail {
+  margin-top: 30px;
+  margin-top: 1.875rem;
 }
 
 .p-search {
@@ -1478,7 +1775,7 @@ select::-ms-expand {
   }
 }
 
-.p-top-choose__img {
+.p-top-choose__img img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -1486,7 +1783,7 @@ select::-ms-expand {
   aspect-ratio: 350/190;
 }
 @media screen and (min-width: 768px) {
-  .p-top-choose__img {
+  .p-top-choose__img img {
     aspect-ratio: 350/350;
   }
 }
@@ -1523,6 +1820,7 @@ select::-ms-expand {
   line-height: 1.75;
   margin-top: 6px;
   margin-top: 0.375rem;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .p-top-choose__text {
@@ -1570,34 +1868,35 @@ select::-ms-expand {
 }
 
 .p-top-choose__btn::after {
+  -webkit-animation: 4s 0s shine linear infinite;
+          animation: 4s 0s shine linear infinite;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, .7)));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .7) 100%);
   content: "";
+  height: 100%;
+  left: -100%;
   position: absolute;
-  top: 50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, .5), transparent);
-  -webkit-transform: translateY(-50%) rotate(45deg);
-          transform: translateY(-50%) rotate(45deg);
-  -webkit-animation: sparkle 2s infinite linear;
-          animation: sparkle 2s infinite linear;
+  top: 0;
+  -webkit-transform: skewX(-25deg);
+          transform: skewX(-25deg);
+  width: 50%;
 }
 
-@-webkit-keyframes sparkle {
-  0% {
-    left: -50%;
+@-webkit-keyframes shine {
+  20% {
+    left: 150%;
   }
   100% {
-    left: 300%;
+    left: 150%;
   }
 }
 
-@keyframes sparkle {
-  0% {
-    left: -50%;
+@keyframes shine {
+  20% {
+    left: 150%;
   }
   100% {
-    left: 300%;
+    left: 150%;
   }
 }
 .p-top-choose__btn:hover {
@@ -1764,6 +2063,7 @@ select::-ms-expand {
   padding-top: 5.625rem;
   padding-bottom: 75px;
   padding-bottom: 4.6875rem;
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .p-top-recruit {

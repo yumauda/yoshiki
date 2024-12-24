@@ -7,6 +7,7 @@ window.addEventListener("DOMContentLoaded", function () {
     {
       opacity: 0,
       x: -30,
+    
     },
     {
       duration: 1.5,
@@ -24,10 +25,12 @@ window.addEventListener("DOMContentLoaded", function () {
     ".js-choose-cards",
     {
       opacity: 0,
-      y: 30,
+      y: 75,
+      clipPath: "inset(100% 0% 0% 0%)",
     },
     {
-      duration: 1.5,
+      duration: 0.5,
+      clipPath: "inset(0% 0% 0% 0%)",
       opacity: 1,
       y: 0,
       stagger: 0.3,
@@ -35,7 +38,7 @@ window.addEventListener("DOMContentLoaded", function () {
         trigger: ".p-top-choose__lists",
         start: "0% 50%",
       },
-      ease: "power3.out",
+      /* ease: "power3.out", */
     }
   );
   gsap.fromTo(
@@ -61,9 +64,11 @@ window.addEventListener("DOMContentLoaded", function () {
     {
       opacity: 0,
       y: 30,
+      clipPath: "inset(0% 100% 0% 0%)",
     },
     {
-      duration: 1.5,
+      duration: 0.5,
+      clipPath: "inset(0% 0% 0% 0%)",
       opacity: 1,
       y: 0,
       stagger: 0.3,
@@ -78,7 +83,7 @@ window.addEventListener("DOMContentLoaded", function () {
     ".js-recruit-title",
     {
       opacity: 0,
-      x: -30,
+      x: 100,
     },
     {
       duration: 1.5,
@@ -92,6 +97,7 @@ window.addEventListener("DOMContentLoaded", function () {
       ease: "power3.out",
     }
   );
+  
   gsap.fromTo(
     ".js-top-future",
     {

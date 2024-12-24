@@ -1,0 +1,39 @@
+@use "global" as *;
+
+.p-school {
+  background: #fff;
+  padding-top: rem(55);
+  padding-bottom: rem(66);
+  padding-left: rem(22);
+  padding-right: rem(22);
+}
+
+.p-school__title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(10);
+}
+
+.p-school__icon {
+  max-width: rem(56);
+  width: 100%;
+}
+.p-school__icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-school__title {
+  text-align: center;
+  font-size: rem(30);
+  font-weight: 700;
+  line-height: calc(30 / 30);
+  color: #000;
+}
+
+.p-school__detail {
+  margin-top: rem(30);
+}
