@@ -3,14 +3,15 @@
 .p-mv {
   margin-top: rem(50);
   @include mq(md) {
-    margin-top: rem(80);
+    margin-top: initial;
+    height: 100vh;
   }
 }
 
 .p-mv__img video {
   object-fit: cover;
   width: 100%;
-  height: auto;
+  height: 100vh;
   aspect-ratio: 375 / 557;
   @include mq(md) {
     aspect-ratio: 1440 / 900;

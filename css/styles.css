@@ -1560,7 +1560,9 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-mv {
-    margin-top: 5rem;
+    margin-top: 0;
+    margin-top: initial;
+    height: 100vh;
   }
 }
 
@@ -1568,7 +1570,7 @@ select::-ms-expand {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: auto;
+  height: 100vh;
   aspect-ratio: 375/557;
 }
 @media screen and (min-width: 768px) {
