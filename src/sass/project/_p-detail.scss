@@ -17,6 +17,14 @@
 .p-detail__slider {
   margin-top: rem(30);
 }
+.p-detail__slider--secondary {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  @include mq(md) {
+    max-width: rem(985);
+  }
+}
 .swiper-detail .swiper-wrapper {
   @include mq(md) {
     display: grid;
@@ -24,11 +32,18 @@
     gap: rem(20);
   }
 }
+.swiper-wrapper--secondary {
+  @include mq(md) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: rem(35);
+  }
+}
 
 .p-detail__img {
 }
 
-.p-detail__img {
+.p-detail__img img {
   aspect-ratio: 250 / 175;
   object-fit: cover;
   width: 100%;

@@ -7,7 +7,9 @@
   padding-left: rem(22);
   padding-right: rem(22);
 }
-
+.p-school + .p-school {
+  margin-top: rem(50);
+}
 .p-school__title-wrapper {
   display: flex;
   align-items: center;

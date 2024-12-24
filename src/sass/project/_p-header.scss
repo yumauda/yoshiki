@@ -1,0 +1,89 @@
+@use "global" as *;
+
+.p-header {
+  background: #fff;
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: rem(50);
+  @include mq(md) {
+    height: rem(80);
+  }
+}
+
+.p-header__inner {
+  height: inherit;
+  padding-left: rem(15);
+  @include mq(md) {
+    padding-left: rem(34);
+  }
+}
+
+.p-header__content {
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+
+.p-header__logo {
+}
+
+.p-header__home {
+  display: inline-block;
+  width: rem(146);
+  @include mq(md) {
+    width: rem(212);
+  }
+}
+.p-header__home img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.p-header__nav {
+  display: none;
+  @include mq(md) {
+    display: block;
+    margin-left: auto;
+    height: inherit;
+  }
+}
+
+.p-header__lists {
+  display: flex;
+  align-items: center;
+  gap: rem(40);
+  height: inherit;
+}
+
+.p-header__list {
+  height: inherit;
+}
+
+.p-header__link {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: rem(16);
+  font-weight: 700;
+  color: #000;
+  line-height: calc(20 / 16);
+}
+.p-header__link--btn {
+  display: inline-block;
+  width: rem(270);
+}
+.p-header__link--btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.p-header__drawer {
+  margin-left: auto;
+}
