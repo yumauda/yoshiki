@@ -1554,6 +1554,29 @@ select::-ms-expand {
   margin-left: auto;
 }
 
+.p-mv {
+  margin-top: 50px;
+  margin-top: 3.125rem;
+}
+@media screen and (min-width: 768px) {
+  .p-mv {
+    margin-top: 5rem;
+  }
+}
+
+.p-mv__img video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 375/557;
+}
+@media screen and (min-width: 768px) {
+  .p-mv__img video {
+    aspect-ratio: 1440/900;
+  }
+}
+
 .p-point__row {
   display: -webkit-box;
   display: -ms-flexbox;

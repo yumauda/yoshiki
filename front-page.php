@@ -1,5 +1,14 @@
 <?php get_header(); ?>
 <main>
+  <div class="p-mv">
+    <div class="p-mv__img u-desktop">
+      <video src="<?php echo get_template_directory_uri() ?>/images/common/mv_pc.mp4" preload="auto" playsinline autoplay muted loop></video>
+
+    </div>
+    <div class="p-mv__img u-mobile">
+      <video src="<?php echo get_template_directory_uri() ?>/images/common/mv_sp.mp4" preload="auto" playsinline autoplay muted loop></video>
+    </div>
+  </div>
   <div class="p-swiper">
     <!-- Slider main container -->
     <div class="swiper">
@@ -27,13 +36,13 @@
             </figure>
           </a>
         </div>
-       
+
       </div>
-  
+
       <!-- If we need navigation buttons -->
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
-  
+
     </div>
   </div>
   <section class="p-top-news">
