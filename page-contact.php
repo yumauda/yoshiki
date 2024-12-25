@@ -13,6 +13,7 @@
           <p class="p-contact__attention-text">無料体験をお申し込みの方は、お問い合わせフォームの<br>
             お問い合わせ項目より「無料体験申し込み」をお選びください。</p>
         </div>
+        <?php the_content(); ?>
         <div class="p-form">
           <div class="p-form__row">
             <div class="p-form__dt-wrapper">
