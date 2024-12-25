@@ -1682,12 +1682,12 @@ select::-ms-expand {
 }
 
 .p-form__need {
-  color: #D00303;
+  color: #d00303;
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
   background: transparent;
-  border: 1px solid #D00303;
+  border: 1px solid #d00303;
   border-radius: 9999px;
   padding-left: 5px;
   padding-left: 0.3125rem;
@@ -1808,7 +1808,7 @@ select::-ms-expand {
 }
 
 .p-form input[type=submit] {
-  background: #FFFF00;
+  background: #ffff00;
   display: inline-block;
   color: #000;
   text-align: center;
@@ -2043,27 +2043,35 @@ select::-ms-expand {
 }
 
 ::-webkit-input-placeholder {
-  color: #999;
+  color: #d8d8d8;
   font-size: 16px;
   font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.75;
 }
 
 ::-moz-placeholder {
-  color: #999;
+  color: #d8d8d8;
   font-size: 16px;
   font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.75;
 }
 
 ::-ms-input-placeholder {
-  color: #999;
+  color: #d8d8d8;
   font-size: 16px;
   font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.75;
 }
 
 ::placeholder {
-  color: #999;
+  color: #d8d8d8;
   font-size: 16px;
   font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.75;
 }
 
 @media screen and (min-width: 768px) {

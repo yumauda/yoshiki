@@ -143,11 +143,11 @@
   margin-top: rem(16);
 }
 .p-form__need {
-  color: #D00303;
+  color: #d00303;
   font-size: rem(12);
   line-height: 1;
   background: transparent;
-  border: 1px solid #D00303;
+  border: 1px solid #d00303;
   border-radius: 9999px;
   padding-left: rem(5);
   padding-right: rem(5);
@@ -219,7 +219,7 @@
   }
 }
 .p-form input[type="submit"] {
-  background: #FFFF00;
+  background: #ffff00;
   display: inline-block;
   color: #000;
   text-align: center;
@@ -372,8 +372,10 @@
   align-items: flex-start;
 }
 ::placeholder {
-  color: #999;
+  color: #d8d8d8;
   font-size: rem(16);
+  font-weight: 500;
+  line-height: calc(28 / 16);
 }
 .p-form__description--multi {
   @include mq(md) {
