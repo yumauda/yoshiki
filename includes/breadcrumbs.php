@@ -1,9 +1,9 @@
-<?php if (is_home() || is_front_page()) : ?>
+<?php if (is_front_page()) : ?>
 
 <?php elseif (is_page('search')) : ?>
     <ul class="p-breadcrumbs">
         <li class="p-breadcrumbs__list">
-            <a href="<?php echo home_url(); ?>" class="p-breadcrumbs__link">
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="p-breadcrumbs__link">
                 トップ
             </a>
         </li>
@@ -19,7 +19,7 @@
 <?php elseif (is_page('feature')) : ?>
     <ul class="p-breadcrumbs">
         <li class="p-breadcrumbs__list">
-            <a href="<?php echo home_url(); ?>" class="p-breadcrumbs__link">
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="p-breadcrumbs__link">
                 トップ
             </a>
         </li>
@@ -32,10 +32,50 @@
             </p>
         </li>
     </ul>
+<?php elseif (is_home()) : ?>
+    <ul class="p-breadcrumbs">
+        <li class="p-breadcrumbs__list">
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="p-breadcrumbs__link">
+                トップ
+            </a>
+        </li>
+        <li class="p-breadcrumbs__list">
+            <span class="p-breadcrumbs__line">/</span>
+        </li>
+        <li class="p-breadcrumbs__list">
+            <p class="p-breadcrumbs__now">
+                お知らせ一覧
+            </p>
+        </li>
+    </ul>
+<?php elseif (is_single()) : ?>
+    <ul class="p-breadcrumbs">
+        <li class="p-breadcrumbs__list">
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="p-breadcrumbs__link">
+                トップ
+            </a>
+        </li>
+        <li class="p-breadcrumbs__list">
+            <span class="p-breadcrumbs__line">/</span>
+        </li>
+        <li class="p-breadcrumbs__list">
+            <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-breadcrumbs__link">
+                お知らせ一覧
+            </a>
+        </li>
+        <li class="p-breadcrumbs__list">
+            <span class="p-breadcrumbs__line">/</span>
+        </li>
+        <li class="p-breadcrumbs__list">
+            <p class="p-breadcrumbs__now">
+                <?php the_title(); ?>
+            </p>
+        </li>
+    </ul>
 <?php elseif (is_page('course')) : ?>
     <ul class="p-breadcrumbs">
         <li class="p-breadcrumbs__list">
-            <a href="<?php echo home_url(); ?>" class="p-breadcrumbs__link">
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="p-breadcrumbs__link">
                 トップ
             </a>
         </li>
@@ -51,7 +91,7 @@
 <?php elseif (is_page('privacy')) : ?>
     <ul class="p-breadcrumbs">
         <li class="p-breadcrumbs__list">
-            <a href="<?php echo home_url(); ?>" class="p-breadcrumbs__link">
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="p-breadcrumbs__link">
                 トップ
             </a>
         </li>
@@ -71,7 +111,7 @@
 <?php elseif (is_page('thanks')) : ?>
     <ul class="p-breadcrumbs">
         <li class="p-breadcrumbs__list">
-            <a href="<?php echo home_url(); ?>" class="p-breadcrumbs__link">
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="p-breadcrumbs__link">
                 トップ
             </a>
         </li>
@@ -79,7 +119,7 @@
             <span class="p-breadcrumbs__line">/</span>
         </li>
         <li class="p-breadcrumbs__list">
-            <a href="<?php echo home_url(); ?>" class="p-breadcrumbs__link">
+            <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-breadcrumbs__link">
                 お問い合わせフォーム
             </a>
         </li>
