@@ -52,6 +52,9 @@ function my_script_init()
 		wp_enqueue_script('scrollTrigger', '//cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js', '', "1.0.1", true);
 		wp_enqueue_script('js-gsap', get_template_directory_uri() . '/js/gsap.js', array('jquery'), filemtime(get_theme_file_path('/js/gsap.js')), true);
 	}
+	if (is_page('contact')) {
+		wp_enqueue_script('zipcode', '//ajaxzip3.github.io/ajaxzip3.js', '', "1.0.1", true);
+	}
 	wp_enqueue_script('script', get_template_directory_uri() . '/js/script.js', array('jquery'), filemtime(get_theme_file_path('/js/script.js')), true);
 }
 add_action('wp_enqueue_scripts', 'my_script_init');

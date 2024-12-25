@@ -1,0 +1,33 @@
+@use "global" as *;
+
+.p-contact {
+  padding-top: rem(88);
+  padding-bottom: rem(46);
+  background: #f8f8f8;
+}
+.p-contact__content {
+  background: #fff;
+  padding-top: rem(70);
+  padding-bottom: rem(70);
+  padding-left: rem(170);
+  padding-right: rem(170);
+  margin-top: rem(17);
+  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+}
+.p-contact__title {
+  text-align: center;
+}
+.p-contact__attention {
+  margin-top: rem(56);
+  background: #d00303;
+  padding-top: rem(14);
+  padding-bottom: rem(14);
+  text-align: center;
+}
+
+.p-contact__attention-text {
+  color: #fff;
+  font-size: rem(16);
+  font-weight: 700;
+  line-height: calc(28 / 16);
+}

@@ -1,6 +1,8 @@
 jQuery(function ($) {
   // この中であればWordpressでも「$」が使用可能になる
-
+  $("#zipcode1").on("blur", function () {
+    AjaxZip3.zip2addr("zipcode1", "", "address1", "address1");
+  });
   var topBtn = $(".p-totop");
   topBtn.hide();
 

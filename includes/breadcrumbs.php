@@ -104,6 +104,22 @@
             </p>
         </li>
     </ul>
+<?php elseif (is_page('contact')) : ?>
+    <ul class="p-breadcrumbs">
+        <li class="p-breadcrumbs__list">
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="p-breadcrumbs__link">
+                トップ
+            </a>
+        </li>
+        <li class="p-breadcrumbs__list">
+            <span class="p-breadcrumbs__line">/</span>
+        </li>
+        <li class="p-breadcrumbs__list">
+            <p class="p-breadcrumbs__now">
+                お問い合わせフォーム
+            </p>
+        </li>
+    </ul>
 <?php elseif (is_page((array('confirm-customer', 'confirm-company')))) : ?>
 
 <?php elseif (is_post_type_archive('product')) : ?>
