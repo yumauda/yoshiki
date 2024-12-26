@@ -16,7 +16,11 @@ jQuery(function ($) {
       topBtn.fadeOut();
     }
   });
-
+  $(document).ready(function ($) {
+    $(".p-submit__cancel").on("click", function () {
+      $(".p-submit").addClass("fade-out");
+    });
+  });
   // ボタンをクリックしたらスクロールして上に戻る
   topBtn.click(function () {
     $("body,html").animate(

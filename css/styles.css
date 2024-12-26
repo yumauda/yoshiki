@@ -1301,19 +1301,22 @@ select::-ms-expand {
 }
 
 .p-footer__lists {
-  margin-top: 60px;
-  margin-top: 3.75rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 30px;
-  gap: 1.875rem;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .p-footer__lists {
+    margin-top: 3.75rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 1.875rem;
+  }
 }
 
 .p-footer__link {
@@ -3045,6 +3048,92 @@ select::-ms-expand {
   line-height: 1.25;
 }
 
+.p-submit {
+  position: fixed;
+  bottom: 20px;
+  bottom: 1.25rem;
+  right: 20px;
+  right: 1.25rem;
+  z-index: 9999;
+  -webkit-transition: opacity 0.5s ease, visibility 0.5s ease;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  opacity: 1;
+  visibility: visible;
+}
+
+.p-submit.fade-out {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.p-submit__link {
+  max-width: 200px;
+  max-width: 12.5rem;
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="6" /><feOffset dx="1" dy="4" result="offsetblur" /><feFlood flood-color="rgba(0,0,0,0.16)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
+  -webkit-filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, .16));
+          filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, .16));
+}
+
+.p-submit__cancel {
+  position: absolute;
+  z-index: 10000;
+  top: 10px;
+  top: 0.625rem;
+  right: 10px;
+  right: 0.625rem;
+  width: 30px;
+  width: 1.875rem;
+  height: 30px;
+  height: 1.875rem;
+  background: #fff;
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="6" /><feOffset dx="1" dy="4" result="offsetblur" /><feFlood flood-color="rgba(0,0,0,0.16)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
+  -webkit-filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, .16));
+          filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, .16));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 9999px;
+}
+
+.p-submit__line-wrapper {
+  position: relative;
+}
+
+.p-submit__line {
+  position: absolute;
+  width: 20px;
+  width: 1.25rem;
+  height: 1px;
+  background: #d00303;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.p-submit__line:nth-child(2) {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.p-submit__link img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
 .p-swiper {
   padding-top: 30px;
   padding-top: 1.875rem;
@@ -3188,6 +3277,10 @@ select::-ms-expand {
   padding-bottom: 0.5rem;
 }
 
+.p-top-achieve__block-title--high {
+  background: #d00303;
+}
+
 .p-top-achieve__blockRow {
   margin-top: 20px;
   margin-top: 1.25rem;
@@ -3198,12 +3291,23 @@ select::-ms-expand {
   gap: 1.25rem;
   padding-left: 16px;
   padding-left: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
-.p-top-achieve__univ {
-  max-width: 160px;
-  max-width: 10rem;
-  width: 100%;
+@media screen and (min-width: 768px) {
+  .p-top-achieve__univ {
+    max-width: 10rem;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-top-achieve__high-univ {
+    max-width: 22.9375rem;
+    width: 100%;
+  }
 }
 
 .p-top-achieve__univ-title {
@@ -3230,18 +3334,63 @@ select::-ms-expand {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 19px;
-  padding-left: 1.1875rem;
+  padding-left: min(19px, 1.3194444444vw);
+  padding-left: min(1.1875rem, 1.3194444444vw);
   gap: 12px;
   gap: 0.75rem;
 }
 
+.p-top-achieve__univ-row--special {
+  padding-left: 0;
+  padding-left: initial;
+}
+
+.p-top-achive__univ-row svg {
+  max-width: min(18px, 1.25vw);
+  max-width: min(1.125rem, 1.25vw);
+  min-width: min(18px, 1.25vw);
+  min-width: min(1.125rem, 1.25vw);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
 .p-top-achieve__name {
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: min(16px, 1.1111111111vw);
+  font-size: min(1rem, 1.1111111111vw);
   font-weight: 400;
   line-height: 2.25;
   color: #000;
+}
+
+@media screen and (min-width: 768px) {
+  .p-top-achieve__high {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-top-achieve__special {
+    margin-top: 1.25rem;
+    margin-left: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-top-achieve__high-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: min(4rem, 4.4444444444vw);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .p-top-choose {

@@ -94,11 +94,14 @@
 }
 
 .p-footer__lists {
-  margin-top: rem(60);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: rem(30);
+  display: none;
+  @include mq(md) {
+    margin-top: rem(60);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: rem(30);
+  }
 }
 
 .p-footer__list {
