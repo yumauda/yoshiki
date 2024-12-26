@@ -1,7 +1,10 @@
 @use "global" as *;
 
 .p-top-achieve {
-  padding-top: rem(132);
+  padding-top: rem(48);
+  @include mq(md) {
+    padding-top: rem(132);
+  }
 }
 
 .p-top-achieve__content {
@@ -13,21 +16,24 @@
 
 .p-top-achieve__row {
   margin-top: rem(36);
-  display: flex;
-  gap: rem(30);
+  @include mq(md) {
+    display: flex;
+    gap: rem(30);
+  }
 }
 
 .p-top-achieve__block {
   background: #f8f8f8;
-
+  padding: rem(25);
   @include mq(md) {
-    padding: rem(25);
     max-width: rem(450);
     width: 100%;
   }
 }
 .p-top-achieve__block:nth-child(2) {
+  margin-top: rem(20);
   @include mq(md) {
+    margin-top: initial;
     max-width: rem(620);
     width: 100%;
   }
@@ -49,8 +55,10 @@
   margin-top: rem(20);
   display: flex;
   gap: rem(20);
-  padding-left: rem(16);
   flex: 1;
+  @include mq(md) {
+    padding-left: rem(16);
+  }
 }
 
 .p-top-achieve__univ {
@@ -67,13 +75,17 @@
 }
 
 .p-top-achieve__univ-title {
-  font-size: rem(24);
   font-weight: 700;
   color: #000;
-  line-height: calc(41 / 24);
   padding-bottom: rem(6);
   text-align: center;
   border-bottom: 1px solid #9d9898;
+  font-size: rem(18);
+  line-height: calc(41 / 18);
+  @include mq(md) {
+    line-height: calc(41 / 24);
+    font-size: rem(24);
+  }
 }
 
 .p-top-achieve__univ-wrapper {
@@ -86,21 +98,33 @@
   gap: rem(12);
 }
 .p-top-achieve__univ-row--special {
-  padding-left: initial;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include mq(md) {
+    padding-left: initial;
+  }
 }
 .p-top-achive__univ-row svg {
-  max-width: min(rem(18), calc(18 / 1440) * 100vw);
-  min-width: min(rem(18), calc(18 / 1440) * 100vw);
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center center;
+  max-width: rem(18);
+  min-width: rem(18);
+  @include mq(md) {
+    max-width: min(rem(18), calc(18 / 1440) * 100vw);
+    min-width: min(rem(18), calc(18 / 1440) * 100vw);
+  }
 }
 .p-top-achieve__name {
-  font-size: min(rem(16), calc(16 / 1440) * 100vw);
   font-weight: 400;
   line-height: calc(36 / 16);
+  font-size: rem(16);
   color: #000;
+  @include mq(md) {
+    font-size: min(rem(16), calc(16 / 1440) * 100vw);
+  }
 }
 
 .p-top-achieve__high {
@@ -109,14 +133,15 @@
   }
 }
 .p-top-achieve__special {
+  margin-top: rem(20);
   @include mq(md) {
-    margin-top: rem(20);
     margin-left: rem(20);
   }
 }
 .p-top-achieve__high-row {
+  display: flex;
+  gap: rem(20);
   @include mq(md) {
-    display: flex;
     gap: min(rem(64), calc(64 / 1440) * 100vw);
     justify-content: center;
   }

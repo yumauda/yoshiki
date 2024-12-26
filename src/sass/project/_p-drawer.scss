@@ -1,11 +1,10 @@
 @use "global" as *;
 
 .p-drawer-icon {
-  background: #fff;
+  background: #000;
   transition: 0.3s;
-  border-radius: 9999px;
-  width: rem(44);
-  height: rem(44);
+  width: rem(70);
+  height: rem(50);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,57 +21,75 @@
     height: rem(15);
   }
   .p-drawer-icon__bar1 {
-    background: white;
+    background: #fff100;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
   }
+  .p-drawer-icon__bar2 {
+    display: none;
+  }
   .p-drawer-icon__bar3 {
-    background: white;
+    background: #fff100;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
   }
+  .p-drawer-icon__text {
+    position: absolute;
+    bottom: rem(-10);
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    width: 100vw;
+  }
 }
 .p-drawer-icon__bars {
   position: relative;
-  width: rem(28);
-  height: rem(8);
+  width: rem(48);
+  height: rem(36);
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
   gap: rem(6);
-  @include mq(md) {
-    gap: rem(8);
-    width: rem(28);
-    height: rem(12);
-  }
+  padding-top: rem(4);
 }
 .p-drawer-icon__bar1 {
   height: 2px;
-  background: #333;
+  background: #fff100;
   transition: 0.5s;
-  width: rem(20);
+  width: rem(25);
   display: flex;
-  @include mq(md) {
-    width: rem(28);
-  }
+}
+.p-drawer-icon__bar2 {
+  height: 2px;
+  background: #fff100;
+  transition: 0.5s;
+  width: rem(25);
+  display: flex;
 }
 
 .p-drawer-icon__bar3 {
   height: 2px;
-  background: #333;
+  background: #fff100;
   transition: 0.5s;
   display: flex;
-  width: rem(20);
-  @include mq(md) {
-    width: rem(28);
-  }
+  width: rem(25);
 }
-
+.p-drawer-icon__text {
+  color: #fff100;
+  font-size: rem(12);
+  font-weight: 400;
+  line-height: calc(28 / 12);
+  position: absolute;
+  bottom: rem(-10);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
 .p-drawer-content {
   width: 100%;
   height: 100dvh;

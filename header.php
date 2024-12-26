@@ -107,12 +107,12 @@
                             </a>
                         </li>
                         <li class="p-header__list">
-                            <a href="<?php echo esc_url(home_url('/')); ?>" class="p-header__link">
+                            <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-header__link">
                                 お問い合わせ
                             </a>
                         </li>
                         <li class="p-header__list">
-                            <a href="<?php echo esc_url(home_url('/')); ?>" class="p-header__link--btn">
+                            <a href="<?php echo esc_url(home_url('/search')); ?>" class="p-header__link--btn">
                                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/header_btn.png" alt="教室を探す" width="270" height="80">
                             </a>
                         </li>
@@ -121,7 +121,9 @@
                 <button class="p-header__drawer p-drawer-icon">
                     <span class="p-drawer-icon__bars">
                         <span class="p-drawer-icon__bar1"></span>
+                        <span class="p-drawer-icon__bar2"></span>
                         <span class="p-drawer-icon__bar3"></span>
+                        <span class="p-drawer-icon__text">メニュー</span>
                     </span>
                 </button>
                 <div class="p-header__drawer-content p-drawer-content">

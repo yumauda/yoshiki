@@ -25,7 +25,7 @@
             </figure>
             <div class="p-footer__block">
                 <div class="p-footer__address-wrapper">
-                    <p class="p-footer__address">〒528-0035&emsp;滋賀県甲賀市水口町名坂3166-8</p>
+                    <p class="p-footer__address">〒528-0035&emsp;<br class="u-mobile">滋賀県甲賀市水口町名坂3166-8</p>
                 </div>
                 <div class="p-footer__tel">
                     <a href="tel:0748634588" class="p-footer__tel-link">

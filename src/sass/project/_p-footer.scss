@@ -2,9 +2,12 @@
 
 .p-footer {
   padding-top: rem(28);
-  padding-bottom: rem(41);
   background: #000000;
   overflow: hidden;
+  padding-bottom: rem(106);
+  @include mq(md) {
+    padding-bottom: rem(41);
+  }
 }
 .p-footer--down {
   padding-top: initial;
@@ -17,6 +20,7 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  max-width: rem(230);
   @include mq(md) {
     max-width: rem(394);
   }
@@ -36,13 +40,21 @@
 }
 
 .p-footer__address {
-  font-size: rem(16);
   color: #fff;
-  line-height: calc(28 / 16);
+  font-size: rem(12);
+  line-height: calc(18 / 12);
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: calc(28 / 16);
+  }
 }
 
 .p-footer__tel {
-  margin-top: rem(2);
+  display: none;
+  @include mq(md) {
+    display: block;
+    margin-top: rem(2);
+  }
 }
 
 .p-footer__tel-link {
@@ -59,9 +71,11 @@
   object-position: center center;
 }
 .p-footer__number {
-  font-size: rem(50);
-  color: #fff;
-  font-weight: 700;
+  @include mq(md) {
+    font-size: rem(50);
+    color: #fff;
+    font-weight: 700;
+  }
 }
 
 .p-footer__time {
@@ -75,22 +89,31 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: rem(38);
   margin-top: rem(36);
+  gap: rem(50);
+  @include mq(md) {
+    gap: rem(38);
+  }
 }
 
 .p-footer__icon-list {
 }
 
 .p-footer__icon-link {
-  max-width: rem(30);
+  max-width: rem(40);
+  @include mq(md) {
+    max-width: rem(30);
+  }
 }
 .p-footer__icon-link img {
-  max-width: rem(30);
+  max-width: rem(40);
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center center;
+  @include mq(md) {
+    max-width: rem(30);
+  }
 }
 
 .p-footer__lists {
@@ -120,12 +143,18 @@
 }
 
 .p-footer__small {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: rem(41);
   position: relative;
-  margin-top: rem(22);
+  margin-top: rem(35);
+  padding-top: rem(16);
+  text-align: center;
+  @include mq(md) {
+    text-align: initial;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: rem(22);
+    padding-top: rem(41);
+  }
 }
 .p-footer__small::before {
   position: absolute;
@@ -140,12 +169,20 @@
   right: 0;
 }
 .p-footer__small small {
-  font-size: rem(16);
   color: #fff;
-  line-height: calc(28 / 16);
+  font-size: rem(12);
+  line-height: calc(28 / 12);
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: calc(28 / 16);
+  }
 }
 .p-footer__privacy {
-  font-size: rem(16);
-  color: #fff;
-  line-height: calc(28 / 16);
+  display: none;
+  @include mq(md) {
+    display: block;
+    font-size: rem(16);
+    color: #fff;
+    line-height: calc(28 / 16);
+  }
 }

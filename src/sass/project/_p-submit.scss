@@ -1,13 +1,17 @@
 @use "global" as *;
 
 .p-submit {
-  position: fixed;
-  bottom: rem(20);
-  right: rem(20);
-  z-index: 9999;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
-  opacity: 1;
-  visibility: visible;
+  display: none;
+  @include mq(md) {
+    display: block;
+    position: fixed;
+    bottom: rem(20);
+    right: rem(20);
+    z-index: 9999;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    opacity: 1;
+    visibility: visible;
+  }
 }
 .p-submit.fade-out {
   opacity: 0;

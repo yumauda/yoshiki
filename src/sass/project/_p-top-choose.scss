@@ -1,9 +1,10 @@
 @use "global" as *;
 
 .p-top-choose {
-  padding-top: rem(113);
+  padding-top: rem(67);
   padding-bottom: rem(42);
   @include mq(md) {
+    padding-top: rem(113);
     padding-bottom: rem(120);
   }
 }
