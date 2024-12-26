@@ -1,50 +1,69 @@
 @use "global" as *;
 
 .p-single {
-  padding-top: rem(88);
   background: #f8f8f8;
+  padding-top: rem(65);
+  padding-bottom: rem(12);
+  @include mq(md) {
+    padding-top: rem(88);
+    padding-bottom: initial;
+  }
 }
 
 .p-single__content {
-  margin-top: rem(26);
   background: #fff;
   filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
-  padding-top: rem(70);
-  padding-bottom: rem(70);
-  padding-left: rem(150);
-  padding-right: rem(150);
-}
-
-.p-single__top {
+  margin-top: rem(44);
+  padding-top: rem(44);
+  padding-left: rem(10);
+  padding-right: rem(10);
+  padding-bottom: rem(54);
+  @include mq(md) {
+    margin-top: rem(26);
+    padding-top: rem(70);
+    padding-bottom: rem(70);
+    padding-left: rem(150);
+    padding-right: rem(150);
+  }
 }
 
 .p-single__time {
   font-size: rem(16);
   color: #000;
   line-height: calc(28 / 16);
-  padding-left: rem(40);
-  padding-right: rem(40);
+  @include mq(md) {
+    padding-left: rem(40);
+    padding-right: rem(40);
+  }
 }
 .p-single__title-wrapper {
   padding-bottom: rem(20);
   border-bottom: 1px solid #707070;
-  padding-left: rem(40);
-  padding-right: rem(40);
+  @include mq(md) {
+    padding-left: rem(40);
+    padding-right: rem(40);
+  }
 }
 
 .p-single__title {
   margin-top: rem(20);
   color: #000;
   font-weight: 700;
-  font-size: rem(24);
-  line-height: calc(28 / 24);
+  font-size: rem(18);
+  line-height: calc(28 / 18);
+  @include mq(md) {
+    line-height: calc(28 / 24);
+    font-size: rem(24);
+  }
 }
 
 .p-single__block {
-  padding-left: rem(40);
-  padding-right: rem(40);
   padding-bottom: rem(20);
   border-bottom: 1px solid #707070;
+  @include mq(md) {
+    padding-left: rem(40);
+    padding-right: rem(40);
+  }
 }
 .p-single__block p {
   font-size: rem(16);
@@ -62,8 +81,12 @@
 
 .p-single__bottom {
   margin-top: rem(32);
-  padding-left: rem(64);
-  padding-right: rem(64);
+  padding-left: rem(23);
+  padding-right: rem(23);
+  @include mq(md) {
+    padding-left: rem(64);
+    padding-right: rem(64);
+  }
 }
 
 .p-single__lists {

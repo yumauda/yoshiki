@@ -2322,11 +2322,19 @@ select::-ms-expand {
 }
 
 .p-news {
-  padding-top: 88px;
-  padding-top: 5.5rem;
-  margin-bottom: -80px;
-  margin-bottom: -5rem;
   background: #f8f8f8;
+  padding-top: 65px;
+  padding-top: 4.0625rem;
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-news {
+    padding-top: 5.5rem;
+    margin-bottom: -5rem;
+    padding-bottom: 0;
+    padding-bottom: initial;
+  }
 }
 
 .p-news__content {
@@ -2339,16 +2347,25 @@ select::-ms-expand {
   -webkit-filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, .16));
           filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, .16));
   background: #fff;
-  margin-top: 25px;
-  margin-top: 1.5625rem;
-  padding-top: 70px;
-  padding-top: 4.375rem;
-  padding-left: 20px;
-  padding-left: 1.25rem;
-  padding-right: 20px;
-  padding-right: 1.25rem;
-  padding-bottom: 70px;
-  padding-bottom: 4.375rem;
+  margin-top: 38px;
+  margin-top: 2.375rem;
+  padding-top: 53px;
+  padding-top: 3.3125rem;
+  padding-left: 24px;
+  padding-left: 1.5rem;
+  padding-right: 24px;
+  padding-right: 1.5rem;
+  padding-bottom: 40px;
+  padding-bottom: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-news__content {
+    padding-bottom: 4.375rem;
+    margin-top: 1.5625rem;
+    padding-top: 4.375rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
 }
 
 .p-news__title {
@@ -2356,13 +2373,18 @@ select::-ms-expand {
 }
 
 .p-news__lists {
-  margin-top: 56px;
-  margin-top: 3.5rem;
   max-width: 705px;
   max-width: 44.0625rem;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 52px;
+  margin-top: 3.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-news__lists {
+    margin-top: 3.5rem;
+  }
 }
 
 .p-news__list {
@@ -2370,19 +2392,25 @@ select::-ms-expand {
 }
 
 .p-news__list + .p-news__list {
-  margin-top: 45px;
-  margin-top: 2.8125rem;
+  margin-top: 40px;
+  margin-top: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-news__list + .p-news__list {
+    margin-top: 2.8125rem;
+  }
 }
 
-.p-news__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 40px;
-  gap: 2.5rem;
+@media screen and (min-width: 768px) {
+  .p-news__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2.5rem;
+  }
 }
 
 .p-news__time {
@@ -2391,8 +2419,11 @@ select::-ms-expand {
   font-weight: 400;
   line-height: 1.75;
   color: #000;
-  width: 80px;
-  width: 5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-news__time {
+    width: 5rem;
+  }
 }
 
 .p-news__text {
@@ -2995,26 +3026,44 @@ select::-ms-expand {
 }
 
 .p-single {
-  padding-top: 88px;
-  padding-top: 5.5rem;
   background: #f8f8f8;
+  padding-top: 65px;
+  padding-top: 4.0625rem;
+  padding-bottom: 12px;
+  padding-bottom: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .p-single {
+    padding-top: 5.5rem;
+    padding-bottom: 0;
+    padding-bottom: initial;
+  }
 }
 
 .p-single__content {
-  margin-top: 26px;
-  margin-top: 1.625rem;
   background: #fff;
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="6" /><feOffset dx="1" dy="4" result="offsetblur" /><feFlood flood-color="rgba(0,0,0,0.16)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
   -webkit-filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, .16));
           filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, .16));
-  padding-top: 70px;
-  padding-top: 4.375rem;
-  padding-bottom: 70px;
-  padding-bottom: 4.375rem;
-  padding-left: 150px;
-  padding-left: 9.375rem;
-  padding-right: 150px;
-  padding-right: 9.375rem;
+  margin-top: 44px;
+  margin-top: 2.75rem;
+  padding-top: 44px;
+  padding-top: 2.75rem;
+  padding-left: 10px;
+  padding-left: 0.625rem;
+  padding-right: 10px;
+  padding-right: 0.625rem;
+  padding-bottom: 54px;
+  padding-bottom: 3.375rem;
+}
+@media screen and (min-width: 768px) {
+  .p-single__content {
+    margin-top: 1.625rem;
+    padding-top: 4.375rem;
+    padding-bottom: 4.375rem;
+    padding-left: 9.375rem;
+    padding-right: 9.375rem;
+  }
 }
 
 .p-single__time {
@@ -3022,20 +3071,24 @@ select::-ms-expand {
   font-size: 1rem;
   color: #000;
   line-height: 1.75;
-  padding-left: 40px;
-  padding-left: 2.5rem;
-  padding-right: 40px;
-  padding-right: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-single__time {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
 }
 
 .p-single__title-wrapper {
   padding-bottom: 20px;
   padding-bottom: 1.25rem;
   border-bottom: 1px solid #707070;
-  padding-left: 40px;
-  padding-left: 2.5rem;
-  padding-right: 40px;
-  padding-right: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-single__title-wrapper {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
 }
 
 .p-single__title {
@@ -3043,19 +3096,27 @@ select::-ms-expand {
   margin-top: 1.25rem;
   color: #000;
   font-weight: 700;
-  font-size: 24px;
-  font-size: 1.5rem;
-  line-height: 1.1666666667;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.5555555556;
+}
+@media screen and (min-width: 768px) {
+  .p-single__title {
+    line-height: 1.1666666667;
+    font-size: 1.5rem;
+  }
 }
 
 .p-single__block {
-  padding-left: 40px;
-  padding-left: 2.5rem;
-  padding-right: 40px;
-  padding-right: 2.5rem;
   padding-bottom: 20px;
   padding-bottom: 1.25rem;
   border-bottom: 1px solid #707070;
+}
+@media screen and (min-width: 768px) {
+  .p-single__block {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
 }
 
 .p-single__block p {
@@ -3081,10 +3142,16 @@ select::-ms-expand {
 .p-single__bottom {
   margin-top: 32px;
   margin-top: 2rem;
-  padding-left: 64px;
-  padding-left: 4rem;
-  padding-right: 64px;
-  padding-right: 4rem;
+  padding-left: 23px;
+  padding-left: 1.4375rem;
+  padding-right: 23px;
+  padding-right: 1.4375rem;
+}
+@media screen and (min-width: 768px) {
+  .p-single__bottom {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
 }
 
 .p-single__lists {

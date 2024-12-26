@@ -105,15 +105,7 @@
               <li class="p-pagination__number">
                 <a href="#" class="p-pagination__num">3</a>
               </li>
-              <li class="p-pagination__number">
-                <a href="#" class="p-pagination__num">4</a>
-              </li>
-              <li class="p-pagination__number">
-                <a href="#" class="p-pagination__num">5</a>
-              </li>
-              <li class="p-pagination__number">
-                <a href="#" class="p-pagination__num">6</a>
-              </li>
+              
               <li class="p-pagination__list p-pagination__list--next">
                 <a href="#" class="p-pagination__prev">
                   <p class="p-pagination__text">next</p>
