@@ -2,27 +2,55 @@
 
 .p-block {
   background: #ffffff;
-  padding: rem(48);
+  padding-top: rem(56);
+  padding-left: rem(12);
+  padding-right: rem(12);
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
+  padding-bottom: rem(90);
+  @include mq(md) {
+    padding: rem(48);
+    margin-left: initial;
+    margin-right: initial;
+    width: initial;
+    padding-bottom: initial;
+  }
 }
 .p-block--white {
   background: transparent;
-  margin-top: rem(150);
+  margin-top: rem(94);
+  @include mq(md) {
+    margin-top: rem(150);
+  }
 }
 
 .p-block__lists {
-  margin-top: rem(38);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: rem(30);
+  grid-template-columns: repeat(1, 1fr);
+  padding-left: rem(16);
+  padding-right: rem(16);
+  margin-top: rem(50);
+  gap: rem(50);
+  @include mq(md) {
+    margin-top: rem(38);
+    gap: rem(30);
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: initial;
+    padding-right: initial;
+  }
 }
 
 .p-block__list {
 }
 
 .p-block__img {
-  max-width: rem(150);
   margin-left: auto;
   margin-right: auto;
+  max-width: rem(240);
+  @include mq(md) {
+    max-width: rem(150);
+  }
 }
 .p-block__img img {
   aspect-ratio: 150 / 150;
@@ -38,9 +66,13 @@
 .p-block__detail-title {
   text-align: center;
   color: #000;
-  font-size: rem(18);
   font-weight: 700;
+  font-size: rem(16);
   line-height: calc(28 / 18);
+  @include mq(md) {
+    font-size: rem(18);
+    line-height: calc(28 / 18);
+  }
 }
 
 .p-block__explain {
@@ -56,10 +88,15 @@
 }
 .p-block__cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: rem(40);
-  row-gap: rem(60);
-  margin-top: rem(50);
+  grid-template-columns: repeat(1, 1fr);
+  margin-top: rem(21);
+  gap: rem(70);
+  @include mq(md) {
+    column-gap: rem(40);
+    row-gap: rem(60);
+    margin-top: rem(50);
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .p-block__card {
@@ -75,7 +112,10 @@
 }
 
 .p-block__cardDetail {
-  padding-top: rem(20);
+  padding-top: rem(10);
+  @include mq(md) {
+    padding-top: rem(20);
+  }
 }
 
 .p-block__cardDetail-title {
@@ -101,7 +141,10 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: rme(22);
+  margin-top: rem(18);
+  @include mq(md) {
+    margin-top: rem(22);
+  }
 }
 .p-block__arrow-img img {
   width: 100%;

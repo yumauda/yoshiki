@@ -18,7 +18,7 @@
                   集団授業
                 </h3>
               </div>
-              <h4 class="p-block-top__subTitle">競い合いながら勉強することで互いに刺激を与え合う</h4>
+              <h4 class="p-block-top__subTitle">競い合いながら勉強することで<br class="u-mobile">互いに刺激を与え合う</h4>
             </div>
             <ul class="p-block__lists">
               <li class="p-block__list">
@@ -89,7 +89,7 @@
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/block_card2.jpg" alt="生徒一人ひとりに合った個別のニーズに対応" width="480" height="350">
                 </figure>
                 <div class="p-block__cardDetail">
-                  <p class="p-block__cardDetail-title">生徒一人ひとりに合った個別のニーズに対応</p>
+                  <p class="p-block__cardDetail-title">生徒一人ひとりに合った<br class="u-mobile">個別のニーズに対応</p>
                   <p class="p-block__cardDetail-explain">
                     個別の授業は、集団授業とは違いその生徒様のペースに合わせて授業ができます。<br>
                     「学校より早くどんどん進みたい」や「前の学年に戻って学習したい」などの生徒様にお勧めです。<br>
@@ -102,7 +102,7 @@
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/block_card3.jpg" alt="個別と集団授業を自由に組み合わせて個別のニーズに対応" width="480" height="350">
                 </figure>
                 <div class="p-block__cardDetail">
-                  <p class="p-block__cardDetail-title">個別と集団授業を自由に組み合わせて個別のニーズに対応</p>
+                  <p class="p-block__cardDetail-title">個別と集団授業を自由に組み合わせて<br class="u-mobile">個別のニーズに対応</p>
                   <p class="p-block__cardDetail-explain">
                     得意な教科は集団授業で受講し、苦手な教科は個別授業で受講するなど、教科によって変更できます。生徒様一人ひとりに合った最適な組み合わせで受講できます。
                   </p>

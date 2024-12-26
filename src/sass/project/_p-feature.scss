@@ -2,15 +2,25 @@
 
 .p-feature {
   background: #f8f8f8;
-  padding-top: rem(88);
+  padding-top: rem(65);
+  @include mq(md) {
+    padding-top: rem(88);
+  }
 }
 
 .p-feature__title {
+  margin-top: rem(97);
   text-align: center;
+  @include mq(md) {
+    margin-top: rem(70);
+  }
 }
 
 .p-feature__content {
-  margin-top: rem(56);
+  margin-top: rem(61);
+  @include mq(md) {
+    margin-top: rem(56);
+  }
 }
 
 .p-feature__block {

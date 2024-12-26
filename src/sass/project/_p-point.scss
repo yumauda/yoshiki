@@ -7,19 +7,32 @@
 }
 
 .p-point__row {
-  display: flex;
   background: #fff;
-  padding-top: rem(20);
-  padding-bottom: rem(20);
-  padding-left: rem(40);
-  padding-right: rem(23);
+  padding-top: rem(14);
+  padding-bottom: rem(17);
+  padding-left: rem(11);
+  padding-right: rem(11);
+
+  @include mq(md) {
+    padding-top: rem(20);
+    padding-bottom: rem(20);
+    padding-left: rem(40);
+    padding-right: rem(23);
+    display: flex;
+  }
 }
 .p-point__row + .p-point__row {
   margin-top: rem(30);
 }
 
 .p-point__title-wrapper {
-  width: rem(225);
+  display: flex;
+  align-items: center;
+  gap: rem(10);
+  @include mq(md) {
+    display: block;
+    width: rem(225);
+  }
 }
 
 .p-point__num {
@@ -45,12 +58,17 @@
 
 .p-point__detail {
   background: #f8f8f8;
-  padding-top: rem(28);
-  padding-bottom: rem(28);
-  padding-left: rem(24);
-  padding-right: rem(20);
-  width: calc(100% - rem(225));
-  margin-left: rem(29);
+  padding: rem(13) rem(3);
+  margin-top: rem(8);
+  @include mq(md) {
+    padding-top: rem(28);
+    padding-bottom: rem(28);
+    padding-left: rem(24);
+    padding-right: rem(20);
+    width: calc(100% - rem(225));
+    margin-left: rem(29);
+    margin-top: initial;
+  }
 }
 
 .p-point__text {

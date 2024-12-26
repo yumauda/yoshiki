@@ -23,10 +23,15 @@
 
 .p-block-top__title {
   text-align: center;
-  font-size: rem(24);
   font-weight: 700;
   color: #000;
-  line-height: calc(28 / 24);
+  font-size: rem(18);
+  line-height: calc(28 / 18);
+  margin-top: rem(7);
+  @include mq(md) {
+    font-size: rem(24);
+    line-height: calc(28 / 24);
+  }
 }
 
 .p-block-top__subTitle {
@@ -36,7 +41,11 @@
   background: #1676a8;
   padding-top: rem(7);
   padding-bottom: rem(7);
-  font-size: rem(18);
-  line-height: calc(28 / 18);
   font-weight: 700;
+  font-size: rem(16);
+  line-height: calc(24 / 16);
+  @include mq(md) {
+    font-size: rem(18);
+    line-height: calc(28 / 18);
+  }
 }
