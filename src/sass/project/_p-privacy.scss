@@ -1,9 +1,12 @@
 @use "global" as *;
 
 .p-privacy {
-  padding-top: rem(88);
   padding-bottom: rem(24);
   background: #f8f8f8;
+  padding-top: rem(65);
+  @include mq(md) {
+    padding-top: rem(88);
+  }
 }
 
 .p-privacy__breadcrumbs {
@@ -14,6 +17,10 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: rem(97);
+  @include mq(md) {
+    margin-top: initial;
+  }
 }
 
 .p-privacy__title {
@@ -21,7 +28,10 @@
 }
 
 .p-privacy__text-top {
-  margin-top: rem(86);
+  margin-top: rem(54);
+  @include mq(md) {
+    margin-top: rem(86);
+  }
 }
 
 .p-privacy__text {
@@ -31,7 +41,10 @@
 }
 
 .p-privacy__block {
-  margin-top: rem(71);
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(71);
+  }
 }
 
 .p-privacy__detail {
@@ -55,10 +68,15 @@
 }
 
 .p-privacy__box {
-  margin-top: rem(72);
   background: #fff;
-  padding: rem(22) rem(32);
   border: 1px solid #707070;
+  margin-top: rem(30);
+  padding: rem(32) rem(20);
+  @include mq(md){
+    margin-top: rem(72);
+    padding: rem(22) rem(32);
+    
+  }
 }
 
 .p-privacy__box-text {

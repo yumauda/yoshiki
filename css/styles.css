@@ -2673,11 +2673,16 @@ select::-ms-expand {
 }
 
 .p-privacy {
-  padding-top: 88px;
-  padding-top: 5.5rem;
   padding-bottom: 24px;
   padding-bottom: 1.5rem;
   background: #f8f8f8;
+  padding-top: 65px;
+  padding-top: 4.0625rem;
+}
+@media screen and (min-width: 768px) {
+  .p-privacy {
+    padding-top: 5.5rem;
+  }
 }
 
 .p-privacy__content {
@@ -2686,6 +2691,14 @@ select::-ms-expand {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 97px;
+  margin-top: 6.0625rem;
+}
+@media screen and (min-width: 768px) {
+  .p-privacy__content {
+    margin-top: 0;
+    margin-top: initial;
+  }
 }
 
 .p-privacy__title {
@@ -2693,8 +2706,13 @@ select::-ms-expand {
 }
 
 .p-privacy__text-top {
-  margin-top: 86px;
-  margin-top: 5.375rem;
+  margin-top: 54px;
+  margin-top: 3.375rem;
+}
+@media screen and (min-width: 768px) {
+  .p-privacy__text-top {
+    margin-top: 5.375rem;
+  }
 }
 
 .p-privacy__text {
@@ -2705,8 +2723,13 @@ select::-ms-expand {
 }
 
 .p-privacy__block {
-  margin-top: 71px;
-  margin-top: 4.4375rem;
+  margin-top: 40px;
+  margin-top: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-privacy__block {
+    margin-top: 4.4375rem;
+  }
 }
 
 .p-privacy__detail + .p-privacy__detail {
@@ -2735,12 +2758,18 @@ select::-ms-expand {
 }
 
 .p-privacy__box {
-  margin-top: 72px;
-  margin-top: 4.5rem;
   background: #fff;
-  padding: 22px 32px;
-  padding: 1.375rem 2rem;
   border: 1px solid #707070;
+  margin-top: 30px;
+  margin-top: 1.875rem;
+  padding: 32px 20px;
+  padding: 2rem 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-privacy__box {
+    margin-top: 4.5rem;
+    padding: 1.375rem 2rem;
+  }
 }
 
 .p-privacy__box-text {
