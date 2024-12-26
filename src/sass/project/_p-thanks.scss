@@ -2,18 +2,25 @@
 
 .p-thanks {
   background: #f8f8f8;
-  padding-top: rem(88);
-}
-
-.p-thanks__breadcrumbs {
+  padding-top: rem(65);
+  padding-bottom: rem(14);
+  @include mq(md) {
+    padding-top: rem(88);
+    padding-bottom: initial;
+  }
 }
 
 .p-thanks__content {
   background: #fff;
-  padding-top: rem(68);
-  padding-bottom: rem(97);
   filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
-  margin-top: rem(28);
+  padding-top: rem(53);
+  padding-bottom: rem(163);
+  margin-top: rem(43);
+  @include mq(md) {
+    padding-bottom: rem(97);
+    margin-top: rem(28);
+    padding-top: rem(68);
+  }
 }
 
 .p-thanks__title {
@@ -21,7 +28,10 @@
 }
 
 .p-thanks__block {
-  margin-top: rem(64);
+  margin-top: rem(74);
+  @include mq(md) {
+    margin-top: rem(64);
+  }
 }
 
 .p-thanks__text-wrapper {
@@ -29,9 +39,13 @@
 }
 
 .p-thanks__text {
-  font-size: rem(16);
-  line-height: calc(28 / 16);
   color: #000;
+  font-size: rem(12);
+  line-height: 2;
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: calc(28 / 16);
+  }
 }
 .p-thanks__text + .p-thanks__text {
   margin-top: rem(32);
@@ -39,21 +53,29 @@
 
 .p-thanks__btn-wrapper {
   text-align: center;
-  margin-top: rem(48);
+  margin-top: rem(32);
+  @include mq(md) {
+    margin-top: rem(48);
+  }
 }
 
 .p-thanks__btn {
   display: inline-block;
-  width: rem(300);
   text-align: center;
   background: #ffff00;
   font-size: rem(16);
   color: #000;
   line-height: calc(28 / 16);
-  padding-top: rem(18);
-  padding-bottom: rem(18);
   filter: drop-shadow(3px 3px 0px rgba(#d8d8d8, 1));
   transition: 0.3s ease-in-out;
+  padding-top: rem(13);
+  padding-bottom: rem(13);
+  width: rem(250);
+  @include mq(md) {
+    width: rem(300);
+    padding-top: rem(18);
+    padding-bottom: rem(18);
+  }
 }
 .p-thanks__btn:hover {
   background: #d00303;

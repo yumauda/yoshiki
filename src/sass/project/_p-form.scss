@@ -5,7 +5,7 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: rem(48);
+  margin-top: rem(38);
   @include mq(md) {
     margin-top: rem(80);
   }
@@ -49,9 +49,10 @@
     background: #f8f8f8;
     border: 1px solid #707070;
     box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: rem(5);
     display: inline-block;
-    width: rem(20);
-    height: rem(20);
+    width: rem(30);
+    height: rem(30);
     position: relative;
     top: -1px;
     margin-right: rem(12);
@@ -196,26 +197,14 @@
 }
 .p-form__btn-wrapper {
   text-align: center;
-  margin-top: rem(48);
+  margin-top: rem(30);
   position: relative;
-  width: rem(206);
+  width: rem(250);
   margin-left: auto;
   margin-right: auto;
   @include mq(md) {
     width: rem(300);
     margin-top: rem(25);
-  }
-}
-.p-form__btn-wrapper svg {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: rem(13);
-  height: rem(12);
-  z-index: 1;
-  right: rem(16);
-  @include mq(md) {
-    right: rem(24);
   }
 }
 .p-form input[type="submit"] {
@@ -225,13 +214,15 @@
   text-align: center;
   line-height: calc(28 / 16);
   font-weight: 400;
-  width: rem(206);
+  width: rem(250);
   font-size: rem(16);
   transition: 0.3s ease-in-out;
-  padding-top: rem(18);
-  padding-bottom: rem(18);
+  padding-top: rem(11);
+  padding-bottom: rem(11);
   filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.2));
   @include mq(md) {
+    padding-top: rem(16);
+    padding-bottom: rem(16);
     font-size: rem(16);
     width: rem(300);
   }

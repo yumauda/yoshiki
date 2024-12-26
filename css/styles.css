@@ -656,28 +656,41 @@ select::-ms-expand {
 }
 
 .p-contact {
-  padding-top: 88px;
-  padding-top: 5.5rem;
+  padding-top: 65px;
+  padding-top: 4.0625rem;
   padding-bottom: 46px;
   padding-bottom: 2.875rem;
   background: #f8f8f8;
 }
+@media screen and (min-width: 768px) {
+  .p-contact {
+    padding-top: 5.5rem;
+  }
+}
 
 .p-contact__content {
   background: #fff;
-  padding-top: 70px;
-  padding-top: 4.375rem;
-  padding-bottom: 70px;
-  padding-bottom: 4.375rem;
-  padding-left: 170px;
-  padding-left: 10.625rem;
-  padding-right: 170px;
-  padding-right: 10.625rem;
   margin-top: 17px;
   margin-top: 1.0625rem;
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="6" /><feOffset dx="1" dy="4" result="offsetblur" /><feFlood flood-color="rgba(0,0,0,0.16)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
   -webkit-filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, .16));
           filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, .16));
+  padding-top: 53px;
+  padding-top: 3.3125rem;
+  padding-left: 15px;
+  padding-left: 0.9375rem;
+  padding-right: 15px;
+  padding-right: 0.9375rem;
+  padding-bottom: 60px;
+  padding-bottom: 3.75rem;
+}
+@media screen and (min-width: 768px) {
+  .p-contact__content {
+    padding-top: 4.375rem;
+    padding-left: 10.625rem;
+    padding-right: 10.625rem;
+    padding-bottom: 4.375rem;
+  }
 }
 
 .p-contact__title {
@@ -688,19 +701,31 @@ select::-ms-expand {
   margin-top: 56px;
   margin-top: 3.5rem;
   background: #d00303;
-  padding-top: 14px;
-  padding-top: 0.875rem;
-  padding-bottom: 14px;
-  padding-bottom: 0.875rem;
   text-align: center;
+  padding-top: 16px;
+  padding-top: 1rem;
+  padding-bottom: 16px;
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-contact__attention {
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+  }
 }
 
 .p-contact__attention-text {
   color: #fff;
-  font-size: 16px;
-  font-size: 1rem;
   font-weight: 700;
-  line-height: 1.75;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 2;
+}
+@media screen and (min-width: 768px) {
+  .p-contact__attention-text {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
 }
 
 .p-course {
@@ -1459,8 +1484,8 @@ select::-ms-expand {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 48px;
-  margin-top: 3rem;
+  margin-top: 38px;
+  margin-top: 2.375rem;
 }
 @media screen and (min-width: 768px) {
   .p-form {
@@ -1518,11 +1543,12 @@ select::-ms-expand {
   border: 1px solid #707070;
   -webkit-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, .16);
           box-shadow: inset 0px 3px 6px rgba(0, 0, 0, .16);
+  border-radius: 0.3125rem;
   display: inline-block;
-  width: 20px;
-  width: 1.25rem;
-  height: 20px;
-  height: 1.25rem;
+  width: 30px;
+  width: 1.875rem;
+  height: 30px;
+  height: 1.875rem;
   position: relative;
   top: -1px;
   margin-right: 12px;
@@ -1744,11 +1770,11 @@ select::-ms-expand {
 
 .p-form__btn-wrapper {
   text-align: center;
-  margin-top: 48px;
-  margin-top: 3rem;
+  margin-top: 30px;
+  margin-top: 1.875rem;
   position: relative;
-  width: 206px;
-  width: 12.875rem;
+  width: 250px;
+  width: 15.625rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1759,25 +1785,6 @@ select::-ms-expand {
   }
 }
 
-.p-form__btn-wrapper svg {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 13px;
-  width: 0.8125rem;
-  height: 12px;
-  height: 0.75rem;
-  z-index: 1;
-  right: 16px;
-  right: 1rem;
-}
-@media screen and (min-width: 768px) {
-  .p-form__btn-wrapper svg {
-    right: 1.5rem;
-  }
-}
-
 .p-form input[type=submit] {
   background: #ffff00;
   display: inline-block;
@@ -1785,22 +1792,24 @@ select::-ms-expand {
   text-align: center;
   line-height: 1.75;
   font-weight: 400;
-  width: 206px;
-  width: 12.875rem;
+  width: 250px;
+  width: 15.625rem;
   font-size: 16px;
   font-size: 1rem;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  padding-top: 18px;
-  padding-top: 1.125rem;
-  padding-bottom: 18px;
-  padding-bottom: 1.125rem;
+  padding-top: 11px;
+  padding-top: 0.6875rem;
+  padding-bottom: 11px;
+  padding-bottom: 0.6875rem;
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="0" /><feOffset dx="4" dy="4" result="offsetblur" /><feFlood flood-color="rgba(0,0,0,0.2)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
   -webkit-filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, .2));
           filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, .2));
 }
 @media screen and (min-width: 768px) {
   .p-form input[type=submit] {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     font-size: 1rem;
     width: 18.75rem;
   }
@@ -3304,21 +3313,37 @@ select::-ms-expand {
 
 .p-thanks {
   background: #f8f8f8;
-  padding-top: 88px;
-  padding-top: 5.5rem;
+  padding-top: 65px;
+  padding-top: 4.0625rem;
+  padding-bottom: 14px;
+  padding-bottom: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-thanks {
+    padding-top: 5.5rem;
+    padding-bottom: 0;
+    padding-bottom: initial;
+  }
 }
 
 .p-thanks__content {
   background: #fff;
-  padding-top: 68px;
-  padding-top: 4.25rem;
-  padding-bottom: 97px;
-  padding-bottom: 6.0625rem;
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="6" /><feOffset dx="1" dy="4" result="offsetblur" /><feFlood flood-color="rgba(0,0,0,0.16)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
   -webkit-filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, .16));
           filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, .16));
-  margin-top: 28px;
-  margin-top: 1.75rem;
+  padding-top: 53px;
+  padding-top: 3.3125rem;
+  padding-bottom: 163px;
+  padding-bottom: 10.1875rem;
+  margin-top: 43px;
+  margin-top: 2.6875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-thanks__content {
+    padding-bottom: 6.0625rem;
+    margin-top: 1.75rem;
+    padding-top: 4.25rem;
+  }
 }
 
 .p-thanks__title {
@@ -3326,8 +3351,13 @@ select::-ms-expand {
 }
 
 .p-thanks__block {
-  margin-top: 64px;
-  margin-top: 4rem;
+  margin-top: 74px;
+  margin-top: 4.625rem;
+}
+@media screen and (min-width: 768px) {
+  .p-thanks__block {
+    margin-top: 4rem;
+  }
 }
 
 .p-thanks__text-wrapper {
@@ -3335,10 +3365,16 @@ select::-ms-expand {
 }
 
 .p-thanks__text {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.75;
   color: #000;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 2;
+}
+@media screen and (min-width: 768px) {
+  .p-thanks__text {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
 }
 
 .p-thanks__text + .p-thanks__text {
@@ -3348,29 +3384,41 @@ select::-ms-expand {
 
 .p-thanks__btn-wrapper {
   text-align: center;
-  margin-top: 48px;
-  margin-top: 3rem;
+  margin-top: 32px;
+  margin-top: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .p-thanks__btn-wrapper {
+    margin-top: 3rem;
+  }
 }
 
 .p-thanks__btn {
   display: inline-block;
-  width: 300px;
-  width: 18.75rem;
   text-align: center;
   background: #ffff00;
   font-size: 16px;
   font-size: 1rem;
   color: #000;
   line-height: 1.75;
-  padding-top: 18px;
-  padding-top: 1.125rem;
-  padding-bottom: 18px;
-  padding-bottom: 1.125rem;
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="0" /><feOffset dx="4" dy="4" result="offsetblur" /><feFlood flood-color="rgba(216,216,216,1)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
   -webkit-filter: drop-shadow(3px 3px 0px #d8d8d8);
           filter: drop-shadow(3px 3px 0px #d8d8d8);
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  padding-top: 13px;
+  padding-top: 0.8125rem;
+  padding-bottom: 13px;
+  padding-bottom: 0.8125rem;
+  width: 250px;
+  width: 15.625rem;
+}
+@media screen and (min-width: 768px) {
+  .p-thanks__btn {
+    width: 18.75rem;
+    padding-top: 1.125rem;
+    padding-bottom: 1.125rem;
+  }
 }
 
 .p-thanks__btn:hover {
