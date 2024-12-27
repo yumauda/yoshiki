@@ -1664,12 +1664,12 @@ select::-ms-expand {
   position: absolute;
   content: "";
   display: block;
-  width: 20px;
-  width: 1.25rem;
-  height: 20px;
-  height: 1.25rem;
-  top: 4px;
-  background: url(../images/common/check-box-mark.svg);
+  width: 30px;
+  width: 1.875rem;
+  height: 30px;
+  height: 1.875rem;
+  top: 0;
+  background: url(../images/common/check.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
