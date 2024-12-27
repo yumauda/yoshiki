@@ -19,7 +19,7 @@
   margin-right: auto;
   margin-top: rem(97);
   @include mq(md) {
-    margin-top: initial;
+    margin-top: rem(72);
   }
 }
 

@@ -7,15 +7,15 @@
     <meta name="format-detection" content="telephone=no" />
     <!-- meta情報 -->
     <?php if (is_home() || is_front_page()) : ?>
-        <title>よしき塾</title>
-        <meta name="description" content="" />
+        <title>甲賀市・湖南市・日野町の学習/進学塾 服部塾よしき塾</title>
+        <meta name="description" content="勉強の量だけおいかけてどうすんねんと。結果を出してナンボ. 合格指導実績. 【国公立大学】" />
         <meta name="keywords" content="" />
-        <meta property="og:title" content="" />
+        <meta property="og:title" content="甲賀市・湖南市・日野町の学習/進学塾 服部塾よしき塾" />
         <meta property="og:type" content="website">
         <meta property="og:url" content="">
         <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/images/common/ogp.jpg" />
-        <meta property="og:site_name" content="" />
-        <meta property="og:description" content="" />
+        <meta property="og:site_name" content="甲賀市・湖南市・日野町の学習/進学塾 服部塾よしき塾" />
+        <meta property="og:description" content="勉強の量だけおいかけてどうすんねんと。結果を出してナンボ. 合格指導実績. 【国公立大学】" />
     <?php elseif (is_page('adult')) : ?>
         <title>大人の矯正・成人矯正｜大倉山ファミリア矯正歯科（横浜市港北区）</title>
         <meta name="description" content="横浜市港北区大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザライン)なども子供から大人まで安心の定額制です。" />
@@ -81,7 +81,7 @@
             <div class="p-header__content">
                 <h1 class="p-header__logo">
                     <a href="<?php echo esc_url(home_url('/')); ?>" class="p-header__home">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/common/header_logo.svg" alt="服部塾よしき塾" width="212" height="35">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/common/header_logo.png" alt="服部塾よしき塾" width="212" height="35">
                     </a>
                 </h1>
                 <nav class="p-header__nav">
@@ -133,13 +133,13 @@
                                 <a href="<?php echo esc_url(home_url('/')); ?>" class="p-drawer-content__link">トップページ</a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="<?php echo esc_url(home_url('/about')); ?>" class="p-drawer-content__link">服部塾・よしき塾の特長</a>
+                                <a href="<?php echo esc_url(home_url('/feature')); ?>" class="p-drawer-content__link">服部塾・よしき塾の特長</a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="<?php echo esc_url(home_url('/business')); ?>" class="p-drawer-content__link">各コースの料金と詳細</a>
+                                <a href="<?php echo esc_url(home_url('/course')); ?>" class="p-drawer-content__link">各コースの料金と詳細</a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="<?php echo esc_url(home_url('/talent')); ?>" class="p-drawer-content__link">教室を探す</a>
+                                <a href="<?php echo esc_url(home_url('/search')); ?>" class="p-drawer-content__link">教室を探す</a>
                             </li>
                             <li class="p-drawer-content__list">
                                 <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-drawer-content__link">お知らせ</a>

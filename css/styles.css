@@ -2823,8 +2823,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-privacy__content {
-    margin-top: 0;
-    margin-top: initial;
+    margin-top: 4.5rem;
   }
 }
 

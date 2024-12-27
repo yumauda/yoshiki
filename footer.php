@@ -55,36 +55,36 @@
                 </ul>
                 <ul class="p-footer__lists">
                     <li class="p-footer__list">
-                        <a href="#" class="p-footer__link">服部塾・よしき塾の特長</a>
+                        <a href="<?php echo esc_url(home_url('/feature')); ?>" class="p-footer__link">服部塾・よしき塾の特長</a>
                     </li>
                     <li class="p-footer__list">
                         <span class="p-footer__line">｜</span>
                     </li>
                     <li class="p-footer__list">
-                        <a href="#" class="p-footer__link">各コースの料金と詳細</a>
+                        <a href="<?php echo esc_url(home_url('/course')); ?>" class="p-footer__link">各コースの料金と詳細</a>
                     </li>
                     <li class="p-footer__list">
                         <span class="p-footer__line">｜</span>
                     </li>
                     <li class="p-footer__list">
-                        <a href="#" class="p-footer__link">教室を探す</a>
+                        <a href="<?php echo esc_url(home_url('/search')); ?>" class="p-footer__link">教室を探す</a>
                     </li>
                     <li class="p-footer__list">
                         <span class="p-footer__line">｜</span>
                     </li>
                     <li class="p-footer__list">
-                        <a href="#" class="p-footer__link">お知らせ</a>
+                        <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-footer__link">お知らせ</a>
                     </li>
                     <li class="p-footer__list">
                         <span class="p-footer__line">｜</span>
                     </li>
                     <li class="p-footer__list">
-                        <a href="#" class="p-footer__link">お問い合わせ</a>
+                        <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-footer__link">お問い合わせ</a>
                     </li>
                 </ul>
                 <div class="p-footer__small">
                     <small>＠2024 hattorijyuku.yoshikijyuku.</small>
-                    <a href="#" class="p-footer__privacy">PRIVACY POLICY</a>
+                    <a href="<?php echo esc_url(home_url('/privacy')); ?>" class="p-footer__privacy">PRIVACY POLICY</a>
                 </div>
             </div>
         </div>

@@ -36,7 +36,7 @@
           <p class="p-privacy__box-text">制定日：2024年6月1日</p>
           <p class="p-privacy__box-text">個人情報に関するお問い合わせ及び開示ご請求の窓口</p>
           <figure class="p-privacy__img">
-            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/privacy_text.svg" alt="服部塾よしき塾" width="200" height="33">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/privacy_text.png" alt="服部塾よしき塾" width="200" height="33">
           </figure>
           <dl class="p-privacy__dl">
             <div class="p-privacy__row">
