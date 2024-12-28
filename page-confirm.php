@@ -9,11 +9,12 @@
         <div class="p-contact__title">
           <h2 class="c-main-title">送信確認</h2>
         </div>
-        
+
         <?php the_content(); ?>
       </div>
     </div>
   </section>
+  <?php get_template_part('includes/totop'); ?>
 
 
 </main>

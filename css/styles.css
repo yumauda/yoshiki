@@ -5221,6 +5221,34 @@ select::-ms-expand {
   }
 }
 
+.p-totop {
+  position: fixed;
+  z-index: 9999;
+  right: 63px;
+  right: 3.9375rem;
+  bottom: 63px;
+  bottom: 3.9375rem;
+}
+
+.p-totop__link {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .p-totop__link {
+    display: inline-block;
+    width: 4.375rem;
+    height: 4.375rem;
+  }
+}
+
+.p-totop__link img {
+  aspect-ratio: 70/70;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
 .c-main-text {
   font-size: 13px;
   font-size: 0.8125rem;

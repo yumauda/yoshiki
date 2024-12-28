@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.p-totop {
+  position: fixed;
+  z-index: 9999;
+  right: rem(63);
+  bottom: rem(63);
+}
+
+.p-totop__link {
+  display: none;
+  @include mq(md) {
+    display: inline-block;
+    width: rem(70);
+    height: rem(70);
+  }
+}
+.p-totop__link img {
+  aspect-ratio: 70 / 70;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
