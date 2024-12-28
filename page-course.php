@@ -21,7 +21,7 @@
               </figure>
               <div class="p-course__linkText">
                 <p class="p-course__linkTitle">
-                  小学生コース
+                  小学生<br class="u-mobile">コース
                 </p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="15.618" height="10" viewBox="0 0 15.618 10">
                   <path d="M2.191,0,0,2.191,5.618,7.809,0,13.427l2.191,2.191L10,7.809Z" transform="translate(15.618 0) rotate(90)" />
@@ -39,7 +39,7 @@
               </figure>
               <div class="p-course__linkText">
                 <p class="p-course__linkTitle">
-                  中学生コース
+                  中学生<br class="u-mobile">コース
                 </p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="15.618" height="10" viewBox="0 0 15.618 10">
                   <path d="M2.191,0,0,2.191,5.618,7.809,0,13.427l2.191,2.191L10,7.809Z" transform="translate(15.618 0) rotate(90)" />
@@ -57,7 +57,7 @@
               </figure>
               <div class="p-course__linkText">
                 <p class="p-course__linkTitle">
-                  高校生コース
+                  高校生<br class="u-mobile">コース
                 </p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="15.618" height="10" viewBox="0 0 15.618 10">
                   <path d="M2.191,0,0,2.191,5.618,7.809,0,13.427l2.191,2.191L10,7.809Z" transform="translate(15.618 0) rotate(90)" />
@@ -314,7 +314,7 @@
                             <td class="p-table-high__text" colspan="2">
                               <p class="p-table-high__detail-text">英語・数学・理科・国社</p>
                               <p class="p-table-high__detail-text--smallRed">※理科のみ週1回60分</p>
-                              <p class="p-table-high__detail-text--smallRed">※中学1年生の開講教科は数学・英語のみです。（テスト対策は5教科行います。）</p>
+                              <p class="p-table-high__detail-text--smallRed">※中学1年生の開講教科は数学・英語のみです。<br class="u-mobile">（テスト対策は5教科行います。）</p>
                             </td>
                           </tr>
                         </tbody>

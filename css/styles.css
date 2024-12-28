@@ -819,74 +819,117 @@ select::-ms-expand {
 
 .p-course {
   background: #f8f8f8;
-  padding-top: 88px;
-  padding-top: 5.5rem;
+  padding-top: 58px;
+  padding-top: 3.625rem;
+}
+@media screen and (min-width: 768px) {
+  .p-course {
+    padding-top: 5.5rem;
+  }
 }
 
 .p-course__title {
-  margin-top: 60px;
-  margin-top: 3.75rem;
   text-align: center;
+  margin-top: 97px;
+  margin-top: 6.0625rem;
+}
+@media screen and (min-width: 768px) {
+  .p-course__title {
+    margin-top: 3.75rem;
+  }
 }
 
 .p-course__sub {
   text-align: center;
-  margin-top: 48px;
-  margin-top: 3rem;
-  font-size: 18px;
-  font-size: 1.125rem;
   font-weight: 700;
   line-height: 1.5555555556;
+  margin-top: 40px;
+  margin-top: 2.5rem;
+  font-size: 16px;
+  font-size: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-course__sub {
+    font-size: 1.125rem;
+    margin-top: 3rem;
+  }
 }
 
 .p-course__content {
-  margin-top: 68px;
-  margin-top: 4.25rem;
+  margin-top: 24px;
+  margin-top: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-course__content {
+    margin-top: 4.25rem;
+  }
 }
 
 .p-course__pageLinks {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  gap: 1.875rem;
   max-width: 900px;
   max-width: 56.25rem;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  gap: 11px;
+  gap: 0.6875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-course__pageLinks {
+    gap: 1.875rem;
+  }
 }
 
 .p-course__pageLink {
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="0" /><feOffset dx="4" dy="4" result="offsetblur" /><feFlood flood-color="rgba(216,216,216,1)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
-  -webkit-filter: drop-shadow(3px 3px 0px #D8D8D8);
-          filter: drop-shadow(3px 3px 0px #D8D8D8);
+  -webkit-filter: drop-shadow(3px 3px 0px #d8d8d8);
+          filter: drop-shadow(3px 3px 0px #d8d8d8);
 }
 
 .p-course__pageLink-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background: #fff;
+  display: block;
+  padding-bottom: 9px;
+  padding-bottom: 0.5625rem;
+}
+@media screen and (min-width: 768px) {
+  .p-course__pageLink-link {
+    padding-bottom: 0;
+    padding-bottom: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .p-course__linkImg {
-  max-width: 130px;
-  max-width: 8.125rem;
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .p-course__linkImg {
+    max-width: 8.125rem;
+  }
 }
 
 .p-course__linkImg img {
-  aspect-ratio: 130/130;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: auto;
+  aspect-ratio: 100/69;
+}
+@media screen and (min-width: 768px) {
+  .p-course__linkImg img {
+    aspect-ratio: 130/130;
+  }
 }
 
 .p-course__linkText {
@@ -908,6 +951,14 @@ select::-ms-expand {
   padding-right: 25px;
   padding-right: 1.5625rem;
   height: 100%;
+  padding-top: 9px;
+  padding-top: 0.5625rem;
+}
+@media screen and (min-width: 768px) {
+  .p-course__linkText {
+    padding-top: 0;
+    padding-top: initial;
+  }
 }
 
 .p-course__linkText svg {
@@ -916,16 +967,27 @@ select::-ms-expand {
 }
 
 .p-course__linkTitle {
-  font-size: 18px;
-  font-size: 1.125rem;
   font-weight: 700;
-  line-height: 1.5555555556;
   color: #000;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+@media screen and (min-width: 768px) {
+  .p-course__linkTitle {
+    font-size: 1.125rem;
+    line-height: 1.5555555556;
+  }
 }
 
 .p-course__block {
-  margin-top: 61px;
-  margin-top: 3.8125rem;
+  margin-top: 23px;
+  margin-top: 1.4375rem;
+}
+@media screen and (min-width: 768px) {
+  .p-course__block {
+    margin-top: 3.8125rem;
+  }
 }
 
 .p-detail__title-wrapper {
@@ -1257,6 +1319,14 @@ select::-ms-expand {
   padding-top: 50px;
   padding-top: 3.125rem;
   background: #f8f8f8;
+  padding-bottom: 66px;
+  padding-bottom: 4.125rem;
+}
+@media screen and (min-width: 768px) {
+  .p-flow {
+    padding-bottom: 0;
+    padding-bottom: initial;
+  }
 }
 
 .p-flow__title {
@@ -1265,19 +1335,40 @@ select::-ms-expand {
 
 .p-flow__lists {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 45px;
-  gap: 2.8125rem;
   margin-top: 68px;
   margin-top: 4.25rem;
+  grid-template-columns: repeat(1, 1fr);
+  gap: rme(72);
+}
+@media screen and (min-width: 768px) {
+  .p-flow__lists {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.8125rem;
+  }
+}
+
+.p-flow__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  .p-flow__list {
+    display: block;
+  }
 }
 
 .p-flow__img {
-  max-width: 150px;
-  max-width: 9.375rem;
+  max-width: 100px;
+  max-width: 6.25rem;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .p-flow__img {
+    max-width: 9.375rem;
+  }
 }
 
 .p-flow__img img {
@@ -1294,12 +1385,16 @@ select::-ms-expand {
 }
 
 .p-flow__subTitle {
-  text-align: center;
   font-size: 18px;
   font-size: 1.125rem;
   font-weight: 700;
   line-height: 1.5555555556;
   color: #000;
+}
+@media screen and (min-width: 768px) {
+  .p-flow__subTitle {
+    text-align: center;
+  }
 }
 
 .p-flow__text {
@@ -1313,9 +1408,14 @@ select::-ms-expand {
 }
 
 .p-flow__bottom {
-  text-align: center;
-  margin-top: 50px;
-  margin-top: 3.125rem;
+  margin-top: 60px;
+  margin-top: 3.75rem;
+}
+@media screen and (min-width: 768px) {
+  .p-flow__bottom {
+    margin-top: 3.125rem;
+    text-align: center;
+  }
 }
 
 .p-flow__bottom-text {
@@ -4098,10 +4198,6 @@ select::-ms-expand {
   }
 }
 
-.p-table-high__table--sp {
-  display: block;
-  width: 100%;
-}
 @media screen and (min-width: 768px) {
   .p-table-high__table--sp {
     display: none;

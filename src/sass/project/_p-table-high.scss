@@ -89,8 +89,6 @@
   }
 }
 .p-table-high__table--sp {
-  display: block;
-  width: 100%;
   @include mq(md) {
     display: none;
   }
