@@ -2284,6 +2284,29 @@ select::-ms-expand {
   padding-right: 1.25rem;
 }
 
+.p-form__description--select {
+  position: relative;
+}
+
+.p-form__description--select::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/select_arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 16px;
+  width: 1rem;
+  height: 24px;
+  height: 1.5rem;
+  top: 50%;
+  right: 20px;
+  right: 1.25rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 1;
+}
+
 .p-header {
   background: #fff;
   position: fixed;

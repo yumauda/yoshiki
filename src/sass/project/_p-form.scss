@@ -447,3 +447,20 @@
   padding-left: rem(20);
   padding-right: rem(20);
 }
+.p-form__description--select {
+  position: relative;
+}
+.p-form__description--select::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/select_arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: rem(16);
+  height: rem(24);
+  top: 50%;
+  right: rem(20);
+  transform: translateY(-50%);
+  z-index: 1;
+}
