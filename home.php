@@ -12,78 +12,19 @@
           </h3>
         </div>
         <ul class="p-news__lists">
-          <li class="p-news__list">
-            <a href="<?php the_permalink(); ?>" class="p-news__link">
-              <time datetime="2024-12-23" class="p-news__time">2024/9/23</time>
-              <p class="p-news__text">
-                テキストテキストテキストテキストテキストテキストテキストテキスト…
-              </p>
-            </a>
-          </li>
-          <li class="p-news__list">
-            <a href="<?php the_permalink(); ?>" class="p-news__link">
-              <time datetime="2024-12-23" class="p-news__time">2024.12.23</time>
-              <p class="p-news__text">
-                テキストテキストテキストテキストテキストテキストテキストテキスト…
-              </p>
-            </a>
-          </li>
-          <li class="p-news__list">
-            <a href="<?php the_permalink(); ?>" class="p-news__link">
-              <time datetime="2024-12-23" class="p-news__time">2024.12.23</time>
-              <p class="p-news__text">
-                テキストテキストテキストテキストテキストテキストテキストテキスト…
-              </p>
-            </a>
-          </li>
-          <li class="p-news__list">
-            <a href="<?php the_permalink(); ?>" class="p-news__link">
-              <time datetime="2024-12-23" class="p-news__time">2024.12.23</time>
-              <p class="p-news__text">
-                テキストテキストテキストテキストテキストテキストテキストテキスト…
-              </p>
-            </a>
-          </li>
-          <li class="p-news__list">
-            <a href="<?php the_permalink(); ?>" class="p-news__link">
-              <time datetime="2024-12-23" class="p-news__time">2024.12.23</time>
-              <p class="p-news__text">
-                テキストテキストテキストテキストテキストテキストテキストテキストテキスト…
-              </p>
-            </a>
-          </li>
-          <li class="p-news__list">
-            <a href="<?php the_permalink(); ?>" class="p-news__link">
-              <time datetime="2024-12-23" class="p-news__time">2024.12.23</time>
-              <p class="p-news__text">
-                テキストテキストテキストテキストテキストテキストテキストテキストテキスト…
-              </p>
-            </a>
-          </li>
-          <li class="p-news__list">
-            <a href="<?php the_permalink(); ?>" class="p-news__link">
-              <time datetime="2024-12-23" class="p-news__time">2024.12.23</time>
-              <p class="p-news__text">
-                テキストテキストテキストテキストテキストテキストテキストテキストテキスト…
-              </p>
-            </a>
-          </li>
-          <li class="p-news__list">
-            <a href="<?php the_permalink(); ?>" class="p-news__link">
-              <time datetime="2024-12-23" class="p-news__time">2024.12.23</time>
-              <p class="p-news__text">
-                テキストテキストテキストテキストテキストテキストテキストテキストテキスト…
-              </p>
-            </a>
-          </li>
-          <li class="p-news__list">
-            <a href="<?php the_permalink(); ?>" class="p-news__link">
-              <time datetime="2024-12-23" class="p-news__time">2024.12.23</time>
-              <p class="p-news__text">
-                テキストテキストテキストテキストテキストテキストテキストテキストテキスト…
-              </p>
-            </a>
-          </li>
+          <?php if (have_posts()) : ?>
+            <?php while (have_posts()) : ?>
+              <?php the_post(); ?>
+              <li class="p-news__list">
+                <a href="<?php the_permalink(); ?>" class="p-news__link">
+                  <time datetime="<?php the_time('Y-m-d'); ?>" class="p-news__time"><?php the_time('Y/m/d'); ?></time>
+                  <p class="p-news__text">
+                    <?php echo wp_trim_words(get_the_title(), 40, '...'); ?>
+                  </p>
+                </a>
+              </li>
+            <?php endwhile; ?>
+          <?php endif; ?>
         </ul>
         <div class="p-news__pagination">
           <div class="p-pagination">
@@ -105,7 +46,7 @@
               <li class="p-pagination__number">
                 <a href="#" class="p-pagination__num">3</a>
               </li>
-              
+
               <li class="p-pagination__list p-pagination__list--next">
                 <a href="#" class="p-pagination__prev">
                   <p class="p-pagination__text">next</p>
