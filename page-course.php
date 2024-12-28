@@ -227,6 +227,136 @@
               <div class="p-detail__title-wrapper">
                 <p class="p-detail__title">中学生コースの詳細</p>
               </div>
+              <div class="p-school__table p-school__table--high">
+                <div class="p-table-high">
+                  <div class="p-table-high__row">
+                    <div class="p-table-high__table-wrapper">
+                      <h4 class="p-table-high__title p-table-high__title--middle">集団授業コース</h4>
+
+                      <table class="p-table-high__table p-table-high__table--pc">
+                        <tbody>
+                          <tr>
+                            <td class="p-table-high__text" colspan="4">高３・高卒</td>
+                          </tr>
+                          <tr>
+                            <td class="p-table-high__text">1教科</td>
+                            <td class="p-table-high__text">2教科</td>
+                            <td class="p-table-high__text">3教科</td>
+                            <td class="p-table-high__text">3教科</td>
+                          </tr>
+                          <tr>
+                            <td class="p-table-high__text h135">
+                              <p class="p-table-high__detail-text">週1回90分</p>
+                              <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>9,900</span>円/月</p>
+                              <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
+                            </td>
+                            <td class="p-table-high__text h135">
+                              <p class="p-table-high__detail-text">各教科につき<br>週1回90分</p>
+                              <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>14,300</span>円/月</p>
+                              <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
+                            </td>
+                            <td class="p-table-high__text h135">
+                              <p class="p-table-high__detail-text">各教科につき<br>週1回90分</p>
+                              <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>17,600</span>円/月</p>
+                              <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
+                            </td>
+                            <td class="p-table-high__text h135">
+                              <p class="p-table-high__detail-text">各教科につき<br>週1回90分</p>
+                              <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>19,800</span>円/月</p>
+                              <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="p-table-high__text" colspan="4">
+                              <p class="p-table-high__detail-text">英語・数学・理科・国社</p>
+                              <p class="p-table-high__detail-text--smallRed">※理科のみ週1回60分</p>
+                              <p class="p-table-high__detail-text--smallRed">※中学1年生の開講教科は数学・英語のみです。（テスト対策は5教科行います。）</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table class="p-table-high__table p-table-high__table--sp">
+                        <tbody>
+                          <tr>
+                            <td class="p-table-high__text">1教科</td>
+                            <td class="p-table-high__text">2教科</td>
+
+                          </tr>
+                          <tr>
+                            <td class="p-table-high__text">
+                              <p class="p-table-high__detail-text">各教科につき<br>週1回90分</p>
+                              <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>14,300</span>円/月</p>
+                              <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
+                            </td>
+                            <td class="p-table-high__text">
+                              <p class="p-table-high__detail-text">各教科につき<br>週1回90分</p>
+                              <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>14,300</span>円/月</p>
+                              <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="p-table-high__text">3教科</td>
+                            <td class="p-table-high__text">4教科</td>
+                          </tr>
+                          <tr>
+                            <td class="p-table-high__text">
+                              <p class="p-table-high__detail-text">各教科につき<br>週1回90分</p>
+                              <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>14,300</span>円/月</p>
+                              <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
+                            </td>
+                            <td class="p-table-high__text">
+                              <p class="p-table-high__detail-text">各教科につき<br>週1回90分</p>
+                              <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>14,300</span>円/月</p>
+                              <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="p-table-high__text" colspan="2">
+                              <p class="p-table-high__detail-text">英語・数学・理科・国社</p>
+                              <p class="p-table-high__detail-text--smallRed">※理科のみ週1回60分</p>
+                              <p class="p-table-high__detail-text--smallRed">※中学1年生の開講教科は数学・英語のみです。（テスト対策は5教科行います。）</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="p-table-high__table-wrapper">
+                      <h4 class="p-table-high__title p-table-high__title--middle">個別指導コース</h4>
+                      <table class="p-table-high__table">
+                        <tbody>
+                          <tr>
+                            <td class="p-table-high__text" colspan="2">高1、高2</td>
+                          </tr>
+                          <tr>
+                            <td class="p-table-high__text">1教科</td>
+                            <td class="p-table-high__text">2教科</td>
+                          </tr>
+                          <tr>
+                            <td class="p-table-high__text h135">
+                              <p class="p-table-high__detail-text">週1回90分</p>
+                              <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>13,200</span>円/月</p>
+                              <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
+                            </td>
+                            <td class="p-table-high__text h135">
+                              <p class="p-table-high__detail-text">各教科につき<br>各週1回90分</p>
+                              <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>17,600</span>円/月</p>
+                              <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="p-table-high__text" colspan="2">
+                              <p class="p-table-high__detail-text">英語・算数・国語・社会・理科</p>
+                              <p class="p-table-high__detail-text--small">※上記以外の教科は応相談</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
               <div class="p-detail__slider p-detail__slider--secondary">
                 <!-- Slider main container -->
                 <div class="swiper swiper-detail">
@@ -283,6 +413,152 @@
             <div class="p-school__icon">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/boy_3.svg" alt="" width="431" height="38">
             </div>
+          </div>
+          <div class="p-school__table p-school__table--high">
+            <div class="p-table-high">
+              <h4 class="p-table-high__title">集団授業コース</h4>
+              <div class="p-table-high__row">
+                <div class="p-table-high__table-wrapper">
+                  <table class="p-table-high__table">
+                    <tbody>
+                      <tr>
+                        <td class="p-table-high__text" colspan="2">高1、高2</td>
+                      </tr>
+                      <tr>
+                        <td class="p-table-high__text">1教科</td>
+                        <td class="p-table-high__text">2教科</td>
+                      </tr>
+                      <tr>
+                        <td class="p-table-high__text h135">
+                          <p class="p-table-high__detail-text">週1回90分</p>
+                          <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>13,200</span>円/月</p>
+                          <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
+                        </td>
+                        <td class="p-table-high__text h135">
+                          <p class="p-table-high__detail-text">各教科につき<br>各週1回90分</p>
+                          <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>17,600</span>円/月</p>
+                          <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-table-high__text" colspan="2">
+                          <p class="p-table-high__detail-text">数学・英語</p>
+                          <p class="p-table-high__detail-text--small">※水口校・甲西駅前校で開講</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="p-table-high__table-wrapper">
+                  <table class="p-table-high__table">
+                    <tbody>
+                      <tr>
+                        <td class="p-table-high__text" colspan="3">高３・高卒</td>
+                      </tr>
+                      <tr>
+                        <td class="p-table-high__text">1教科</td>
+                        <td class="p-table-high__text">2教科</td>
+                        <td class="p-table-high__text">3教科</td>
+                      </tr>
+                      <tr>
+                        <td class="p-table-high__text h135">
+                          <p class="p-table-high__detail-text">週1回90分</p>
+                          <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>15,400</span>円/月</p>
+                          <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
+                        </td>
+                        <td class="p-table-high__text h135">
+                          <p class="p-table-high__detail-text">週1回90分につき</p>
+                          <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>27,500</span>円/月</p>
+                          <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
+                        </td>
+                        <td class="p-table-high__text h135">
+                          <p class="p-table-high__detail-text">週1回90分につき</p>
+                          <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>35,200</span>円/月</p>
+                          <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-table-high__text" colspan="3">
+                          <p class="p-table-high__detail-text">週1回60分</p>
+                          <p class="p-table-high__detail-text--small">※水口校・甲西駅前校で開講</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+            </div>
+            <div class="p-table-high">
+              <h4 class="p-table-high__title">個別授業コース</h4>
+              <div class="p-table-high__row">
+                <div class="p-table-high__table-wrapper">
+                  <table class="p-table-high__table">
+                    <tbody>
+                      <tr>
+                        <td class="p-table-high__text" colspan="2">高1、高2</td>
+                      </tr>
+                      <tr>
+                        <td class="p-table-high__text">1教科</td>
+                        <td class="p-table-high__text">2教科</td>
+                      </tr>
+                      <tr>
+                        <td class="p-table-high__text h135">
+                          <p class="p-table-high__detail-text">週1回90分</p>
+                          <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>17,600</span>円/月</p>
+                          <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
+                        </td>
+                        <td class="p-table-high__text h135">
+                          <p class="p-table-high__detail-text">各教科につき<br>各週1回90分</p>
+                          <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>34,100</span>円/月</p>
+                          <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-table-high__text" colspan="2">
+                          <p class="p-table-high__detail-text">数学・国語・英語</p>
+                          <p class="p-table-high__detail-text--small">※上記以外の教科は応相談</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="p-table-high__table-wrapper">
+                  <table class="p-table-high__table">
+                    <tbody>
+                      <tr>
+                        <td class="p-table-high__text" colspan="2">高３・高卒</td>
+                      </tr>
+                      <tr>
+                        <td class="p-table-high__text">1教科</td>
+                        <td class="p-table-high__text">2教科</td>
+                      </tr>
+                      <tr>
+                        <td class="p-table-high__text h135">
+                          <p class="p-table-high__detail-text">週1回90分</p>
+                          <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>18,700</span>円/月</p>
+                          <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
+                        </td>
+                        <td class="p-table-high__text h135">
+                          <p class="p-table-high__detail-text">各教科につき<br>週1回90分</p>
+                          <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>37,400</span>円/月</p>
+                          <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-table-high__text" colspan="2">
+                          <p class="p-table-high__detail-text">数学・国語・英語</p>
+                          <p class="p-table-high__detail-text--small">※上記以外の教科は応相談</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+            </div>
+
+
           </div>
           <div class="p-school__detail">
             <div class="p-detail">

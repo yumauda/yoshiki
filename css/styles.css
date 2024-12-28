@@ -3433,6 +3433,10 @@ select::-ms-expand {
   }
 }
 
+.p-school__table--high {
+  display: block;
+}
+
 .p-school__table-title {
   text-align: center;
   background: #16a88c;
@@ -3977,6 +3981,131 @@ select::-ms-expand {
      object-fit: cover;
   width: 100%;
   height: auto;
+}
+
+.p-table-high + .p-table-high {
+  margin-top: 32px;
+  margin-top: 2rem;
+}
+
+.p-table-high__title {
+  text-align: center;
+  background: #1692a8;
+  color: #fff;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.5555555556;
+  padding-top: 6px;
+  padding-top: 0.375rem;
+  padding-bottom: 6px;
+  padding-bottom: 0.375rem;
+}
+
+.p-table-high__row {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media screen and (min-width: 768px) {
+  .p-table-high__row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.p-table-high__table {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .p-table-high--secondary {
+    border-left: 1px solid #707070;
+    border-right: 1px solid #707070;
+  }
+}
+
+.p-table-high__text {
+  text-align: center;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #000;
+  border-top: 1px solid #707070;
+  padding-top: 16px;
+  padding-top: 1rem;
+  padding-bottom: 16px;
+  padding-bottom: 1rem;
+}
+
+.p-table-high__text:nth-child(2),
+.p-table-high__text:nth-child(3),
+.p-table-high__text:nth-child(4) {
+  border-left: 1px solid #707070;
+}
+
+.p-table-high__detail-text {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+.p-table-high__detail-text--red {
+  color: #d00303;
+}
+
+.p-table-high__detail-text--red span {
+  font-weight: 700;
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+.h135 {
+  height: 135px;
+  height: 8.4375rem;
+  padding-top: 0;
+  padding-top: initial;
+  padding-bottom: 0;
+  padding-bottom: initial;
+}
+
+.p-table-high__detail-text--small {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 2;
+  font-weight: 500;
+  color: #000;
+}
+
+.p-table-high__detail-text--smallRed {
+  color: #d00303;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 2;
+  font-weight: 500;
+}
+
+.p-table-high__title--middle {
+  background: #f87474;
+}
+
+.p-table-high__table--pc {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .p-table-high__table--pc {
+    display: block;
+  }
+}
+
+.p-table-high__table--sp {
+  display: block;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .p-table-high__table--sp {
+    display: none;
+  }
 }
 
 .p-table {

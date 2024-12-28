@@ -51,7 +51,9 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
+.p-school__table--high {
+  display: block;
+}
 .p-school__table-course {
 }
 
