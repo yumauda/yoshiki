@@ -2413,6 +2413,12 @@ select::-ms-expand {
   font-weight: 700;
   color: #000;
   line-height: 1.25;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.p-header__link:hover {
+  color: #d00303;
 }
 
 .p-header__link--btn {

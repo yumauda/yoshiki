@@ -55,49 +55,38 @@
           </h3>
         </div>
         <ul class="p-top-news__lists">
-          <li class="p-top-news__list">
-            <a href="<?php the_permalink(); ?>" class="p-top-news__link">
-              <time datetime="2024-12-23" class="p-top-news__time">2024/9/23</time>
-              <p class="p-top-news__text">
-                テキストテキストテキストテキストテキストテキストテキストテキスト…
-              </p>
-            </a>
-          </li>
-          <li class="p-top-news__list">
-            <a href="<?php the_permalink(); ?>" class="p-top-news__link">
-              <time datetime="2024-12-23" class="p-top-news__time">2024.12.23</time>
-              <p class="p-top-news__text">
-                テキストテキストテキストテキストテキストテキストテキストテキスト…
-              </p>
-            </a>
-          </li>
-          <li class="p-top-news__list">
-            <a href="<?php the_permalink(); ?>" class="p-top-news__link">
-              <time datetime="2024-12-23" class="p-top-news__time">2024.12.23</time>
-              <p class="p-top-news__text">
-                テキストテキストテキストテキストテキストテキストテキストテキスト…
-              </p>
-            </a>
-          </li>
-          <li class="p-top-news__list">
-            <a href="<?php the_permalink(); ?>" class="p-top-news__link">
-              <time datetime="2024-12-23" class="p-top-news__time">2024.12.23</time>
-              <p class="p-top-news__text">
-                テキストテキストテキストテキストテキストテキストテキストテキスト…
-              </p>
-            </a>
-          </li>
-          <li class="p-top-news__list">
-            <a href="<?php the_permalink(); ?>" class="p-top-news__link">
-              <time datetime="2024-12-23" class="p-top-news__time">2024.12.23</time>
-              <p class="p-top-news__text">
-                テキストテキストテキストテキストテキストテキストテキストテキストテキスト…
-              </p>
-            </a>
-          </li>
+          <?php
+          // パラメータの設定
+          $args = array(
+            'posts_per_page' => 5,
+            'post_status' => 'publish',
+            'post_type' => 'post',
+            'orderby' => 'date',
+          );
+
+          // WP_Queryインスタンスの生成
+          $my_query = new WP_Query($args);
+          if ($my_query->have_posts()) :
+            while ($my_query->have_posts()) : $my_query->the_post();
+          ?>
+
+              <li class="p-top-news__list">
+                <a href="<?php the_permalink(); ?>" class="p-top-news__link">
+                  <time datetime="<?php the_time('Y-m-d'); ?>" class="p-top-news__time"><?php the_time('Y/m/d'); ?></time>
+                  <p class="p-top-news__text">
+                    <?php echo wp_trim_words(get_the_title(), 40, '...'); ?>
+                  </p>
+                </a>
+              </li>
+
+          <?php
+            endwhile;
+          endif;
+          wp_reset_postdata();
+          ?>
         </ul>
         <div class="p-top-news__btn-wrapper">
-          <a href="#" class="p-top-news__btn">
+          <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-top-news__btn">
             <p class="p-top-news__btn-text">お知らせ一覧を見る</p>
             <span class="p-top-news__bg">
               <svg xmlns="http://www.w3.org/2000/svg" width="12.385" height="13.033" viewBox="0 0 12.385 13.033">

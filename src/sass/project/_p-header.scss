@@ -76,6 +76,10 @@
   font-weight: 700;
   color: #000;
   line-height: calc(20 / 16);
+  transition: 0.3s ease-in-out;
+}
+.p-header__link:hover {
+  color: #d00303;
 }
 .p-header__link--btn {
   display: inline-block;
