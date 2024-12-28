@@ -1,0 +1,39 @@
+@use "global" as *;
+
+.p-table {
+  width: 100%;
+}
+
+.p-table--secondary {
+  @include mq(md) {
+    border-left: 1px solid #707070;
+    border-right: 1px solid #707070;
+  }
+}
+
+.p-table__text {
+  text-align: center;
+  font-size: rem(16);
+  font-weight: 400;
+  line-height: calc(28 / 16);
+  color: #000;
+  border-top: 1px solid #707070;
+  padding-top: rem(16);
+  padding-bottom: rem(16);
+}
+.p-table__text:nth-child(2) {
+  border-left: 1px solid #707070;
+}
+.p-table__detail-text {
+  font-size: rem(16);
+  font-weight: 400;
+  line-height: calc(28 / 16);
+}
+
+.p-table__detail-text--red {
+  color: #d00303;
+}
+.p-table__detail-text--red span {
+  font-weight: 700;
+  font-size: rem(24);
+}

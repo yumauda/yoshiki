@@ -72,10 +72,84 @@
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/girl_1.svg" alt="" width="431" height="38">
             </div>
             <h3 class="p-school__title">
-              小学生コース
+              小学生
             </h3>
             <div class="p-school__icon">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/boy_1.svg" alt="" width="431" height="38">
+            </div>
+          </div>
+          <div class="p-school__table">
+            <div class="p-school__table-course">
+              <h4 class="p-school__table-title">集団授業コース</h4>
+              <table class="p-table">
+                <tbody>
+                  <tr>
+                    <td class="p-table__text">1教科</td>
+                    <td class="p-table__text">2教科</td>
+                  </tr>
+                  <tr>
+                    <td class="p-table__text">
+                      <p class="p-table__detail-text">週1回60分</p>
+                      <p class="p-table__detail-text p-table__detail-text--red"><span>5,500</span>円/月</p>
+                      <p class="p-table__detail-text p-table__detail-text--red">(税込)</p>
+                    </td>
+                    <td class="p-table__text">
+                      <p class="p-table__detail-text">週1回60分</p>
+                      <p class="p-table__detail-text p-table__detail-text--red"><span>5,500</span>円/月</p>
+                      <p class="p-table__detail-text p-table__detail-text--red">(税込)</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="p-table__text" colspan="2">小６算数・小６英語</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="p-school__table-course">
+              <h4 class="p-school__table-title">小6県立中受験コース</h4>
+              <table class="p-table p-table--secondary">
+                <tbody>
+                  <tr>
+                    <td class="p-table__text">各2教科</td>
+                  </tr>
+                  <tr>
+                    <td class="p-table__text">
+                      <p class="p-table__detail-text">週1回60分</p>
+                      <p class="p-table__detail-text p-table__detail-text--red"><span>5,500</span>円/月</p>
+                      <p class="p-table__detail-text p-table__detail-text--red">(税込)</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="p-table__text">適性検査・作文</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="p-school__table-course">
+              <h4 class="p-school__table-title">個別指導コース</h4>
+              <table class="p-table">
+                <tbody>
+                  <tr>
+                    <td class="p-table__text">1教科</td>
+                    <td class="p-table__text">2教科</td>
+                  </tr>
+                  <tr>
+                    <td class="p-table__text">
+                      <p class="p-table__detail-text">週1回60分</p>
+                      <p class="p-table__detail-text p-table__detail-text--red"><span>5,500</span>円/月</p>
+                      <p class="p-table__detail-text p-table__detail-text--red">(税込)</p>
+                    </td>
+                    <td class="p-table__text">
+                      <p class="p-table__detail-text">週1回60分</p>
+                      <p class="p-table__detail-text p-table__detail-text--red"><span>5,500</span>円/月</p>
+                      <p class="p-table__detail-text p-table__detail-text--red">(税込)</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="p-table__text" colspan="2">小６算数・小６英語</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
           <div class="p-school__detail">
@@ -168,7 +242,7 @@
                         <p class="p-detail__text">各教科別に行う予習型の授業です。中学校の進度を確認しながら、ポイントをおさえて分かりやすく丁寧に指導します。学校の授業内容を十分理解することで、高校入試に向けた内申点（成績）の向上を目指します。</p>
                       </div>
                     </div>
-                    
+
                     <div class="swiper-slide">
                       <figure class="p-detail__img">
                         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/course_swiper6.jpg" alt="小６県立中受験コース" width="250" height="175">
