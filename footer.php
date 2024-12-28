@@ -1,5 +1,13 @@
+<?php if (is_page('contact')) : ?>
+    <figure class="p-top-contact">
+        <picture>
+            <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/contact_bottom.png" media="(min-width: 768px)" width="1238" height="570" />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/common/contact_bottom_sp.png" alt="君の輝く未来はここから始まる" width="376" height="397">
+        </picture>
+    </figure>
+<?php endif; ?>
 <footer class="l-footer p-footer p-footer--down">
-    <?php if (!is_front_page() && !is_page('search')) : ?>
+    <?php if (!is_front_page() && !is_page('search') && !is_page('contact')) : ?>
         <figure class="p-top-future">
             <picture>
                 <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/footer_top.png" media="(min-width: 768px)" width="1440" height="196" />
@@ -15,6 +23,7 @@
             </picture>
         </figure>
     <?php endif; ?>
+
     <div class="l-inner">
         <div class="p-footer__content">
             <figure class="p-footer__img">

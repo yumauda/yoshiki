@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.p-top-contact {
+  @include mq(md){
+   margin-top: rem(-250); 
+  }
+}
+.p-top-contact img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
