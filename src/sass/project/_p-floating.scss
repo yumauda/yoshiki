@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.p-floating {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+  @include mq(md) {
+    display: none;
+  }
+}
+.p-floating.is-active {
+  opacity: 1;
+}
+.p-floating__row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.p-floating__link {
+  display: block;
+}
+.p-floating__link img {
+  aspect-ratio: 187 / 60;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}

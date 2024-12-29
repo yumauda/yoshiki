@@ -98,6 +98,7 @@
             </div>
         </div>
     </div>
+    <?php get_template_part('includes/floating'); ?>
 </footer>
 <?php wp_footer(); ?>
 </body>

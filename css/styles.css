@@ -1315,6 +1315,43 @@ select::-ms-expand {
   }
 }
 
+.p-floating {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+}
+@media screen and (min-width: 768px) {
+  .p-floating {
+    display: none;
+  }
+}
+
+.p-floating.is-active {
+  opacity: 1;
+}
+
+.p-floating__row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.p-floating__link {
+  display: block;
+}
+
+.p-floating__link img {
+  aspect-ratio: 187/60;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
 .p-flow {
   padding-top: 50px;
   padding-top: 3.125rem;
