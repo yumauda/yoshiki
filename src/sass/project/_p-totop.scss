@@ -6,7 +6,18 @@
   right: rem(63);
   bottom: rem(63);
 }
-
+.p-totop--sp {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  width: rem(69);
+  height: rem(69);
+  z-index: 9999;
+  @include mq(md) {
+    display: none;
+  }
+}
 .p-totop__link {
   display: none;
   @include mq(md) {

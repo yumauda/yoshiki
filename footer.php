@@ -8,12 +8,18 @@
 <?php endif; ?>
 <footer class="l-footer p-footer p-footer--down">
     <?php if (!is_front_page() && !is_page('search') && !is_page('contact')) : ?>
+        <div class="p-totop--sp">
+            <a href="#" class="p-totop__link">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/back_top.svg" alt="トップへ戻る" width="100" height="100">
+            </a>
+        </div>
         <figure class="p-top-future">
             <picture>
                 <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/footer_top.png" media="(min-width: 768px)" width="1440" height="196" />
                 <img src="<?php echo get_template_directory_uri(); ?>/images/common/footer_top_sp.png" alt="" width="375" height="95">
             </picture>
         </figure>
+
     <?php endif; ?>
     <?php if (is_page('search')) : ?>
         <figure class="p-top-future">

@@ -16,33 +16,53 @@
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide">
-          <a href="<?php the_permalink() ?>" class="p-swiper__link">
-            <figure class="p-swiper__img">
-              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/swiper_1.jpg" alt="<?php the_title(); ?>" width="750" height="390">
-            </figure>
-          </a>
-        </div>
-        <div class="swiper-slide">
-          <a href="<?php the_permalink() ?>" class="p-swiper__link">
-            <figure class="p-swiper__img">
-              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/swiper_1.jpg" alt="<?php the_title(); ?>" width="750" height="390">
-            </figure>
-          </a>
-        </div>
-        <div class="swiper-slide">
-          <a href="<?php the_permalink() ?>" class="p-swiper__link">
-            <figure class="p-swiper__img">
-              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/swiper_1.jpg" alt="<?php the_title(); ?>" width="750" height="390">
-            </figure>
-          </a>
-        </div>
+        <?php
+        // パラメータの設定
+        $args = array(
+          'posts_per_page' => 100,
+          'post_status' => 'publish',
+          'post_type' => 'post',
+          'orderby' => 'date',
+        );
 
+        // WP_Queryインスタンスの生成
+        $my_query = new WP_Query($args);
+        if ($my_query->have_posts()) :
+          while ($my_query->have_posts()) : $my_query->the_post();
+
+            // ACFのチェックボックスの値を取得
+            $show_in_slider = get_field('top_slider');
+
+            // チェックボックスが選択されている場合にのみスライドを表示
+            if ($show_in_slider && in_array('get_top', $show_in_slider)) :
+        ?>
+              <div class="swiper-slide">
+                <a href="<?php the_permalink() ?>" class="p-swiper__link">
+                  <?php if (has_post_thumbnail()) : ?>
+                    <figure class="p-swiper__img">
+                      <img decoding="async" loading="lazy" src="<?php the_post_thumbnail_url('large'); ?>" alt="<?php the_title(); ?>" width="750" height="390">
+                    </figure>
+                  <?php else : ?>
+                    <figure class="p-swiper__img">
+                      <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/noimage.jpg" alt="<?php the_title(); ?>" width="750" height="390">
+                    </figure>
+                  <?php endif; ?>
+                </a>
+              </div>
+        <?php
+            endif;
+          endwhile;
+        endif;
+        wp_reset_postdata();
+        ?>
       </div>
 
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev">
+        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow_prev.svg" alt="" width="50" height="45">
+      </div>
+      <div class="swiper-button-next">
+        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow_next.svg" alt="" width="50" height="45">
+      </div>
 
     </div>
   </div>

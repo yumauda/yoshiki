@@ -21,9 +21,22 @@
   width: 100%;
   height: auto;
 }
-
+.p-swiper__button {
+}
 .swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 23%;
 }
 
 .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 23%;
+}
+.swiper-slide-prev,
+.swiper-slide-next {
+  opacity: 0.5;
 }

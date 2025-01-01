@@ -569,6 +569,19 @@
 
 
           </div>
+          <div class="p-course__other">
+            <div class="p-other">
+              <span class="p-other__circle"></span>
+              <div class="p-other__row">
+                <p class="p-other__text">諸費（半年分）...</p>
+                <p class="p-other__red"><span>13,200</span>円(税込)</p>
+              </div>
+              <div class="p-other__row">
+                <p class="p-other__text">諸費（半年分）...</p>
+                <p class="p-other__red"><span>16,050</span>円(税込)</p>
+              </div>
+            </div>
+          </div>
           <div class="p-school__detail">
             <div class="p-detail">
               <div class="p-detail__title-wrapper">

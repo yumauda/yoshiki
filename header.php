@@ -81,7 +81,7 @@
             <div class="p-header__content">
                 <h1 class="p-header__logo">
                     <a href="<?php echo esc_url(home_url('/')); ?>" class="p-header__home">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/common/header_logo.png" alt="服部塾よしき塾" width="212" height="35">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/common/header_logo.svg" alt="服部塾よしき塾" width="212" height="35">
                     </a>
                 </h1>
                 <nav class="p-header__nav">
