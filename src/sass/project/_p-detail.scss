@@ -15,7 +15,11 @@
 }
 
 .p-detail__slider {
+  margin-right: calc(50% - 50vw);
   margin-top: rem(30);
+  @include mq(md) {
+    margin-right: initial;
+  }
 }
 .p-detail__slider--secondary {
   width: 100%;
@@ -69,4 +73,22 @@
   font-size: rem(16);
   line-height: calc(28 / 16);
   color: #000;
+}
+.p-detail__slider .swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0 !important;
+  @include mq(md) {
+    display: none;
+  }
+}
+.p-detail__slider .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0 !important;
+  @include mq(md) {
+    display: none;
+  }
 }

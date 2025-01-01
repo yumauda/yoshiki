@@ -23,6 +23,8 @@
   padding-left: rem(24);
   padding-right: rem(24);
   padding-bottom: rem(40);
+  position: relative;
+  z-index: 999;
   @include mq(md) {
     padding-bottom: rem(70);
     margin-top: rem(25);

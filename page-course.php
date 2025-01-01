@@ -630,10 +630,13 @@
                       </div>
                     </div>
                   </div>
-
                   <!-- If we need navigation buttons -->
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev">
+                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/course_swiper_prev.svg" alt="" width="50" height="50">
+                  </div>
+                  <div class="swiper-button-next">
+                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/course_swiper_next.svg" alt="" width="50" height="50">
+                  </div>
 
                 </div>
               </div>

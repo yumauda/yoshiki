@@ -6,7 +6,6 @@
   padding-bottom: rem(12);
   @include mq(md) {
     padding-top: rem(88);
-    padding-bottom: initial;
   }
 }
 
@@ -98,14 +97,16 @@
 .p-single__list {
 }
 
-.p-single__prev {
+.p-single__prev,
+.p-single__next {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: rem(10);
 }
 
-.p-single__prev-text {
+.p-single__prev-text,
+.p-single__next-text {
   color: #000;
   font-size: rem(12);
   text-transform: uppercase;

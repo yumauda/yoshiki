@@ -1003,8 +1003,15 @@ select::-ms-expand {
 }
 
 .p-detail__slider {
+  margin-right: calc(50% - 50vw);
   margin-top: 30px;
   margin-top: 1.875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-detail__slider {
+    margin-right: 0;
+    margin-right: initial;
+  }
 }
 
 .p-detail__slider--secondary {
@@ -1066,6 +1073,32 @@ select::-ms-expand {
   font-size: 1rem;
   line-height: 1.75;
   color: #000;
+}
+
+.p-detail__slider .swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0 !important;
+}
+@media screen and (min-width: 768px) {
+  .p-detail__slider .swiper-button-prev {
+    display: none;
+  }
+}
+
+.p-detail__slider .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0 !important;
+}
+@media screen and (min-width: 768px) {
+  .p-detail__slider .swiper-button-next {
+    display: none;
+  }
 }
 
 .p-drawer-icon {
@@ -3009,6 +3042,8 @@ select::-ms-expand {
   padding-right: 1.5rem;
   padding-bottom: 40px;
   padding-bottom: 2.5rem;
+  position: relative;
+  z-index: 999;
 }
 @media screen and (min-width: 768px) {
   .p-news__content {
@@ -3949,8 +3984,6 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .p-single {
     padding-top: 5.5rem;
-    padding-bottom: 0;
-    padding-bottom: initial;
   }
 }
 
@@ -4080,7 +4113,8 @@ select::-ms-expand {
           justify-content: space-between;
 }
 
-.p-single__prev {
+.p-single__prev,
+.p-single__next {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4094,7 +4128,8 @@ select::-ms-expand {
   gap: 0.625rem;
 }
 
-.p-single__prev-text {
+.p-single__prev-text,
+.p-single__next-text {
   color: #000;
   font-size: 12px;
   font-size: 0.75rem;
@@ -4216,7 +4251,7 @@ select::-ms-expand {
   height: auto;
 }
 
-.swiper-button-prev {
+.p-swiper .swiper-button-prev {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -4224,7 +4259,7 @@ select::-ms-expand {
   left: 23%;
 }
 
-.swiper-button-next {
+.p-swiper .swiper-button-next {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);

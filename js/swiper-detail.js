@@ -34,13 +34,10 @@ window.addEventListener(
 
 const createSwiper = () => {
   swiper = new Swiper(".swiper", {
-    loop: true, // ループさせる
+    loop: false, // ループさせる
+    spaceBetween: 20,
+    slidesPerView: 1.2,
     speed: 1500, // 少しゆっくり(デフォルトは300)
-    autoplay: {
-      // 自動再生
-      delay: 1000, // 1秒後に次のスライド
-      disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない
-    },
     // ページネーション
     pagination: {
       el: ".swiper-pagination",

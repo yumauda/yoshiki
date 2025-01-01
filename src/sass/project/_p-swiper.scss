@@ -23,14 +23,14 @@
 }
 .p-swiper__button {
 }
-.swiper-button-prev {
+.p-swiper .swiper-button-prev {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 23%;
 }
 
-.swiper-button-next {
+.p-swiper .swiper-button-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
