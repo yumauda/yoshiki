@@ -573,11 +573,11 @@
             <div class="p-other">
               <span class="p-other__circle"></span>
               <div class="p-other__row">
-                <p class="p-other__text">諸費（半年分）...</p>
+                <p class="p-other__text"><span>高校1年生・2年生</span>諸費（半年分）...</p>
                 <p class="p-other__red"><span>13,200</span>円(税込)</p>
               </div>
               <div class="p-other__row">
-                <p class="p-other__text">諸費（半年分）...</p>
+                <p class="p-other__text"><span>高校3年生・高卒生</span>諸費（半年分）...</p>
                 <p class="p-other__red"><span>16,050</span>円(税込)</p>
               </div>
             </div>
@@ -656,7 +656,7 @@
         </div>
         <ul class="p-flow__lists">
           <li class="p-flow__list">
-            <figure class="p-flow__img">
+            <figure class="p-flow__img p-flow__img--1">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/flow_img1.png" alt="お問い合わせ" width="150" height="150">
             </figure>
             <div class="p-flow__detail">
@@ -665,7 +665,7 @@
             </div>
           </li>
           <li class="p-flow__list">
-            <figure class="p-flow__img">
+            <figure class="p-flow__img p-flow__img--2">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/flow_img2.png" alt="体験授業" width="150" height="150">
             </figure>
             <div class="p-flow__detail">
@@ -683,7 +683,7 @@
             </div>
           </li>
           <li class="p-flow__list">
-            <figure class="p-flow__img">
+            <figure class="p-flow__img p-flow__img--3">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/flow_img4.png" alt="入塾" width="150" height="150">
             </figure>
             <div class="p-flow__detail">

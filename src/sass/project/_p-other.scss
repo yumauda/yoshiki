@@ -58,7 +58,10 @@
   color: #000;
   font-weight: 400;
 }
-
+.p-other__text span {
+  font-weight: 700;
+  margin-right: rem(8);
+}
 .p-other__red {
   font-size: rem(16);
   line-height: calc(28 / 16);

@@ -36,11 +36,13 @@
 
 .p-flow__img {
   max-width: rem(100);
+  min-width: rem(100);
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   @include mq(md) {
     max-width: rem(150);
+    min-width: rem(150);
   }
 }
 .p-flow__img img {
@@ -49,7 +51,56 @@
   width: 100%;
   height: auto;
 }
-
+.p-flow__img--1,
+.p-flow__img--2,
+.p-flow__img--3 {
+  position: relative;
+}
+.p-flow__img--1::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/flow_step1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: rem(71);
+  aspect-ratio: 71 / 66;
+  object-fit: cover;
+  height: auto;
+  top: rem(-24);
+  left: rem(-10);
+  z-index: 1;
+}
+.p-flow__img--2::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/flow_step2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: rem(71);
+  aspect-ratio: 71 / 66;
+  object-fit: cover;
+  height: auto;
+  top: rem(-24);
+  left: rem(-10);
+  z-index: 1;
+}
+.p-flow__img--3::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/flow_step3.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: rem(71);
+  aspect-ratio: 71 / 66;
+  object-fit: cover;
+  height: auto;
+  top: rem(-24);
+  left: rem(-10);
+  z-index: 1;
+}
 .p-flow__detail {
   padding-top: rem(8);
 }

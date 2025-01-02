@@ -1431,6 +1431,8 @@ select::-ms-expand {
 .p-flow__img {
   max-width: 100px;
   max-width: 6.25rem;
+  min-width: 100px;
+  min-width: 6.25rem;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -1438,6 +1440,7 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .p-flow__img {
     max-width: 9.375rem;
+    min-width: 9.375rem;
   }
 }
 
@@ -1447,6 +1450,72 @@ select::-ms-expand {
      object-fit: cover;
   width: 100%;
   height: auto;
+}
+
+.p-flow__img--1,
+.p-flow__img--2,
+.p-flow__img--3 {
+  position: relative;
+}
+
+.p-flow__img--1::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/flow_step1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 71px;
+  width: 4.4375rem;
+  aspect-ratio: 71/66;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: auto;
+  top: -24px;
+  top: -1.5rem;
+  left: -10px;
+  left: -0.625rem;
+  z-index: 1;
+}
+
+.p-flow__img--2::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/flow_step2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 71px;
+  width: 4.4375rem;
+  aspect-ratio: 71/66;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: auto;
+  top: -24px;
+  top: -1.5rem;
+  left: -10px;
+  left: -0.625rem;
+  z-index: 1;
+}
+
+.p-flow__img--3::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/flow_step3.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 71px;
+  width: 4.4375rem;
+  aspect-ratio: 71/66;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: auto;
+  top: -24px;
+  top: -1.5rem;
+  left: -10px;
+  left: -0.625rem;
+  z-index: 1;
 }
 
 .p-flow__detail {
@@ -3271,6 +3340,12 @@ select::-ms-expand {
   font-weight: 400;
 }
 
+.p-other__text span {
+  font-weight: 700;
+  margin-right: 8px;
+  margin-right: 0.5rem;
+}
+
 .p-other__red {
   font-size: 16px;
   font-size: 1rem;
@@ -3320,7 +3395,8 @@ select::-ms-expand {
   margin-left: 1.875rem;
 }
 
-.p-pagination__prev {
+.prev,
+.next {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3334,6 +3410,24 @@ select::-ms-expand {
   gap: 0.625rem;
 }
 
+.prev svg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.next svg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
 .p-pagination__text {
   text-transform: uppercase;
   font-size: 12px;
@@ -3343,7 +3437,7 @@ select::-ms-expand {
   font-weight: 700;
 }
 
-.p-pagination__num {
+.page-numbers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3358,15 +3452,15 @@ select::-ms-expand {
   width: 2.5rem;
   height: 40px;
   height: 2.5rem;
-  color: #D8D8D8;
+  color: #d8d8d8;
   font-weight: 700;
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 2.3333333333;
 }
 
-.p-pagination__num--current {
-  background: #FFFF00;
+.current {
+  background: #ffff00;
   color: #000;
 }
 
