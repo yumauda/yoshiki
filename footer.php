@@ -53,7 +53,7 @@
                 </div>
                 <ul class="p-footer__icon-lists">
                     <li class="p-footer__icon-list">
-                        <a href="#" class="p-footer__icon-link">
+                        <a href="https://www.instagram.com/hattorijuku_yoshikijuku/?igsh=MTJyc2hjdHp4eGVtcQ%3D%3D" class="p-footer__icon-link" target="_blank" rel="noopener noreferrer">
                             <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/footer_instagram.png" alt="インスタグラム" width="30" height="30">
                         </a>
                     </li>

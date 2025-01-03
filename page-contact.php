@@ -32,7 +32,7 @@
           </div>
           <ul class="p-line__lists">
             <li class="p-line__list">
-              <a href="#" class="p-line__link">
+              <a href="https://line.me/ti/p/nuQmi74uC_" class="p-line__link" target="_blank" rel="noopener noreferrer">
                 <div class="p-line__icon">
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/line_icon.svg" alt="LINE" width="26" height="25">
                 </div>
@@ -45,7 +45,7 @@
               </a>
             </li>
             <li class="p-line__list">
-              <a href="#" class="p-line__link">
+              <a href="https://line.me/ti/p/si3mBhT_r3" class="p-line__link" target="_blank" rel="noopener noreferrer">
                 <div class="p-line__icon">
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/line_icon.svg" alt="LINE" width="26" height="25">
                 </div>
@@ -58,7 +58,7 @@
               </a>
             </li>
             <li class="p-line__list">
-              <a href="#" class="p-line__link">
+              <a href="https://line.me/ti/p/5OASGOzURY" class="p-line__link" target="_blank" rel="noopener noreferrer">
                 <div class="p-line__icon">
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/line_icon.svg" alt="LINE" width="26" height="25">
                 </div>
@@ -71,7 +71,7 @@
               </a>
             </li>
             <li class="p-line__list">
-              <a href="#" class="p-line__link">
+              <a href="https://line.me/ti/p/s2w_4EXvnw" class="p-line__link" target="_blank" rel="noopener noreferrer">
                 <div class="p-line__icon">
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/line_icon.svg" alt="LINE" width="26" height="25">
                 </div>

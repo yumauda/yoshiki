@@ -1573,8 +1573,8 @@ select::-ms-expand {
      object-fit: cover;
   height: auto;
   z-index: 1;
-  top: -40px;
-  top: -2.5rem;
+  top: -56px;
+  top: -3.5rem;
   left: 0;
 }
 @media screen and (min-width: 768px) {
@@ -1597,8 +1597,8 @@ select::-ms-expand {
   -o-object-fit: cover;
      object-fit: cover;
   height: auto;
-  top: -40px;
-  top: -2.5rem;
+  top: -56px;
+  top: -3.5rem;
   left: 0;
   z-index: 1;
 }
@@ -1622,8 +1622,8 @@ select::-ms-expand {
   -o-object-fit: cover;
      object-fit: cover;
   height: auto;
-  top: -40px;
-  top: -2.5rem;
+  top: -56px;
+  top: -3.5rem;
   left: 0;
   z-index: 1;
 }

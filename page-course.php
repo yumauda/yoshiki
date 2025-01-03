@@ -12,7 +12,7 @@
       <div class="p-course__content">
         <ul class="p-course__pageLinks">
           <li class="p-course__pageLink">
-            <a href="" class="p-course__pageLink-link">
+            <a href="#elementary" class="p-course__pageLink-link">
               <figure class="p-course__linkImg">
                 <picture>
                   <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/course_link_1_pc.jpg" media="(min-width: 768px)" width="130" height="130" />
@@ -30,7 +30,7 @@
             </a>
           </li>
           <li class="p-course__pageLink">
-            <a href="" class="p-course__pageLink-link">
+            <a href="#middle" class="p-course__pageLink-link">
               <figure class="p-course__linkImg">
                 <picture>
                   <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/course_link_2_pc.jpg" media="(min-width: 768px)" width="130" height="130" />
@@ -48,7 +48,7 @@
             </a>
           </li>
           <li class="p-course__pageLink">
-            <a href="" class="p-course__pageLink-link">
+            <a href="#high" class="p-course__pageLink-link">
               <figure class="p-course__linkImg">
                 <picture>
                   <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/course_link_3_pc.jpg" media="(min-width: 768px)" width="130" height="130" />
@@ -66,7 +66,7 @@
             </a>
           </li>
         </ul>
-        <div class="p-course__block p-school">
+        <div class="p-course__block p-school" id="elementary">
           <div class="p-school__title-wrapper">
             <div class="p-school__icon">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/girl_1.svg" alt="" width="431" height="38">
@@ -219,7 +219,7 @@
             </div>
           </div>
         </div>
-        <div class="p-school">
+        <div class="p-school" id="middle">
           <div class="p-school__title-wrapper">
             <div class="p-school__icon">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/girl_2.svg" alt="" width="431" height="38">
@@ -411,7 +411,7 @@
             </div>
           </div>
         </div>
-        <div class="p-school">
+        <div class="p-school" id="high">
           <div class="p-school__title-wrapper">
             <div class="p-school__icon">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/girl_3.svg" alt="" width="431" height="38">
@@ -657,7 +657,10 @@
         <ul class="p-flow__lists">
           <li class="p-flow__list">
             <figure class="p-flow__img p-flow__img--1">
-              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/flow_img1.png" alt="お問い合わせ" width="150" height="150">
+              <picture>
+                <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/flow_img1.png" media="(min-width: 768px)" width="150" height="150">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/common/flow_img1_sp.png" alt="お問い合わせ" width="100" height="100">
+              </picture>
             </figure>
             <div class="p-flow__detail">
               <h3 class="p-flow__subTitle">お問い合わせ</h3>
@@ -666,7 +669,10 @@
           </li>
           <li class="p-flow__list">
             <figure class="p-flow__img p-flow__img--2">
-              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/flow_img2.png" alt="体験授業" width="150" height="150">
+              <picture>
+                <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/flow_img2.png" media="(min-width: 768px)" width="150" height="150">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/common/flow_img2_sp.png" alt="体験授業" width="100" height="100">
+              </picture>
             </figure>
             <div class="p-flow__detail">
               <h3 class="p-flow__subTitle">体験授業</h3>
@@ -675,7 +681,10 @@
           </li>
           <li class="p-flow__list">
             <figure class="p-flow__img">
-              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/flow_img3.png" alt="説明" width="150" height="150">
+              <picture>
+                <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/flow_img3.png" media="(min-width: 768px)" width="150" height="150">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/common/flow_img3_sp.png" alt="説明" width="100" height="100">
+              </picture>
             </figure>
             <div class="p-flow__detail">
               <h3 class="p-flow__subTitle">説明</h3>
@@ -684,7 +693,10 @@
           </li>
           <li class="p-flow__list">
             <figure class="p-flow__img p-flow__img--3">
-              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/flow_img4.png" alt="入塾" width="150" height="150">
+              <picture>
+                <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/flow_img4.png" media="(min-width: 768px)" width="150" height="150">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/common/flow_img4_sp.png" alt="入塾" width="100" height="100">
+              </picture>
             </figure>
             <div class="p-flow__detail">
               <h3 class="p-flow__subTitle">入塾</h3>

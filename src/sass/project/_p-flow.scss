@@ -135,7 +135,7 @@
   object-fit: cover;
   height: auto;
   z-index: 1;
-  top: rem(-40);
+  top: rem(-56);
   left: 0;
   @include mq(md) {
     left: rem(-10);
@@ -153,7 +153,7 @@
   aspect-ratio: 71 / 66;
   object-fit: cover;
   height: auto;
-  top: rem(-40);
+  top: rem(-56);
   left: 0;
   z-index: 1;
   @include mq(md) {
@@ -172,7 +172,7 @@
   aspect-ratio: 71 / 66;
   object-fit: cover;
   height: auto;
-  top: rem(-40);
+  top: rem(-56);
   left: 0;
   z-index: 1;
   @include mq(md) {
