@@ -108,7 +108,7 @@
             <div class="p-school__table-course">
               <h4 class="p-school__table-title">小6県立中受験コース</h4>
               <table class="p-table p-table--secondary">
-                <tbody>
+                <tbody class="p-table__tbody">
                   <tr>
                     <td class="p-table__text">各2教科</td>
                   </tr>
@@ -219,7 +219,7 @@
             </div>
           </div>
         </div>
-        <div class="p-school" id="middle">
+        <div class="p-school p-school--secondary" id="middle">
           <div class="p-school__title-wrapper">
             <div class="p-school__icon">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/girl_2.svg" alt="" width="431" height="38">
@@ -245,13 +245,10 @@
                       <table class="p-table-high__table p-table-high__table--pc">
                         <tbody>
                           <tr>
-                            <td class="p-table-high__text" colspan="4">高３・高卒</td>
-                          </tr>
-                          <tr>
                             <td class="p-table-high__text">1教科</td>
                             <td class="p-table-high__text">2教科</td>
                             <td class="p-table-high__text">3教科</td>
-                            <td class="p-table-high__text">3教科</td>
+                            <td class="p-table-high__text">4教科</td>
                           </tr>
                           <tr>
                             <td class="p-table-high__text h135">
@@ -333,9 +330,7 @@
                       <h4 class="p-table-high__title p-table-high__title--middle">個別指導コース</h4>
                       <table class="p-table-high__table">
                         <tbody>
-                          <tr>
-                            <td class="p-table-high__text" colspan="2">高1、高2</td>
-                          </tr>
+
                           <tr>
                             <td class="p-table-high__text">1教科</td>
                             <td class="p-table-high__text">2教科</td>
@@ -366,7 +361,41 @@
                 </div>
 
               </div>
+              <div class="p-course__other">
+                <div class="p-other">
+                  <span class="p-other__circle"></span>
+                  <div class="p-other__row">
+                    <p class="p-other__bold">中学1・2年生</p>
+                    <div class="p-other__row-wrapper">
+                      <div class="p-other__detailRow">
+                        <p class="p-other__text">諸費（半年分）...</p>
+                        <p class="p-other__red"><span>9,900</span>円(税込)</p>
+                      </div>
+                      <div class="p-other__detailRow">
+                        <p class="p-other__text">模擬テスト代（年間）...</p>
+                        <p class="p-other__red"><span>9,300</span>円(税込)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-other__row">
+                    <p class="p-other__bold">中学3年生</p>
+                    <div class="p-other__row-wrapper">
+                      <div class="p-other__detailRow">
+                        <p class="p-other__text">諸費（半年分）...</p>
+                        <p class="p-other__red"><span>9,900</span>円(税込)</p>
+                      </div>
+                      <div class="p-other__detailRow">
+                        <p class="p-other__text">模擬テスト代（年間）...</p>
+                        <p class="p-other__red"><span>18,600</span>円(税込)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="p-detail__slider p-detail__slider--secondary">
+                <div class="p-detail__title-wrapper">
+                  <p class="p-detail__title">中学生コースの詳細</p>
+                </div>
                 <!-- Slider main container -->
                 <div class="swiper swiper-detail">
                   <!-- Additional required wrapper -->
@@ -382,13 +411,16 @@
                       </div>
                     </div>
 
-                    <div class="swiper-slide">
+                    <div class="swiper-slide p-detail__slider-bg">
                       <figure class="p-detail__img">
                         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/course_swiper6.jpg" alt="小６県立中受験コース" width="250" height="175">
                       </figure>
                       <div class="p-detail__block">
-                        <p class="p-detail__title">無料のテスト対策</p>
+                        <p class="p-detail__title p-detail__title--red">無料のテスト対策</p>
                         <p class="p-detail__text">定期テスト前の休日には、無料のテスト対策授業（集団授業）を受けていただくことができます。テスト対策授業ではテスト頻出の重要単元の復習や過去問の演習を行い、高得点を目指します。個別指導コースを受講の方も集団授業のテスト対策に無料でご参加いただけます。</p>
+                      </div>
+                      <div class="p-detail__test">
+                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/detail_test.svg" alt="テスト対策授業のご案内" width="250" height="175">
                       </div>
                     </div>
                     <div class="swiper-slide">
@@ -563,22 +595,25 @@
                     </tbody>
                   </table>
                 </div>
-
               </div>
             </div>
-
-
           </div>
           <div class="p-course__other">
             <div class="p-other">
               <span class="p-other__circle"></span>
               <div class="p-other__row">
-                <p class="p-other__text"><span>高校1年生・2年生</span>諸費（半年分）...</p>
-                <p class="p-other__red"><span>13,200</span>円(税込)</p>
+                <p class="p-other__bold">高校1年生・2年生</p>
+                <div class="p-other__detailRow">
+                  <p class="p-other__text">諸費（半年分）...</p>
+                  <p class="p-other__red"><span>13,200</span>円(税込)</p>
+                </div>
               </div>
               <div class="p-other__row">
-                <p class="p-other__text"><span>高校3年生・高卒生</span>諸費（半年分）...</p>
-                <p class="p-other__red"><span>16,050</span>円(税込)</p>
+                <p class="p-other__bold">高校3年生・高卒生</p>
+                <div class="p-other__detailRow">
+                  <p class="p-other__text">諸費（半年分）...</p>
+                  <p class="p-other__red"><span>16,050</span>円(税込)</p>
+                </div>
               </div>
             </div>
           </div>

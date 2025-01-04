@@ -1,14 +1,27 @@
 @use "global" as *;
 
 .p-school {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
   background: #fff;
   padding-top: rem(55);
   padding-bottom: rem(66);
-  padding-left: rem(22);
-  padding-right: rem(22);
+  padding-left: rem(13);
+  padding-right: rem(13);
+  @include mq(md) {
+    padding-left: rem(22);
+    padding-right: rem(22);
+    margin-left: initial;
+    margin-right: initial;
+  }
 }
 .p-school + .p-school {
   margin-top: rem(50);
+}
+.p-school--secondary {
+  @include mq(md) {
+    padding-bottom: rem(117);
+  }
 }
 .p-school__title-wrapper {
   display: flex;
@@ -54,7 +67,11 @@
 .p-school__table--high {
   display: block;
 }
-.p-school__table-course {
+.p-school__table-course + .p-school__table-course {
+  margin-top: rem(30);
+  @include mq(md) {
+    margin-top: initial;
+  }
 }
 
 .p-school__table-title {
@@ -66,4 +83,7 @@
   line-height: calc(28 / 18);
   padding-top: rem(6);
   padding-bottom: rem(6);
+}
+tbody {
+  background: #f8f8f8;
 }
