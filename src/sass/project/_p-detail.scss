@@ -46,9 +46,6 @@
   }
 }
 
-.p-detail__img {
-}
-
 .p-detail__img img {
   aspect-ratio: 250 / 175;
   object-fit: cover;
@@ -79,20 +76,12 @@
   color: #000;
 }
 .p-detail__slider .swiper-button-prev {
- /*  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0 !important;
-  margin-left: calc(50% - 50vw); */
+  margin-left: rem(-13);
   @include mq(md) {
     display: none;
   }
 }
 .p-detail__slider .swiper-button-next {
-  /* position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0 !important; */
   @include mq(md) {
     display: none;
   }

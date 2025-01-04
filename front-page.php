@@ -19,7 +19,7 @@
         <?php
         // パラメータの設定
         $args = array(
-          'posts_per_page' => 100,
+          'posts_per_page' => -1,
           'post_status' => 'publish',
           'post_type' => 'post',
           'orderby' => 'date',
@@ -70,7 +70,7 @@
   <section class="p-top-news">
     <div class="l-inner">
       <div class="p-top-news__content">
-        <div class="p-top-news__title">
+        <div class="p-top-news__title js-news-title">
           <h3 class="c-main-title">
             当教室からのお知らせ
           </h3>
@@ -91,7 +91,7 @@
             while ($my_query->have_posts()) : $my_query->the_post();
           ?>
 
-              <li class="p-top-news__list">
+              <li class="p-top-news__list js-news-title">
                 <a href="<?php the_permalink(); ?>" class="p-top-news__link">
                   <time datetime="<?php the_time('Y-m-d'); ?>" class="p-top-news__time"><?php the_time('Y/m/d'); ?></time>
                   <p class="p-top-news__text">
@@ -106,7 +106,7 @@
           wp_reset_postdata();
           ?>
         </ul>
-        <div class="p-top-news__btn-wrapper">
+        <div class="p-top-news__btn-wrapper js-news-title">
           <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-top-news__btn">
             <p class="p-top-news__btn-text">お知らせ一覧を見る</p>
             <span class="p-top-news__bg">
@@ -123,13 +123,13 @@
   <section class="p-top-achieve">
     <div class="l-inner">
       <div class="p-top-achieve__content">
-        <div class="p-top-achieve__title">
+        <div class="p-top-achieve__title js-achieve-title">
           <h3 class="c-main-title">
             合格指導実績
           </h3>
         </div>
         <div class="p-top-achieve__row">
-          <div class="p-top-achieve__block">
+          <div class="p-top-achieve__block js-achieve-title">
             <h4 class="p-top-achieve__block-title">▼&emsp;大学受験&emsp;▼</h4>
             <div class="p-top-achieve__blockRow">
               <div class="p-top-achieve__univ">
@@ -450,7 +450,7 @@
               </div>
             </div>
           </div>
-          <div class="p-top-achieve__block">
+          <div class="p-top-achieve__block js-achieve-title">
             <h4 class="p-top-achieve__block-title p-top-achieve__block-title--high">▼&emsp;高校受験&emsp;▼</h4>
             <div class="p-top-achieve__high">
               <div class="p-top-achieve__blockRow">

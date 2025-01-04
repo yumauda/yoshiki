@@ -3,6 +3,44 @@
 // Then, once the page loads...
 window.addEventListener("DOMContentLoaded", function () {
   gsap.fromTo(
+    ".js-news-title",
+    {
+      opacity: 0,
+      x: -30,
+    
+    },
+    {
+      duration: 1.5,
+      opacity: 1,
+      x: 0,
+      stagger: 0.15,
+      scrollTrigger: {
+        trigger: ".p-top-news",
+        start: "0% 50%",
+      },
+      ease: "power3.out",
+    }
+  );
+  gsap.fromTo(
+    ".js-achieve-title",
+    {
+      opacity: 0,
+      y: 70,
+    
+    },
+    {
+      duration: 1.5,
+      opacity: 1,
+      y: 0,
+      stagger: 0.2,
+      scrollTrigger: {
+        trigger: ".p-top-achieve",
+        start: "0% 50%",
+      },
+      ease: "power3.out",
+    }
+  );
+  gsap.fromTo(
     ".js-choose-title",
     {
       opacity: 0,
@@ -20,7 +58,7 @@ window.addEventListener("DOMContentLoaded", function () {
       },
       ease: "power3.out",
     }
-  )
+  );
   gsap.fromTo(
     ".js-choose-cards",
     {

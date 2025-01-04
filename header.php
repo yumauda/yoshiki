@@ -63,7 +63,6 @@
 
     <!-- ogp -->
     <!-- ファビコン -->
-    <link rel="icon" href="<?php echo get_template_directory_uri() ?>/images/common/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri() ?>/images/common/apple-touch-icon.png">
     <!-- css -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

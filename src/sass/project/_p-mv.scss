@@ -2,9 +2,9 @@
 
 .p-mv {
   margin-top: rem(50);
+  height: 100vh;
   @include mq(md) {
     margin-top: initial;
-    height: 100vh;
   }
 }
 

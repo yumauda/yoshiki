@@ -1,27 +1,22 @@
 @use "global" as *;
 
 .p-swiper {
-  padding-top: rem(30);
-  padding-bottom: rem(30);
-  background: #383636;
-}
-
-.swiper-wrapper {
-}
-
-.swiper-slide {
-}
-
-.p-swiper__link {
+  background: #f8f8f8;
+  @include mq(md) {
+    padding-top: rem(30);
+    padding-bottom: rem(30);
+    background: #383636;
+  }
 }
 
 .p-swiper__img img {
-  aspect-ratio: 750 / 390;
   object-fit: cover;
   width: 100%;
   height: auto;
-}
-.p-swiper__button {
+  aspect-ratio: 375 / 195;
+  @include mq(md) {
+    aspect-ratio: 750 / 390;
+  }
 }
 .p-swiper .swiper-button-prev {
   display: none;
@@ -50,6 +45,8 @@
 }
 .p-swiper .swiper-pagination {
   bottom: rem(-32);
+  position: static;
+  margin-top: rem(8);
   @include mq(md) {
     display: none;
   }
