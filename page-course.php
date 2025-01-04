@@ -3,7 +3,7 @@
   <section class="p-course">
     <?php get_template_part('includes/breadcrumbs'); ?>
     <div class="l-inner">
-      <div class="p-course__title">
+      <div class="p-course__title js-course-title">
         <h2 class="c-main-title">
           各コースの料金と詳細
         </h2>
@@ -11,7 +11,7 @@
       </div>
       <div class="p-course__content">
         <ul class="p-course__pageLinks">
-          <li class="p-course__pageLink">
+          <li class="p-course__pageLink js-course-cards">
             <a href="#elementary" class="p-course__pageLink-link">
               <figure class="p-course__linkImg">
                 <picture>
@@ -29,7 +29,7 @@
               </div>
             </a>
           </li>
-          <li class="p-course__pageLink">
+          <li class="p-course__pageLink js-course-cards">
             <a href="#middle" class="p-course__pageLink-link">
               <figure class="p-course__linkImg">
                 <picture>
@@ -47,7 +47,7 @@
               </div>
             </a>
           </li>
-          <li class="p-course__pageLink">
+          <li class="p-course__pageLink js-course-cards">
             <a href="#high" class="p-course__pageLink-link">
               <figure class="p-course__linkImg">
                 <picture>
@@ -78,7 +78,7 @@
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/boy_1.svg" alt="" width="431" height="38">
             </div>
           </div>
-          <div class="p-school__table">
+          <div class="p-school__table js-elementary-table">
             <div class="p-school__table-course">
               <h4 class="p-school__table-title">集団授業コース</h4>
               <table class="p-table">

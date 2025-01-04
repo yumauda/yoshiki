@@ -52,6 +52,21 @@ function my_script_init()
 		wp_enqueue_script('scrollTrigger', '//cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js', '', "1.0.1", true);
 		wp_enqueue_script('js-gsap', get_template_directory_uri() . '/js/gsap.js', array('jquery'), filemtime(get_theme_file_path('/js/gsap.js')), true);
 	}
+	if (is_page('feature')) {
+		wp_enqueue_script('gsap', '//cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js', '', "1.0.1", true);
+		wp_enqueue_script('scrollTrigger', '//cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js', '', "1.0.1", true);
+		wp_enqueue_script('js-gsap-feature', get_template_directory_uri() . '/js/gsap-feature.js', array('jquery'), filemtime(get_theme_file_path('/js/gsap-feature.js')), true);
+	}
+	if (is_page('search')) {
+		wp_enqueue_script('gsap', '//cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js', '', "1.0.1", true);
+		wp_enqueue_script('scrollTrigger', '//cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js', '', "1.0.1", true);
+		wp_enqueue_script('js-gsap-search', get_template_directory_uri() . '/js/gsap-search.js', array('jquery'), filemtime(get_theme_file_path('/js/gsap-search.js')), true);
+	}
+	if (is_page('course')) {
+		wp_enqueue_script('gsap', '//cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js', '', "1.0.1", true);
+		wp_enqueue_script('scrollTrigger', '//cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js', '', "1.0.1", true);
+		wp_enqueue_script('js-gsap-course', get_template_directory_uri() . '/js/gsap-course.js', array('jquery'), filemtime(get_theme_file_path('/js/gsap-course.js')), true);
+	}
 	if (is_page('contact')) {
 		wp_enqueue_script('zipcode', '//ajaxzip3.github.io/ajaxzip3.js', '', "1.0.1", true);
 	}

@@ -4,12 +4,12 @@
     <?php get_template_part('includes/breadcrumbs'); ?>
     <div class="l-inner">
       <div class="p-search__content">
-        <div class="p-search__title">
+        <div class="p-search__title js-search-title">
           <h2 class="c-main-title">教室を探す</h2>
         </div>
         <div class="p-search__block">
           <ul class="p-search__lists">
-            <li class="p-search__list" id="mizuguchi">
+            <li class="p-search__list js-search-cards" id="mizuguchi">
               <div class="p-search__row">
                 <div class="p-search__detail">
                   <p class="p-search__list-title">服部塾&emsp;水口校</p>
@@ -55,7 +55,7 @@
                 </a>
               </div>
             </li>
-            <li class="p-search__list" id="kousai">
+            <li class="p-search__list js-search-cards" id="kousai">
               <div class="p-search__row">
                 <div class="p-search__detail">
                   <p class="p-search__list-title">服部塾 甲西駅前校</p>
@@ -101,7 +101,7 @@
                 </a>
               </div>
             </li>
-            <li class="p-search__list" id="hino">
+            <li class="p-search__list js-search-cards" id="hino">
               <div class="p-search__row">
                 <div class="p-search__detail">
                   <p class="p-search__list-title">よしき塾&emsp;日野校</p>
@@ -147,7 +147,7 @@
                 </a>
               </div>
             </li>
-            <li class="p-search__list" id="kounan">
+            <li class="p-search__list js-search-cards" id="kounan">
               <div class="p-search__row">
                 <div class="p-search__detail">
                   <p class="p-search__list-title">服部塾 甲南校</p>

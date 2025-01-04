@@ -3,7 +3,7 @@
   <section class="p-feature">
     <?php get_template_part('includes/breadcrumbs'); ?>
     <div class="l-inner">
-      <div class="p-feature__title">
+      <div class="p-feature__title js-feature-title">
         <h2 class="c-main-title">服部塾・よしき塾の特長</h2>
       </div>
       <div class="p-feature__content">
@@ -21,7 +21,7 @@
               <h4 class="p-block-top__subTitle">競い合いながら勉強することで<br class="u-mobile">互いに刺激を与え合う</h4>
             </div>
             <ul class="p-block__lists">
-              <li class="p-block__list">
+              <li class="p-block__list js-feature-cards">
                 <figure class="p-block__img">
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/block_list_img1.png" alt="競争意識が芽生える" width="150" height="150">
                 </figure>
@@ -32,7 +32,7 @@
                   </p>
                 </div>
               </li>
-              <li class="p-block__list">
+              <li class="p-block__list js-feature-cards">
                 <figure class="p-block__img">
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/block_list_img2.png" alt="メリハリのついた楽しく学べる授業" width="150" height="150">
                 </figure>
@@ -44,7 +44,7 @@
                   </p>
                 </div>
               </li>
-              <li class="p-block__list">
+              <li class="p-block__list js-feature-cards">
                 <figure class="p-block__img">
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/block_list_img3.png" alt="適切な勉強ペース" width="150" height="150">
                 </figure>
@@ -72,7 +72,7 @@
               <h4 class="p-block-top__subTitle">勉強に集中できる環境が手に入ります。</h4>
             </div>
             <ul class="p-block__cards">
-              <li class="p-block__card">
+              <li class="p-block__card js-block-cards">
                 <figure class="p-block__cardImg">
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/block_card1.jpg" alt="1：1または1：2だからこその特長" width="480" height="350">
                 </figure>
@@ -84,7 +84,7 @@
                   </p>
                 </div>
               </li>
-              <li class="p-block__card">
+              <li class="p-block__card js-block-cards">
                 <figure class="p-block__cardImg">
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/block_card2.jpg" alt="生徒一人ひとりに合った個別のニーズに対応" width="480" height="350">
                 </figure>
@@ -97,7 +97,7 @@
                   </p>
                 </div>
               </li>
-              <li class="p-block__card">
+              <li class="p-block__card js-block-cards">
                 <figure class="p-block__cardImg">
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/block_card3.jpg" alt="個別と集団授業を自由に組み合わせて個別のニーズに対応" width="480" height="350">
                 </figure>
@@ -107,8 +107,18 @@
                     得意な教科は集団授業で受講し、苦手な教科は個別授業で受講するなど、教科によって変更できます。生徒様一人ひとりに合った最適な組み合わせで受講できます。
                   </p>
                 </div>
+                <div class="p-block__cardBtn-wrapper">
+                  <a href="<?php echo esc_url(home_url('/course')); ?>" class="p-block__cardBtn">
+                    <p class="p-block__cardText">各コースの料金表を見る</p>
+                    <span class="p-block__cardBtn-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12.385" height="13.033" viewBox="0 0 12.385 13.033">
+                        <path d="M5.868,0,4.836,1.032,9.591,5.787H0V7.246H9.591L4.836,12l1.032,1.032,6.517-6.517Z" transform="translate(0 0)" />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
               </li>
-              <li class="p-block__card">
+              <li class="p-block__card js-block-cards">
                 <figure class="p-block__cardImg">
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/block_card4.jpg" alt="講師が担任制だから安心" width="480" height="350">
                 </figure>
@@ -123,7 +133,7 @@
             </ul>
           </div>
         </div>
-        <div class="p-feature__block p-block p-block--white">
+        <div class="p-feature__block p-block p-block--white js-consistent-timing">
           <div class="p-block-top">
             <div class="p-block-top__top">
               <div class="p-block-top__title-wrapper">
@@ -136,13 +146,13 @@
               </div>
               <h4 class="p-block-top__subTitle">信頼関係が生まれやすい環境による安心感</h4>
             </div>
-            <figure class="p-block__arrow-img">
+            <figure class="p-block__arrow-img js-consistent">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/block_arrow.png" alt="小学校から高校まで一貫して通える" width="680" height="166">
             </figure>
             <div class="p-block__point">
               <div class="p-point">
                 <div class="p-point__content">
-                  <div class="p-point__row">
+                  <div class="p-point__row js-consistent">
                     <div class="p-point__title-wrapper">
                       <p class="p-point__num">point 01</p>
                       <p class="p-point__title">信頼関係構築による安心感</p>
@@ -152,7 +162,7 @@
                         また家での勉強法や進路についての悩みなども、相談しやすい関係性がうまれます。</p>
                     </div>
                   </div>
-                  <div class="p-point__row">
+                  <div class="p-point__row js-consistent">
                     <div class="p-point__title-wrapper">
                       <p class="p-point__num">point 02</p>
                       <p class="p-point__title">広い視点での授業</p>
@@ -161,7 +171,7 @@
                       <p class="p-point__text">講師陣のほとんどは小学生から高校生までを教えています。このことは指導するうえで大きなメリットがあります。例えば小学算数で習う「速さ・時間・道のり」は中学数学の「一/二次関数・連立方程式」に直結します。中学数学の「確率」は高校数学の数Aに直結します。このように「ここは将来の学習内容に欠かせない！」と判断した単元は特に注力して指導できるのです。小学校から高校までの全体を俯瞰して指導できるのが服部塾・よしき塾の強みです。</p>
                     </div>
                   </div>
-                  <div class="p-point__row">
+                  <div class="p-point__row js-consistent">
                     <div class="p-point__title-wrapper">
                       <p class="p-point__num">point 03</p>
                       <p class="p-point__title">成長を見守る環境</p>
