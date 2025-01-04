@@ -2740,6 +2740,7 @@ select::-ms-expand {
   padding-left: 1.25rem;
   padding-right: 20px;
   padding-right: 1.25rem;
+  color: #000;
 }
 
 .p-form__description--select {
@@ -2805,7 +2806,7 @@ select::-ms-expand {
 
 .p-header__logo {
   position: relative;
-  z-index: 99999;
+  z-index: 999;
 }
 
 .p-header__home {
