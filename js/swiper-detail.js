@@ -1,7 +1,7 @@
 "use strict";
 
 const swiperSlides = document.getElementsByClassName("swiper-slide");
-const breakPoint = 500; // ブレークポイントを設定
+const breakPoint = 768; // ブレークポイントを設定
 let swiper;
 let swiperBool;
 
@@ -36,8 +36,8 @@ const createSwiper = () => {
   swiper = new Swiper(".swiper", {
     loop: false, // ループさせる
     spaceBetween: 20,
-    slidesPerView: 1.2,
-    speed: 1500, // 少しゆっくり(デフォルトは300)
+    slidesPerView: 1.1,
+    speed: 300, // 少しゆっくり(デフォルトは300)
     // ページネーション
     pagination: {
       el: ".swiper-pagination",

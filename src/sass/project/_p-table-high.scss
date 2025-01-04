@@ -43,6 +43,7 @@
   border-top: 1px solid #707070;
   padding-top: rem(16);
   padding-bottom: rem(16);
+  width: 25%;
 }
 .p-table-high__text:nth-child(2),
 .p-table-high__text:nth-child(3),
@@ -64,8 +65,8 @@
 }
 .h135 {
   height: rem(135);
-  padding-top: initial;
-  padding-bottom: initial;
+  padding-top: initial !important;
+  padding-bottom: initial !important;
 }
 .p-table-high__detail-text--small {
   font-size: rem(12);

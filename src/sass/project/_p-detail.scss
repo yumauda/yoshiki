@@ -10,6 +10,7 @@
 .p-detail__slider {
   margin-right: calc(50% - 50vw);
   margin-top: rem(30);
+  position: relative;
   @include mq(md) {
     margin-right: initial;
   }
@@ -23,8 +24,10 @@
   }
 }
 .swiper-detail {
+  margin-top: rem(30);
   @include mq(md) {
     overflow: initial !important;
+    margin-top: initial;
   }
 }
 .swiper-detail .swiper-wrapper {
@@ -76,19 +79,20 @@
   color: #000;
 }
 .p-detail__slider .swiper-button-prev {
-  position: absolute;
+ /*  position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 0 !important;
+  margin-left: calc(50% - 50vw); */
   @include mq(md) {
     display: none;
   }
 }
 .p-detail__slider .swiper-button-next {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 0 !important;
+  right: 0 !important; */
   @include mq(md) {
     display: none;
   }
@@ -118,4 +122,16 @@
   height: 100%;
   object-fit: cover;
   object-position: center center;
+}
+.p-detail__swiper-button {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+  width: 100%;
+  @include mq(md) {
+    display: none;
+  }
 }

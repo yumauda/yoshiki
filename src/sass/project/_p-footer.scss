@@ -15,6 +15,10 @@
 }
 .p-footer__content {
   text-align: center;
+  padding-top: rem(35);
+  @include mq(md) {
+    padding-top: initial;
+  }
 }
 
 .p-footer__img {

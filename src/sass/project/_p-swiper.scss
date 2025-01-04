@@ -24,19 +24,42 @@
 .p-swiper__button {
 }
 .p-swiper .swiper-button-prev {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 23%;
+  display: none;
+  @include mq(md) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 23%;
+    display: block;
+  }
 }
 
 .p-swiper .swiper-button-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 23%;
+  display: none;
+  @include mq(md) {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 23%;
+  }
 }
 .swiper-slide-prev,
 .swiper-slide-next {
   opacity: 0.5;
+}
+.p-swiper .swiper-pagination {
+  bottom: rem(-32);
+  @include mq(md) {
+    display: none;
+  }
+}
+.swiper-pagination-bullet {
+  width: rem(10) !important;
+  height: rem(10) !important;
+  background: #d8d8d8 !important;
+  opacity: 1 !important;
+}
+.swiper-pagination-bullet-active {
+  background: #d00303 !important;
 }

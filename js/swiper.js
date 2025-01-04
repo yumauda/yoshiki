@@ -10,6 +10,10 @@ var slider2 = new Swiper(".swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
   breakpoints: {
     767: {
       slidesPerView: 2,

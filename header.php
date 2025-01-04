@@ -151,9 +151,19 @@
                         <figure class="p-drawer-content__img">
                             <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/drawer_bottom.png" alt="この塾に通ってよかった。そう思ってもらえる塾です。" width="431" height="38">
                         </figure>
+                        <div class="p-floating-drawer">
+                            <div class="p-floating-drawer__row">
+                                <a href="<?php echo esc_url(home_url('/search')); ?>" class="p-floating-drawer__link">
+                                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/floating_1.svg" alt="教室を探す" width="187" height="60">
+                                </a>
+                                <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-floating-drawer__link">
+                                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/floating_2.svg" alt="お問い合わせ" width="187" height="60">
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </header>

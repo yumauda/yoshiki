@@ -223,7 +223,6 @@
   @include mq(md) {
     padding-top: rem(16);
     padding-bottom: rem(16);
-    font-size: rem(16);
     width: rem(300);
   }
 }
@@ -238,8 +237,7 @@
   text-align: center;
   line-height: 1;
   letter-spacing: 0.02em;
-  font-weight: 700;
-  border-radius: 9999px;
+  font-weight: 400;
   width: rem(220);
   font-size: rem(16);
   padding-top: rem(24);
@@ -247,10 +245,9 @@
   transition: 0.3s ease-in-out;
   border: 1px solid $black;
   @include mq(md) {
-    padding-top: rem(30);
-    padding-bottom: rem(30);
-    font-size: rem(20);
-    width: rem(280);
+    padding-top: rem(16);
+    padding-bottom: rem(16);
+    width: rem(300);
   }
 }
 .p-form__btn--previous {
@@ -314,7 +311,7 @@
   align-items: center;
 }
 .p-form__description--postal .wpcf7-form-control-wrap {
-  width: rem(87);
+  width: rem(154);
   display: inline-block;
 }
 .p-form__zipBtn {

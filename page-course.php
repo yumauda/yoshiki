@@ -88,20 +88,24 @@
                     <td class="p-table__text">2教科</td>
                   </tr>
                   <tr>
-                    <td class="p-table__text">
-                      <p class="p-table__detail-text">週1回60分</p>
-                      <p class="p-table__detail-text p-table__detail-text--red"><span>5,500</span>円/月</p>
+                    <?php
+                    $elementary_group = get_field('elementary_group');
+                    ?>
+                    <td class="p-table__text h135">
+                      <p class="p-table__detail-text"><?php echo wp_kses_post($elementary_group['elementary_group_text1']); ?></p>
+                      <p class="p-table__detail-text p-table__detail-text--red"><span><?php echo esc_html($elementary_group['elementary_group_price1']); ?></span>円/月</p>
                       <p class="p-table__detail-text p-table__detail-text--red">(税込)</p>
                     </td>
-                    <td class="p-table__text">
-                      <p class="p-table__detail-text">週1回60分</p>
-                      <p class="p-table__detail-text p-table__detail-text--red"><span>5,500</span>円/月</p>
+                    <td class="p-table__text h135">
+                      <p class="p-table__detail-text"><?php echo wp_kses_post($elementary_group['elementary_group_text2']); ?></p>
+                      <p class="p-table__detail-text p-table__detail-text--red"><span><?php echo esc_html($elementary_group['elementary_group_price2']); ?></span>円/月</p>
                       <p class="p-table__detail-text p-table__detail-text--red">(税込)</p>
                     </td>
                   </tr>
                   <tr>
-                    <td class="p-table__text" colspan="2">小６算数・小６英語</td>
+                    <td class="p-table__text" colspan="2"><?php echo esc_html($elementary_group['elementary_group_detail']); ?></td>
                   </tr>
+
                 </tbody>
               </table>
             </div>
@@ -113,14 +117,17 @@
                     <td class="p-table__text">各2教科</td>
                   </tr>
                   <tr>
-                    <td class="p-table__text">
-                      <p class="p-table__detail-text">週1回60分</p>
-                      <p class="p-table__detail-text p-table__detail-text--red"><span>5,500</span>円/月</p>
+                    <?php
+                    $elementary_state = get_field('elementary_state');
+                    ?>
+                    <td class="p-table__text h135">
+                      <p class="p-table__detail-text"><?php echo wp_kses_post($elementary_state['elementary_state_text']); ?></p>
+                      <p class="p-table__detail-text p-table__detail-text--red"><span><?php echo esc_html($elementary_state['elementary_state_price']); ?></span>円/月</p>
                       <p class="p-table__detail-text p-table__detail-text--red">(税込)</p>
                     </td>
                   </tr>
                   <tr>
-                    <td class="p-table__text">適性検査・作文</td>
+                    <td class="p-table__text" colspan="2"><?php echo wp_kses_post($elementary_state['elementary_state_detail']); ?></td>
                   </tr>
                 </tbody>
               </table>
@@ -133,20 +140,23 @@
                     <td class="p-table__text">1教科</td>
                     <td class="p-table__text">2教科</td>
                   </tr>
+                  <?php
+                  $elementary_personal = get_field('elementary_personal');
+                  ?>
                   <tr>
-                    <td class="p-table__text">
-                      <p class="p-table__detail-text">週1回60分</p>
-                      <p class="p-table__detail-text p-table__detail-text--red"><span>5,500</span>円/月</p>
+                    <td class="p-table__text h135">
+                      <p class="p-table__detail-text"><?php echo wp_kses_post($elementary_personal['elementary_personal_text']); ?></p>
+                      <p class="p-table__detail-text p-table__detail-text--red"><span><?php echo esc_html($elementary_personal['elementary_personal_price']); ?></span>円/月</p>
                       <p class="p-table__detail-text p-table__detail-text--red">(税込)</p>
                     </td>
-                    <td class="p-table__text">
-                      <p class="p-table__detail-text">週1回60分</p>
-                      <p class="p-table__detail-text p-table__detail-text--red"><span>5,500</span>円/月</p>
+                    <td class="p-table__text h135">
+                      <p class="p-table__detail-text"><?php echo wp_kses_post($elementary_personal['elementary_personal_text2']); ?></p>
+                      <p class="p-table__detail-text p-table__detail-text--red"><span><?php echo esc_html($elementary_personal['elementary_personal_price2']); ?></span>円/月</p>
                       <p class="p-table__detail-text p-table__detail-text--red">(税込)</p>
                     </td>
                   </tr>
                   <tr>
-                    <td class="p-table__text" colspan="2">小６算数・小６英語</td>
+                    <td class="p-table__text" colspan="2"><?php echo wp_kses_post($elementary_personal['elementary_personal_detail']); ?></td>
                   </tr>
                 </tbody>
               </table>
@@ -155,9 +165,12 @@
           <div class="p-course__other">
             <div class="p-other">
               <span class="p-other__circle"></span>
+              <?php
+              $elementary_other = get_field('elementary_other');
+              ?>
               <div class="p-other__row">
-                <p class="p-other__text">諸費（半年分）...</p>
-                <p class="p-other__red"><span>6,000</span>円(税込)</p>
+                <p class="p-other__text"><?php echo wp_kses_post($elementary_other['elementary_other_text']); ?></p>
+                <p class="p-other__red"><span><?php echo esc_html($elementary_other['elementary_other_price']); ?></span>円(税込)</p>
               </div>
             </div>
           </div>
@@ -209,11 +222,14 @@
                       </div>
                     </div>
                   </div>
-
-                  <!-- If we need navigation buttons -->
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
-
+                </div>
+                <div class="p-detail__swiper-button">
+                  <div class="swiper-button-prev">
+                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/course_swiper_prev.svg" alt="" width="50" height="50">
+                  </div>
+                  <div class="swiper-button-next">
+                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/course_swiper_next.svg" alt="" width="50" height="50">
+                  </div>
                 </div>
               </div>
             </div>
@@ -250,33 +266,35 @@
                             <td class="p-table-high__text">3教科</td>
                             <td class="p-table-high__text">4教科</td>
                           </tr>
+                          <?php
+                          $middle_group = get_field('middle_group');
+                          ?>
                           <tr>
                             <td class="p-table-high__text h135">
-                              <p class="p-table-high__detail-text">週1回90分</p>
-                              <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>9,900</span>円/月</p>
+                              <p class="p-table-high__detail-text"><?php echo wp_kses_post($middle_group['middle_group_text1']); ?></p>
+                              <p class="p-table-high__detail-text p-table-high__detail-text--red"><span><?php echo esc_html($middle_group['middle_group_price1']); ?></span>円/月</p>
                               <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
                             </td>
                             <td class="p-table-high__text h135">
-                              <p class="p-table-high__detail-text">各教科につき<br>週1回90分</p>
-                              <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>14,300</span>円/月</p>
+                              <p class="p-table-high__detail-text"><?php echo wp_kses_post($middle_group['middle_group_text2']); ?></p>
+                              <p class="p-table-high__detail-text p-table-high__detail-text--red"><span><?php echo esc_html($middle_group['middle_group_price2']); ?></span>円/月</p>
                               <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
                             </td>
                             <td class="p-table-high__text h135">
-                              <p class="p-table-high__detail-text">各教科につき<br>週1回90分</p>
-                              <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>17,600</span>円/月</p>
+                              <p class="p-table-high__detail-text"><?php echo wp_kses_post($middle_group['middle_group_text3']); ?></p>
+                              <p class="p-table-high__detail-text p-table-high__detail-text--red"><span><?php echo esc_html($middle_group['middle_group_price3']); ?></span>円/月</p>
                               <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
                             </td>
                             <td class="p-table-high__text h135">
-                              <p class="p-table-high__detail-text">各教科につき<br>週1回90分</p>
-                              <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>19,800</span>円/月</p>
+                              <p class="p-table-high__detail-text"><?php echo wp_kses_post($middle_group['middle_group_text4']); ?></p>
+                              <p class="p-table-high__detail-text p-table-high__detail-text--red"><span><?php echo esc_html($middle_group['middle_group_price4']); ?></span>円/月</p>
                               <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
                             </td>
                           </tr>
                           <tr>
                             <td class="p-table-high__text" colspan="4">
-                              <p class="p-table-high__detail-text">英語・数学・理科・国社</p>
-                              <p class="p-table-high__detail-text--smallRed">※理科のみ週1回60分</p>
-                              <p class="p-table-high__detail-text--smallRed">※中学1年生の開講教科は数学・英語のみです。（テスト対策は5教科行います。）</p>
+                              <p class="p-table-high__detail-text"><?php echo wp_kses_post($middle_group['middle_group_detail']); ?></p>
+                              <p class="p-table-high__detail-text--smallRed"><?php echo wp_kses_post($middle_group['middle_group_detail2']); ?></p>
                             </td>
                           </tr>
                         </tbody>
@@ -288,15 +306,18 @@
                             <td class="p-table-high__text">2教科</td>
 
                           </tr>
+                          <?php
+                          $middle_group = get_field('middle_group');
+                          ?>
                           <tr>
                             <td class="p-table-high__text">
-                              <p class="p-table-high__detail-text">各教科につき<br>週1回90分</p>
-                              <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>14,300</span>円/月</p>
+                              <p class="p-table-high__detail-text"><?php echo wp_kses_post($middle_group['middle_group_text1']); ?></p>
+                              <p class="p-table-high__detail-text p-table-high__detail-text--red"><span><?php echo esc_html($middle_group['middle_group_price1']); ?></span>円/月</p>
                               <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
                             </td>
                             <td class="p-table-high__text">
-                              <p class="p-table-high__detail-text">各教科につき<br>週1回90分</p>
-                              <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>14,300</span>円/月</p>
+                              <p class="p-table-high__detail-text"><?php echo wp_kses_post($middle_group['middle_group_text2']); ?></p>
+                              <p class="p-table-high__detail-text p-table-high__detail-text--red"><span><?php echo esc_html($middle_group['middle_group_price2']); ?></span>円/月</p>
                               <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
                             </td>
                           </tr>
@@ -306,21 +327,20 @@
                           </tr>
                           <tr>
                             <td class="p-table-high__text">
-                              <p class="p-table-high__detail-text">各教科につき<br>週1回90分</p>
-                              <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>14,300</span>円/月</p>
+                              <p class="p-table-high__detail-text"><?php echo wp_kses_post($middle_group['middle_group_text3']); ?></p>
+                              <p class="p-table-high__detail-text p-table-high__detail-text--red"><span><?php echo esc_html($middle_group['middle_group_price3']); ?></span>円/月</p>
                               <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
                             </td>
                             <td class="p-table-high__text">
-                              <p class="p-table-high__detail-text">各教科につき<br>週1回90分</p>
-                              <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>14,300</span>円/月</p>
+                              <p class="p-table-high__detail-text"><?php echo wp_kses_post($middle_group['middle_group_text4']); ?></p>
+                              <p class="p-table-high__detail-text p-table-high__detail-text--red"><span><?php echo esc_html($middle_group['middle_group_price4']); ?></span>円/月</p>
                               <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
                             </td>
                           </tr>
                           <tr>
                             <td class="p-table-high__text" colspan="2">
-                              <p class="p-table-high__detail-text">英語・数学・理科・国社</p>
-                              <p class="p-table-high__detail-text--smallRed">※理科のみ週1回60分</p>
-                              <p class="p-table-high__detail-text--smallRed">※中学1年生の開講教科は数学・英語のみです。<br class="u-mobile">（テスト対策は5教科行います。）</p>
+                              <p class="p-table-high__detail-text"><?php echo wp_kses_post($middle_group['middle_group_detail']); ?></p>
+                              <p class="p-table-high__detail-text--smallRed"><?php echo wp_kses_post($middle_group['middle_group_detail2']); ?></p>
                             </td>
                           </tr>
                         </tbody>
@@ -335,22 +355,25 @@
                             <td class="p-table-high__text">1教科</td>
                             <td class="p-table-high__text">2教科</td>
                           </tr>
+                          <?php
+                          $middle_personal = get_field('middle_personal');
+                          ?>
                           <tr>
                             <td class="p-table-high__text h135">
-                              <p class="p-table-high__detail-text">週1回90分</p>
-                              <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>13,200</span>円/月</p>
+                              <p class="p-table-high__detail-text"><?php echo wp_kses_post($middle_personal['middle_personal_text1']); ?></p>
+                              <p class="p-table-high__detail-text p-table-high__detail-text--red"><span><?php echo esc_html($middle_personal['middle_personal_price1']); ?></span>円/月</p>
                               <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
                             </td>
                             <td class="p-table-high__text h135">
-                              <p class="p-table-high__detail-text">各教科につき<br>各週1回90分</p>
-                              <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>17,600</span>円/月</p>
+                              <p class="p-table-high__detail-text"><?php echo wp_kses_post($middle_personal['middle_personal_text2']); ?></p>
+                              <p class="p-table-high__detail-text p-table-high__detail-text--red"><span><?php echo esc_html($middle_personal['middle_personal_price2']); ?></span>円/月</p>
                               <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
                             </td>
                           </tr>
                           <tr>
                             <td class="p-table-high__text" colspan="2">
-                              <p class="p-table-high__detail-text">英語・算数・国語・社会・理科</p>
-                              <p class="p-table-high__detail-text--small">※上記以外の教科は応相談</p>
+                              <p class="p-table-high__detail-text"><?php echo wp_kses_post($middle_personal['middle_personal_detail']); ?></p>
+                              <p class="p-table-high__detail-text--small"><?php echo wp_kses_post($middle_personal['middle_personal_detail2']); ?></p>
                             </td>
                           </tr>
                         </tbody>
@@ -365,28 +388,31 @@
                 <div class="p-other">
                   <span class="p-other__circle"></span>
                   <div class="p-other__row">
-                    <p class="p-other__bold">中学1・2年生</p>
+                    <?php
+                    $middle_other = get_field('middle_other');
+                    ?>
+                    <p class="p-other__bold"><?php echo wp_kses_post($middle_other['middle_other_year1']); ?></p>
                     <div class="p-other__row-wrapper">
                       <div class="p-other__detailRow">
-                        <p class="p-other__text">諸費（半年分）...</p>
-                        <p class="p-other__red"><span>9,900</span>円(税込)</p>
+                        <p class="p-other__text"><?php echo wp_kses_post($middle_other['middle_other_text1']); ?></p>
+                        <p class="p-other__red"><span><?php echo esc_html($middle_other['middle_other_price1']); ?></span>円(税込)</p>
                       </div>
                       <div class="p-other__detailRow">
-                        <p class="p-other__text">模擬テスト代（年間）...</p>
-                        <p class="p-other__red"><span>9,300</span>円(税込)</p>
+                        <p class="p-other__text"><?php echo wp_kses_post($middle_other['middle_other_text2']); ?></p>
+                        <p class="p-other__red"><span><?php echo esc_html($middle_other['middle_other_price2']); ?></span>円(税込)</p>
                       </div>
                     </div>
                   </div>
                   <div class="p-other__row">
-                    <p class="p-other__bold">中学3年生</p>
+                    <p class="p-other__bold"><?php echo wp_kses_post($middle_other['middle_other_year2']); ?></p>
                     <div class="p-other__row-wrapper">
                       <div class="p-other__detailRow">
-                        <p class="p-other__text">諸費（半年分）...</p>
-                        <p class="p-other__red"><span>9,900</span>円(税込)</p>
+                        <p class="p-other__text"><?php echo wp_kses_post($middle_other['middle_other_text3']); ?></p>
+                        <p class="p-other__red"><span><?php echo esc_html($middle_other['middle_other_price3']); ?></span>円(税込)</p>
                       </div>
                       <div class="p-other__detailRow">
-                        <p class="p-other__text">模擬テスト代（年間）...</p>
-                        <p class="p-other__red"><span>18,600</span>円(税込)</p>
+                        <p class="p-other__text"><?php echo wp_kses_post($middle_other['middle_other_text4']); ?></p>
+                        <p class="p-other__red"><span><?php echo esc_html($middle_other['middle_other_price4']); ?></span>円(税込)</p>
                       </div>
                     </div>
                   </div>
@@ -434,10 +460,14 @@
                     </div>
                   </div>
 
-                  <!-- If we need navigation buttons -->
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
-
+                </div>
+                <div class="p-detail__swiper-button">
+                  <div class="swiper-button-prev">
+                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/course_swiper_prev.svg" alt="" width="50" height="50">
+                  </div>
+                  <div class="swiper-button-next">
+                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/course_swiper_next.svg" alt="" width="50" height="50">
+                  </div>
                 </div>
               </div>
             </div>
@@ -465,26 +495,30 @@
                       <tr>
                         <td class="p-table-high__text" colspan="2">高1、高2</td>
                       </tr>
+
                       <tr>
                         <td class="p-table-high__text">1教科</td>
                         <td class="p-table-high__text">2教科</td>
                       </tr>
+                      <?php
+                      $high_group = get_field('high_group');
+                      ?>
                       <tr>
                         <td class="p-table-high__text h135">
-                          <p class="p-table-high__detail-text">週1回90分</p>
-                          <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>13,200</span>円/月</p>
+                          <p class="p-table-high__detail-text"><?php echo wp_kses_post($high_group['high_group_text1']); ?></p>
+                          <p class="p-table-high__detail-text p-table-high__detail-text--red"><span><?php echo esc_html($high_group['high_group_price1']); ?></span>円/月</p>
                           <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
                         </td>
                         <td class="p-table-high__text h135">
-                          <p class="p-table-high__detail-text">各教科につき<br>各週1回90分</p>
-                          <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>17,600</span>円/月</p>
+                          <p class="p-table-high__detail-text"><?php echo wp_kses_post($high_group['high_group_text2']); ?></p>
+                          <p class="p-table-high__detail-text p-table-high__detail-text--red"><span><?php echo esc_html($high_group['high_group_price2']); ?></span>円/月</p>
                           <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
                         </td>
                       </tr>
                       <tr>
                         <td class="p-table-high__text" colspan="2">
-                          <p class="p-table-high__detail-text">数学・英語</p>
-                          <p class="p-table-high__detail-text--small">※水口校・甲西駅前校で開講</p>
+                          <p class="p-table-high__detail-text"><?php echo wp_kses_post($high_group['high_group_detail']); ?></p>
+                          <p class="p-table-high__detail-text--small"><?php echo wp_kses_post($high_group['high_group_small']); ?></p>
                         </td>
                       </tr>
                     </tbody>
@@ -501,27 +535,28 @@
                         <td class="p-table-high__text">2教科</td>
                         <td class="p-table-high__text">3教科</td>
                       </tr>
+
                       <tr>
                         <td class="p-table-high__text h135">
-                          <p class="p-table-high__detail-text">週1回90分</p>
-                          <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>15,400</span>円/月</p>
+                          <p class="p-table-high__detail-text"><?php echo wp_kses_post($high_group['high_group_text3']); ?></p>
+                          <p class="p-table-high__detail-text p-table-high__detail-text--red"><span><?php echo esc_html($high_group['high_group_price3']); ?></span>円/月</p>
                           <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
                         </td>
                         <td class="p-table-high__text h135">
-                          <p class="p-table-high__detail-text">週1回90分につき</p>
-                          <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>27,500</span>円/月</p>
+                          <p class="p-table-high__detail-text"><?php echo wp_kses_post($high_group['high_group_text4']); ?></p>
+                          <p class="p-table-high__detail-text p-table-high__detail-text--red"><span><?php echo esc_html($high_group['high_group_price4']); ?></span>円/月</p>
                           <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
                         </td>
                         <td class="p-table-high__text h135">
-                          <p class="p-table-high__detail-text">週1回90分につき</p>
-                          <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>35,200</span>円/月</p>
+                          <p class="p-table-high__detail-text"><?php echo wp_kses_post($high_group['high_group_text5']); ?></p>
+                          <p class="p-table-high__detail-text p-table-high__detail-text--red"><span><?php echo esc_html($high_group['high_group_price5']); ?></span>円/月</p>
                           <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
                         </td>
                       </tr>
                       <tr>
                         <td class="p-table-high__text" colspan="3">
-                          <p class="p-table-high__detail-text">週1回60分</p>
-                          <p class="p-table-high__detail-text--small">※水口校・甲西駅前校で開講</p>
+                          <p class="p-table-high__detail-text"><?php echo wp_kses_post($high_group['high_group_detail2']); ?></p>
+                          <p class="p-table-high__detail-text--small"><?php echo wp_kses_post($high_group['high_group_small2']); ?></p>
                         </td>
                       </tr>
                     </tbody>
@@ -543,22 +578,25 @@
                         <td class="p-table-high__text">1教科</td>
                         <td class="p-table-high__text">2教科</td>
                       </tr>
+                      <?php
+                      $high_personal = get_field('high_personal');
+                      ?>
                       <tr>
                         <td class="p-table-high__text h135">
-                          <p class="p-table-high__detail-text">週1回90分</p>
-                          <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>17,600</span>円/月</p>
+                          <p class="p-table-high__detail-text"><?php echo wp_kses_post($high_personal['high_personal_text1']); ?></p>
+                          <p class="p-table-high__detail-text p-table-high__detail-text--red"><span><?php echo esc_html($high_personal['high_personal_price1']); ?></span>円/月</p>
                           <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
                         </td>
                         <td class="p-table-high__text h135">
-                          <p class="p-table-high__detail-text">各教科につき<br>各週1回90分</p>
-                          <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>34,100</span>円/月</p>
+                          <p class="p-table-high__detail-text"><?php echo wp_kses_post($high_personal['high_personal_text2']); ?></p>
+                          <p class="p-table-high__detail-text p-table-high__detail-text--red"><span><?php echo esc_html($high_personal['high_personal_price2']); ?></span>円/月</p>
                           <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
                         </td>
                       </tr>
                       <tr>
                         <td class="p-table-high__text" colspan="2">
-                          <p class="p-table-high__detail-text">数学・国語・英語</p>
-                          <p class="p-table-high__detail-text--small">※上記以外の教科は応相談</p>
+                          <p class="p-table-high__detail-text"><?php echo wp_kses_post($high_personal['high_personal_detail']); ?></p>
+                          <p class="p-table-high__detail-text--small"><?php echo wp_kses_post($high_personal['high_personal_small']); ?></p>
                         </td>
                       </tr>
                     </tbody>
@@ -576,20 +614,20 @@
                       </tr>
                       <tr>
                         <td class="p-table-high__text h135">
-                          <p class="p-table-high__detail-text">週1回90分</p>
-                          <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>18,700</span>円/月</p>
+                          <p class="p-table-high__detail-text"><?php echo wp_kses_post($high_personal['high_personal_text3']); ?></p>
+                          <p class="p-table-high__detail-text p-table-high__detail-text--red"><span><?php echo esc_html($high_personal['high_personal_price3']); ?></span>円/月</p>
                           <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
                         </td>
                         <td class="p-table-high__text h135">
-                          <p class="p-table-high__detail-text">各教科につき<br>週1回90分</p>
-                          <p class="p-table-high__detail-text p-table-high__detail-text--red"><span>37,400</span>円/月</p>
+                          <p class="p-table-high__detail-text"><?php echo wp_kses_post($high_personal['high_personal_text4']); ?></p>
+                          <p class="p-table-high__detail-text p-table-high__detail-text--red"><span><?php echo esc_html($high_personal['high_personal_price4']); ?></span>円/月</p>
                           <p class="p-table-high__detail-text p-table-high__detail-text--red">(税込)</p>
                         </td>
                       </tr>
                       <tr>
                         <td class="p-table-high__text" colspan="2">
-                          <p class="p-table-high__detail-text">数学・国語・英語</p>
-                          <p class="p-table-high__detail-text--small">※上記以外の教科は応相談</p>
+                          <p class="p-table-high__detail-text"><?php echo wp_kses_post($high_personal['high_personal_detail2']); ?></p>
+                          <p class="p-table-high__detail-text--small"><?php echo wp_kses_post($high_personal['high_personal_small2']); ?></p>
                         </td>
                       </tr>
                     </tbody>
@@ -602,17 +640,20 @@
             <div class="p-other">
               <span class="p-other__circle"></span>
               <div class="p-other__row">
-                <p class="p-other__bold">高校1年生・2年生</p>
+                <?php
+                $high_other = get_field('high_other');
+                ?>
+                <p class="p-other__bold"><?php echo wp_kses_post($high_other['high_other_year1']); ?></p>
                 <div class="p-other__detailRow">
-                  <p class="p-other__text">諸費（半年分）...</p>
-                  <p class="p-other__red"><span>13,200</span>円(税込)</p>
+                  <p class="p-other__text"><?php echo wp_kses_post($high_other['high_other_text1']); ?></p>
+                  <p class="p-other__red"><span><?php echo esc_html($high_other['high_other_price1']); ?></span>円(税込)</p>
                 </div>
               </div>
               <div class="p-other__row">
-                <p class="p-other__bold">高校3年生・高卒生</p>
+                <p class="p-other__bold"><?php echo wp_kses_post($high_other['high_other_year2']); ?></p>
                 <div class="p-other__detailRow">
-                  <p class="p-other__text">諸費（半年分）...</p>
-                  <p class="p-other__red"><span>16,050</span>円(税込)</p>
+                  <p class="p-other__text"><?php echo wp_kses_post($high_other['high_other_text2']); ?></p>
+                  <p class="p-other__red"><span><?php echo esc_html($high_other['high_other_price2']); ?></span>円(税込)</p>
                 </div>
               </div>
             </div>
@@ -633,7 +674,7 @@
                         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/course_swiper8.jpg" alt="小6数コース" width="250" height="175">
                       </figure>
                       <div class="p-detail__block">
-                        <p class="p-detail__title">集団指導コース（高１・高２）</p>
+                        <p class="p-detail__title">集団指導コース(高1・高2)</p>
                         <p class="p-detail__text">高校で習う内容をより深く理解することはもちろん、大学入試を念頭に数学と英語の授業を行います。数学では定期テストだけでなく大学入試頻出の重要単元の演習を、英語は高２から共通テストや大学入試の過去問の演習にも取り組むことで、高３生になる前から受験に向けたアドバンテージをつくります。<br>また、定期テスト前には無料でテスト対策授業も行います。</p>
                       </div>
                     </div>
@@ -642,7 +683,7 @@
                         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/course_swiper9.jpg" alt="小6英語コース" width="250" height="175">
                       </figure>
                       <div class="p-detail__block">
-                        <p class="p-detail__title">集団指導コース（高３・高卒）</p>
+                        <p class="p-detail__title">集団指導コース(高3・高卒)</p>
                         <p class="p-detail__text">大学入試共通テストや私立大学入試対策の授業を行います。大学入試に精通した精鋭の講師による、最新の入試問題の傾向をふまえた授業で志望校合格を目指します。映像授業ではなくライブ授業なので映像を見ながら寝てしまったり、分からないところが質問できなかったり、といったことはありません。</p>
                       </div>
                     </div>
@@ -665,14 +706,16 @@
                       </div>
                     </div>
                   </div>
-                  <!-- If we need navigation buttons -->
+
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="p-detail__swiper-button">
                   <div class="swiper-button-prev">
                     <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/course_swiper_prev.svg" alt="" width="50" height="50">
                   </div>
                   <div class="swiper-button-next">
                     <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/course_swiper_next.svg" alt="" width="50" height="50">
                   </div>
-
                 </div>
               </div>
             </div>

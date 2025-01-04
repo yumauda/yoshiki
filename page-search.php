@@ -9,7 +9,7 @@
         </div>
         <div class="p-search__block">
           <ul class="p-search__lists">
-            <li class="p-search__list">
+            <li class="p-search__list" id="mizuguchi">
               <div class="p-search__row">
                 <div class="p-search__detail">
                   <p class="p-search__list-title">服部塾&emsp;水口校</p>
@@ -55,7 +55,7 @@
                 </a>
               </div>
             </li>
-            <li class="p-search__list">
+            <li class="p-search__list" id="kousai">
               <div class="p-search__row">
                 <div class="p-search__detail">
                   <p class="p-search__list-title">服部塾 甲西駅前校</p>
@@ -101,7 +101,7 @@
                 </a>
               </div>
             </li>
-            <li class="p-search__list">
+            <li class="p-search__list" id="hino">
               <div class="p-search__row">
                 <div class="p-search__detail">
                   <p class="p-search__list-title">よしき塾&emsp;日野校</p>
@@ -147,7 +147,7 @@
                 </a>
               </div>
             </li>
-            <li class="p-search__list">
+            <li class="p-search__list" id="kounan">
               <div class="p-search__row">
                 <div class="p-search__detail">
                   <p class="p-search__list-title">服部塾 甲南校</p>

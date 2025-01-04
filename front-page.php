@@ -56,7 +56,8 @@
         wp_reset_postdata();
         ?>
       </div>
-
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
       <div class="swiper-button-prev">
         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow_prev.svg" alt="" width="50" height="45">
       </div>
@@ -836,7 +837,7 @@
               <h4 class="p-top-choose__list-title">小学生</h4>
               <p class="p-top-choose__text">メリハリのある授業で楽しく成績アップ！</p>
               <div class="p-top-choose__btn-wrapper">
-                <a href="#" class="p-top-choose__btn">詳しくはこちら</a>
+                <a href="<?php echo esc_url(home_url('/course/#elementary')); ?>" class="p-top-choose__btn">詳しくはこちら</a>
               </div>
             </div>
           </li>
@@ -851,7 +852,7 @@
               <h4 class="p-top-choose__list-title">中学生</h4>
               <p class="p-top-choose__text">県内の中学校データや判断で適切な指導を</p>
               <div class="p-top-choose__btn-wrapper">
-                <a href="#" class="p-top-choose__btn">詳しくはこちら</a>
+                <a href="<?php echo esc_url(home_url('/course/#middle')); ?>" class="p-top-choose__btn">詳しくはこちら</a>
               </div>
             </div>
           </li>
@@ -866,7 +867,7 @@
               <h4 class="p-top-choose__list-title">高校生</h4>
               <p class="p-top-choose__text">一人ひとりとじっくり向き合った進路指導を</p>
               <div class="p-top-choose__btn-wrapper">
-                <a href="#" class="p-top-choose__btn">詳しくはこちら</a>
+                <a href="<?php echo esc_url(home_url('/course/#high')); ?>" class="p-top-choose__btn">詳しくはこちら</a>
               </div>
             </div>
           </li>
@@ -882,7 +883,7 @@
       <div class="p-top-room__content">
         <ul class="p-top-room__lists">
           <li class="p-top-room__list js-room-cards">
-            <a href="#" class="p-top-room__link">
+            <a href="<?php echo esc_url(home_url('/search/#mizuguchi')); ?>" class="p-top-room__link">
               <figure class="p-top-room__img">
                 <picture>
                   <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/top_room_1.jpg" media="(min-width: 768px)" width="1238" height="570" />
@@ -893,7 +894,7 @@
             </a>
           </li>
           <li class="p-top-room__list js-room-cards">
-            <a href="#" class="p-top-room__link">
+            <a href="<?php echo esc_url(home_url('/search/#kousai')); ?>" class="p-top-room__link">
               <figure class="p-top-room__img">
                 <picture>
                   <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/top_room_2.jpg" media="(min-width: 768px)" width="1238" height="570" />
@@ -904,7 +905,7 @@
             </a>
           </li>
           <li class="p-top-room__list js-room-cards">
-            <a href="#" class="p-top-room__link">
+            <a href="<?php echo esc_url(home_url('/search/#hino')); ?>" class="p-top-room__link">
               <figure class="p-top-room__img">
                 <picture>
                   <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/top_room_3.jpg" media="(min-width: 768px)" width="1238" height="570" />
@@ -915,7 +916,7 @@
             </a>
           </li>
           <li class="p-top-room__list js-room-cards">
-            <a href="#" class="p-top-room__link">
+            <a href="<?php echo esc_url(home_url('/search/#kounan')); ?>" class="p-top-room__link">
               <figure class="p-top-room__img">
                 <picture>
                   <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/top_room_4.jpg" media="(min-width: 768px)" width="1238" height="570" />
@@ -966,11 +967,18 @@
       </div>
     </div>
   </section>
-  <figure class="p-top-future js-top-future">
-    <picture>
-      <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/top_future.png" media="(min-width: 768px)" width="1238" height="570" />
-      <img src="<?php echo get_template_directory_uri(); ?>/images/common/top_future_sp.png" alt="君の輝く未来はここから始まる" width="376" height="397">
-    </picture>
-  </figure>
+  <div class="p-top-top__wrapper">
+    <figure class="p-top-future js-top-future">
+      <picture>
+        <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/top_future.png" media="(min-width: 768px)" width="1238" height="570" />
+        <img src="<?php echo get_template_directory_uri(); ?>/images/common/top_future_sp.png" alt="君の輝く未来はここから始まる" width="376" height="397">
+      </picture>
+    </figure>
+    <div class="p-totop--sp">
+      <a href="#" class="p-totop__link">
+        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/back_top.svg" alt="トップへ戻る" width="100" height="100">
+      </a>
+    </div>
+  </div>
 </main>
 <?php get_footer() ?>

@@ -6,15 +6,30 @@ jQuery(function ($) {
   var topBtn = $(".p-totop");
   topBtn.hide();
 
-  // ボタンの表示設定
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 70) {
-      // 指定px以上のスクロールでボタンを表示
-      topBtn.fadeIn();
+  // 関数を定義して、PC時のみスクロールイベントを設定
+  function handleScroll() {
+    if ($(window).width() >= 768) {
+      // PC時の条件
+      $(window).on("scroll", function () {
+        if ($(this).scrollTop() > 70) {
+          topBtn.fadeIn();
+        } else {
+          topBtn.fadeOut();
+        }
+      });
     } else {
-      // 画面が指定pxより上ならボタンを非表示
-      topBtn.fadeOut();
+      // スクロールイベントを解除してボタンを非表示
+      $(window).off("scroll");
+      topBtn.hide();
     }
+  }
+
+  // 初期化時に実行
+  handleScroll();
+
+  // ウィンドウのリサイズ時に再評価
+  $(window).resize(function () {
+    handleScroll();
   });
   $(document).ready(function ($) {
     $(".p-submit__cancel").on("click", function () {
@@ -36,8 +51,8 @@ jQuery(function ($) {
   $("#drawer a[href]").on("click", function (event) {
     $(".p-drawer-icon").trigger("click");
   });
-  
-  $(window).on('scroll', function () {
+
+  $(window).on("scroll", function () {
     // 現在のスクロール位置を取得
     var scrollTop = $(this).scrollTop();
 
@@ -46,19 +61,29 @@ jQuery(function ($) {
 
     // SP時（767px以下）かつスクロール位置が200px以上の場合
     if (windowWidth <= 767 && scrollTop >= 200) {
-      $('.p-floating').addClass('is-active');
+      $(".p-floating").addClass("is-active");
     } else {
-      $('.p-floating').removeClass('is-active');
+      $(".p-floating").removeClass("is-active");
     }
   });
 });
 
-jQuery(".p-drawer-icon").on("click", function (e) {
-  e.preventDefault();
-  jQuery(".p-drawer-icon").toggleClass("is-active");
-  jQuery(".p-drawer-content").toggleClass("is-active");
-  jQuery(".p-drawer-background").toggleClass("is-active");
-  return false;
+jQuery(document).ready(function ($) {
+  $(".p-drawer-icon").on("click", function (e) {
+    e.preventDefault();
+    $(this).toggleClass("is-active");
+    $(".p-drawer-content").toggleClass("is-active");
+    $(".p-drawer-background").toggleClass("is-active");
+
+    // テキストの切り替え
+    if ($(this).hasClass("is-active")) {
+      $(".p-drawer-icon__text").text("閉じる");
+    } else {
+      $(".p-drawer-icon__text").text("メニュー");
+    }
+
+    return false;
+  });
 });
 
 window.onload = function () {

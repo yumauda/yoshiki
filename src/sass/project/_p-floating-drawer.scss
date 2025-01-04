@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.p-floating-drawer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  transition: 0.3s ease-in-out;
+  @include mq(md) {
+    display: none;
+  }
+}
+.p-floating-drawer__row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.p-floating-drawer__link {
+  display: block;
+}
+.p-floating-drawer__link img {
+  aspect-ratio: 187 / 60;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
