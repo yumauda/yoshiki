@@ -162,7 +162,7 @@
               </table>
             </div>
           </div>
-          <div class="p-course__other">
+          <div class="p-course__other js-elementary-other">
             <div class="p-other">
               <span class="p-other__circle"></span>
               <?php
@@ -179,7 +179,7 @@
               <div class="p-detail__title-wrapper">
                 <p class="p-detail__title">小学生コースの詳細</p>
               </div>
-              <div class="p-detail__slider">
+              <div class="p-detail__slider js-elementary-slider">
                 <!-- Slider main container -->
                 <div class="swiper swiper-detail">
                   <!-- Additional required wrapper -->
@@ -255,7 +255,7 @@
               <div class="p-school__table p-school__table--high">
                 <div class="p-table-high">
                   <div class="p-table-high__row">
-                    <div class="p-table-high__table-wrapper">
+                    <div class="p-table-high__table-wrapper js-middle-table">
                       <h4 class="p-table-high__title p-table-high__title--middle">集団授業コース</h4>
 
                       <table class="p-table-high__table p-table-high__table--pc">
@@ -346,7 +346,7 @@
                         </tbody>
                       </table>
                     </div>
-                    <div class="p-table-high__table-wrapper">
+                    <div class="p-table-high__table-wrapper js-middle-table">
                       <h4 class="p-table-high__title p-table-high__title--middle">個別指導コース</h4>
                       <table class="p-table-high__table">
                         <tbody>
@@ -384,7 +384,7 @@
                 </div>
 
               </div>
-              <div class="p-course__other">
+              <div class="p-course__other js-middle-other">
                 <div class="p-other">
                   <span class="p-other__circle"></span>
                   <div class="p-other__row">
@@ -423,7 +423,7 @@
                   <p class="p-detail__title">中学生コースの詳細</p>
                 </div>
                 <!-- Slider main container -->
-                <div class="swiper swiper-detail">
+                <div class="swiper swiper-detail js-middle-slider">
                   <!-- Additional required wrapper -->
                   <div class="swiper-wrapper swiper-wrapper--secondary">
                     <!-- Slides -->
@@ -489,7 +489,7 @@
             <div class="p-table-high">
               <h4 class="p-table-high__title">集団授業コース</h4>
               <div class="p-table-high__row">
-                <div class="p-table-high__table-wrapper">
+                <div class="p-table-high__table-wrapper js-high-table">
                   <table class="p-table-high__table">
                     <tbody>
                       <tr>
@@ -524,7 +524,7 @@
                     </tbody>
                   </table>
                 </div>
-                <div class="p-table-high__table-wrapper">
+                <div class="p-table-high__table-wrapper js-high-table">
                   <table class="p-table-high__table">
                     <tbody>
                       <tr>
@@ -568,7 +568,7 @@
             <div class="p-table-high">
               <h4 class="p-table-high__title">個別授業コース</h4>
               <div class="p-table-high__row">
-                <div class="p-table-high__table-wrapper">
+                <div class="p-table-high__table-wrapper js-high-table">
                   <table class="p-table-high__table">
                     <tbody>
                       <tr>
@@ -602,7 +602,7 @@
                     </tbody>
                   </table>
                 </div>
-                <div class="p-table-high__table-wrapper">
+                <div class="p-table-high__table-wrapper js-high-table">
                   <table class="p-table-high__table">
                     <tbody>
                       <tr>
@@ -636,7 +636,7 @@
               </div>
             </div>
           </div>
-          <div class="p-course__other">
+          <div class="p-course__other js-high-other">
             <div class="p-other">
               <span class="p-other__circle"></span>
               <div class="p-other__row">
@@ -663,7 +663,7 @@
               <div class="p-detail__title-wrapper">
                 <p class="p-detail__title">高校生コースの詳細</p>
               </div>
-              <div class="p-detail__slider">
+              <div class="p-detail__slider js-high-slider">
                 <!-- Slider main container -->
                 <div class="swiper swiper-detail">
                   <!-- Additional required wrapper -->
@@ -727,13 +727,13 @@
   <section class="p-flow">
     <div class="l-inner">
       <div class="p-flow__content">
-        <div class="p-flow__title">
+        <div class="p-flow__title js-flow">
           <h2 class="c-main-title">
             入塾の流れ
           </h2>
         </div>
         <ul class="p-flow__lists">
-          <li class="p-flow__list">
+          <li class="p-flow__list js-flow">
             <figure class="p-flow__img p-flow__img--1">
               <picture>
                 <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/flow_img1.png" media="(min-width: 768px)" width="150" height="150">
@@ -745,7 +745,7 @@
               <p class="p-flow__text">お電話、LINE、お問い合わせフォームよりご希望の内容を入力しお問い合わせください。</p>
             </div>
           </li>
-          <li class="p-flow__list">
+          <li class="p-flow__list js-flow">
             <figure class="p-flow__img p-flow__img--2">
               <picture>
                 <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/flow_img2.png" media="(min-width: 768px)" width="150" height="150">
@@ -757,7 +757,7 @@
               <p class="p-flow__text">集団指導、個別指導共に体験授業を実施しています。塾の雰囲気や授業スピード、教え方などをご理解いただくためにも、積極的な参加をおすすめしています。</p>
             </div>
           </li>
-          <li class="p-flow__list">
+          <li class="p-flow__list js-flow">
             <figure class="p-flow__img">
               <picture>
                 <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/flow_img3.png" media="(min-width: 768px)" width="150" height="150">
@@ -769,7 +769,7 @@
               <p class="p-flow__text">服部塾の教育方針やカリキュラム、料金などについてご説明いたします。</p>
             </div>
           </li>
-          <li class="p-flow__list">
+          <li class="p-flow__list js-flow">
             <figure class="p-flow__img p-flow__img--3">
               <picture>
                 <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/flow_img4.png" media="(min-width: 768px)" width="150" height="150">
@@ -782,7 +782,7 @@
             </div>
           </li>
         </ul>
-        <div class="p-flow__bottom">
+        <div class="p-flow__bottom js-flow">
           <p class="p-flow__bottom-text">※上記の流れは一例です。<br>
             「まず、説明を聞きたい」「兄弟姉妹が通っているため、体験授業や説明は不要」など、<br>
             お問い合わせの際にご要望をお聞かせください。</p>
