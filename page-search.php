@@ -39,7 +39,7 @@
                   </svg>
                   <p class="p-search__tel-number">0748-63-4588</p>
                 </a>
-                <a href="#" class="p-search__line-btn">
+                <a href="https://line.me/ti/p/nuQmi74uC_" class="p-search__line-btn" target="_blank" rel="noopener noreferrer">
                   <svg xmlns="http://www.w3.org/2000/svg" width="25.804" height="24.587" viewBox="0 0 25.804 24.587">
                     <g transform="translate(-7.25 -7.889)">
                       <g transform="translate(7.25 7.889)">
@@ -85,7 +85,7 @@
                   </svg>
                   <p class="p-search__tel-number">0748-72-7669</p>
                 </a>
-                <a href="#" class="p-search__line-btn">
+                <a href="https://line.me/ti/p/s2w_4EXvnw" class="p-search__line-btn" target="_blank" rel="noopener noreferrer">
                   <svg xmlns="http://www.w3.org/2000/svg" width="25.804" height="24.587" viewBox="0 0 25.804 24.587">
                     <g transform="translate(-7.25 -7.889)">
                       <g transform="translate(7.25 7.889)">
@@ -131,7 +131,7 @@
                   </svg>
                   <p class="p-search__tel-number">090-8521-7544</p>
                 </a>
-                <a href="#" class="p-search__line-btn">
+                <a href="https://line.me/ti/p/5OASGOzURY" class="p-search__line-btn" target="_blank" rel="noopener noreferrer">
                   <svg xmlns="http://www.w3.org/2000/svg" width="25.804" height="24.587" viewBox="0 0 25.804 24.587">
                     <g transform="translate(-7.25 -7.889)">
                       <g transform="translate(7.25 7.889)">
@@ -177,7 +177,7 @@
                   </svg>
                   <p class="p-search__tel-number">080-3833-7544</p>
                 </a>
-                <a href="#" class="p-search__line-btn">
+                <a href="https://line.me/ti/p/si3mBhT_r3" class="p-search__line-btn" target="_blank" rel="noopener noreferrer">
                   <svg xmlns="http://www.w3.org/2000/svg" width="25.804" height="24.587" viewBox="0 0 25.804 24.587">
                     <g transform="translate(-7.25 -7.889)">
                       <g transform="translate(7.25 7.889)">

@@ -249,9 +249,7 @@
           </div>
           <div class="p-school__detail">
             <div class="p-detail">
-              <div class="p-detail__title-wrapper">
-                <p class="p-detail__title">中学生コースの詳細</p>
-              </div>
+              
               <div class="p-school__table p-school__table--high">
                 <div class="p-table-high">
                   <div class="p-table-high__row">
