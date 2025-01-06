@@ -25,6 +25,7 @@
 
 .p-table-high__table {
   width: 100%;
+  border-collapse: collapse;
 }
 
 .p-table-high--secondary {
@@ -33,7 +34,11 @@
     border-right: 1px solid #707070;
   }
 }
-
+.p-table-high__table--leftBorder {
+  @include mq(md) {
+    border-left: 1px solid #707070;
+  }
+}
 .p-table-high__text {
   text-align: center;
   font-size: rem(16);
@@ -43,7 +48,7 @@
   border-top: 1px solid #707070;
   padding-top: rem(16);
   padding-bottom: rem(16);
-  width: 25%;
+  width: rem(123);
 }
 .p-table-high__text:nth-child(2),
 .p-table-high__text:nth-child(3),
@@ -77,7 +82,7 @@
 .p-table-high__detail-text--smallRed {
   color: #d00303;
   font-size: rem(12);
-  line-height: 2;
+  line-height: 1.5;
   font-weight: 500;
 }
 .p-table-high__title--middle {
@@ -99,4 +104,9 @@
   @include mq(md) {
     margin-top: initial;
   }
+}
+.p-table-high__text--middleBottom {
+  height: rem(96);
+  padding-top: initial;
+  padding-bottom: initial;
 }

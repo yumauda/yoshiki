@@ -50,7 +50,10 @@
 }
 
 .p-school__detail {
-  margin-top: rem(30);
+  margin-top: rem(60);
+  @include mq(md) {
+    margin-top: rem(48);
+  }
 }
 .p-school__table {
   margin-top: rem(40);

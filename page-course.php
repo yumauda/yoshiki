@@ -109,7 +109,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="p-school__table-course">
+            <div class="p-school__table-course p-table-high__table--leftBorder">
               <h4 class="p-school__table-title">小6県立中受験コース</h4>
               <table class="p-table p-table--secondary">
                 <tbody class="p-table__tbody">
@@ -132,7 +132,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="p-school__table-course">
+            <div class="p-school__table-course p-table-high__table--leftBorder">
               <h4 class="p-school__table-title">個別指導コース</h4>
               <table class="p-table">
                 <tbody>
@@ -249,7 +249,7 @@
           </div>
           <div class="p-school__detail">
             <div class="p-detail">
-              
+
               <div class="p-school__table p-school__table--high">
                 <div class="p-table-high">
                   <div class="p-table-high__row">
@@ -290,7 +290,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td class="p-table-high__text" colspan="4">
+                            <td class="p-table-high__text p-table-high__text--middleBottom" colspan="4">
                               <p class="p-table-high__detail-text"><?php echo wp_kses_post($middle_group['middle_group_detail']); ?></p>
                               <p class="p-table-high__detail-text--smallRed"><?php echo wp_kses_post($middle_group['middle_group_detail2']); ?></p>
                             </td>
@@ -336,7 +336,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td class="p-table-high__text" colspan="2">
+                            <td class="p-table-high__text p-table-high__text--middleBottom" colspan="2">
                               <p class="p-table-high__detail-text"><?php echo wp_kses_post($middle_group['middle_group_detail']); ?></p>
                               <p class="p-table-high__detail-text--smallRed"><?php echo wp_kses_post($middle_group['middle_group_detail2']); ?></p>
                             </td>
@@ -344,7 +344,7 @@
                         </tbody>
                       </table>
                     </div>
-                    <div class="p-table-high__table-wrapper js-middle-table">
+                    <div class="p-table-high__table-wrapper p-table-high__table--leftBorder js-middle-table">
                       <h4 class="p-table-high__title p-table-high__title--middle">個別指導コース</h4>
                       <table class="p-table-high__table">
                         <tbody>
@@ -369,7 +369,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td class="p-table-high__text" colspan="2">
+                            <td class="p-table-high__text p-table-high__text--middleBottom" colspan="2">
                               <p class="p-table-high__detail-text"><?php echo wp_kses_post($middle_personal['middle_personal_detail']); ?></p>
                               <p class="p-table-high__detail-text--small"><?php echo wp_kses_post($middle_personal['middle_personal_detail2']); ?></p>
                             </td>
@@ -523,7 +523,7 @@
                   </table>
                 </div>
                 <div class="p-table-high__table-wrapper js-high-table">
-                  <table class="p-table-high__table">
+                  <table class="p-table-high__table p-table-high__table--leftBorder">
                     <tbody>
                       <tr>
                         <td class="p-table-high__text" colspan="3">高３・高卒</td>
@@ -601,7 +601,7 @@
                   </table>
                 </div>
                 <div class="p-table-high__table-wrapper js-high-table">
-                  <table class="p-table-high__table">
+                  <table class="p-table-high__table p-table-high__table--leftBorder">
                     <tbody>
                       <tr>
                         <td class="p-table-high__text" colspan="2">高３・高卒</td>

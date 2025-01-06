@@ -9,10 +9,11 @@
 
 .p-detail__slider {
   margin-right: calc(50% - 50vw);
-  margin-top: rem(30);
+  margin-top: rem(60);
   position: relative;
   @include mq(md) {
     margin-right: initial;
+    margin-top: rem(48);
   }
 }
 .p-detail__slider--secondary {
