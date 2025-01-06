@@ -5,6 +5,7 @@
   background: #f8f8f8;
   padding-bottom: rem(66);
   @include mq(md) {
+    padding-top: rem(100);
     padding-bottom: initial;
   }
 }

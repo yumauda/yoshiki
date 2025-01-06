@@ -17,7 +17,7 @@
             <p class="p-thanks__text">しばらく経ってもメールが届かない場合は、<br class="u-mobile">入力頂いたメールアドレスが間違っているか、<br>
               迷惑メールフォルダに振り分けられている<br class="u-mobile">可能性がございます。<br>
               また、ドメイン指定をされている場合は、<br>
-              「@XXXX.com」からのメールが受信できるよう<br class="u-mobile">あらかじめ設定をお願いいたします。</p>
+              「hattorijyuku@gmail.com」からのメールが受信できるよう<br class="u-mobile">あらかじめ設定をお願いいたします。</p>
           </div>
           <div class="p-thanks__btn-wrapper">
             <a href="<?php echo home_url(); ?>" class="p-thanks__btn">

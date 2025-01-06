@@ -45,10 +45,9 @@
 .p-contact__attention-text {
   color: #fff;
   font-weight: 700;
-  font-size: rem(12);
+  font-size: rem(16);
   line-height: 2;
   @include mq(md) {
-    font-size: rem(16);
     line-height: calc(28 / 16);
   }
 }

@@ -75,12 +75,12 @@
                         </a>
                     </li>
                     <li class="p-footer__icon-list">
-                        <a href="#" class="p-footer__icon-link">
+                        <a href="#" class="p-footer__icon-link p-footer__icon-link--youtube">
                             <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/footer_youtube.svg" alt="youtube" width="31" height="23">
                         </a>
                     </li>
                     <li class="p-footer__icon-list">
-                        <a href="#" class="p-footer__icon-link">
+                        <a href="https://line.me/ti/p/nuQmi74uC_" class="p-footer__icon-link" target="_blank" rel="noopener noreferrer">
                             <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/footer_line.svg" alt="line" width="30" height="30">
                         </a>
                     </li>

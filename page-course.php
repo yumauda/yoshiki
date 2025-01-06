@@ -735,12 +735,12 @@
             <figure class="p-flow__img p-flow__img--1">
               <picture>
                 <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/flow_img1.png" media="(min-width: 768px)" width="150" height="150">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/common/flow_img1_sp.png" alt="お問い合わせ" width="100" height="100">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/common/flow_img1_sp.png" alt="お問合せ" width="100" height="100">
               </picture>
             </figure>
             <div class="p-flow__detail">
-              <h3 class="p-flow__subTitle">お問い合わせ</h3>
-              <p class="p-flow__text">お電話、LINE、お問い合わせフォームよりご希望の内容を入力しお問い合わせください。</p>
+              <h3 class="p-flow__subTitle">お問合せ</h3>
+              <p class="p-flow__text">お電話、LINE、お問合せフォームよりご希望の内容を入力しお問合せください。</p>
             </div>
           </li>
           <li class="p-flow__list js-flow">
@@ -783,7 +783,7 @@
         <div class="p-flow__bottom js-flow">
           <p class="p-flow__bottom-text">※上記の流れは一例です。<br>
             「まず、説明を聞きたい」「兄弟姉妹が通っているため、体験授業や説明は不要」など、<br>
-            お問い合わせの際にご要望をお聞かせください。</p>
+            お問合せの際にご要望をお聞かせください。</p>
         </div>
       </div>
     </div>

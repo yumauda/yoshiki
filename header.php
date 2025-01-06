@@ -107,7 +107,7 @@
                         </li>
                         <li class="p-header__list">
                             <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-header__link">
-                                お問い合わせ
+                                お問合せ
                             </a>
                         </li>
                         <li class="p-header__list">
@@ -144,7 +144,7 @@
                                 <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-drawer-content__link">お知らせ</a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-drawer-content__link">お問い合わせ</a>
+                                <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-drawer-content__link">お問合せ</a>
                             </li>
                         </ul>
                         <figure class="p-drawer-content__img">

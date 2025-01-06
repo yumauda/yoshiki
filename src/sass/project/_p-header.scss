@@ -36,11 +36,14 @@
 .p-header__home {
   display: inline-block;
   width: rem(146);
+  transition: 0.3s ease-in-out;
   @include mq(md) {
     width: min(rem(212), calc(212 / 1440) * 100vw);
   }
 }
-
+.p-header__home:hover {
+  opacity: 0.5;
+}
 .p-header__home img {
   width: 100%;
   height: 100%;
@@ -84,6 +87,10 @@
 .p-header__link--btn {
   display: inline-block;
   width: min(rem(270), calc(270 / 1440) * 100vw);
+  transition: 0.3s ease-in-out;
+}
+.p-header__link--btn:hover {
+  opacity: 0.5;
 }
 .p-header__link--btn img {
   width: 100%;

@@ -2,6 +2,7 @@
 
 .p-swiper {
   background: #f8f8f8;
+  padding-top: rem(60);
   @include mq(md) {
     padding-top: rem(30);
     padding-bottom: rem(30);

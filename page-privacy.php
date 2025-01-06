@@ -51,7 +51,7 @@
               <dt class="p-privacy__dt">ＦＡＸ番号</dt>
               <dd class="p-privacy__dd">
                 <p class="p-privacy__tel">
-                  0748-63-4588
+                  0748-76-2660
                 </p>
               </dd>
             </div>
@@ -61,7 +61,7 @@
     </div>
   </section>
   <?php get_template_part('includes/totop'); ?>
-  
+
 
 </main>
 <?php get_footer() ?>

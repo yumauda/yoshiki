@@ -54,10 +54,12 @@
 .p-top-achieve__blockRow {
   margin-top: rem(20);
   display: flex;
+  justify-content: center;
   gap: rem(20);
   flex: 1;
   @include mq(md) {
-    padding-left: rem(16);
+    justify-content: initial;
+    padding-left: rem(12);
   }
 }
 
@@ -95,7 +97,7 @@
   display: flex;
   align-items: center;
   padding-left: min(rem(19), calc(19 / 1440) * 100vw);
-  gap: rem(12);
+  gap: rem(8);
 }
 .p-top-achieve__univ-row--special {
   display: flex;
@@ -123,7 +125,7 @@
   font-size: rem(16);
   color: #000;
   @include mq(md) {
-    font-size: min(rem(16), calc(16 / 1440) * 100vw);
+    font-size: min(rem(15), calc(15 / 1440) * 100vw);
   }
 }
 
@@ -136,13 +138,14 @@
   margin-top: rem(20);
   @include mq(md) {
     margin-left: rem(20);
+    padding-right: rem(12);
   }
 }
 .p-top-achieve__high-row {
   display: flex;
   gap: rem(20);
   @include mq(md) {
-    gap: min(rem(64), calc(64 / 1440) * 100vw);
+    gap: min(rem(56), calc(56 / 1440) * 100vw);
     justify-content: center;
   }
 }
