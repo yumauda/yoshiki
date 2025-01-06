@@ -1503,6 +1503,7 @@ select::-ms-expand {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   opacity: 0;
+  background: #000;
 }
 @media screen and (min-width: 768px) {
   .p-floating {
