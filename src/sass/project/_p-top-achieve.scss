@@ -70,9 +70,9 @@
   }
 }
 .p-top-achieve__high-univ {
+  width: 100%;
   @include mq(md) {
     max-width: rem(367);
-    width: 100%;
   }
 }
 
@@ -144,8 +144,8 @@
 .p-top-achieve__high-row {
   display: flex;
   gap: rem(20);
+  justify-content: center;
   @include mq(md) {
     gap: min(rem(56), calc(56 / 1440) * 100vw);
-    justify-content: center;
   }
 }

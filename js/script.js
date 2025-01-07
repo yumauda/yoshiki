@@ -51,23 +51,22 @@ jQuery(function ($) {
   $("#drawer a[href]").on("click", function (event) {
     $(".p-drawer-icon").trigger("click");
   });
-  
-  let scrollPosition = 0; // スクロール位置を記録する変数
 
-  $(window).on("scroll", function () {
+/*   let scrollPosition = 0;  */
+
+  /* $(window).on("scroll", function () {
     var scrollTop = $(this).scrollTop();
 
-    // ウィンドウの幅を取得
+ 
     var windowWidth = $(this).width();
 
-    // SP時（767px以下）かつスクロール位置が200px以上の場合
     if (windowWidth <= 767 && scrollTop >= 200) {
       $(".p-floating").addClass("is-active");
       scrollPosition = scrollTop;
     } else {
       $(".p-floating").removeClass("is-active");
     }
-  });
+  }); */
 });
 
 jQuery(document).ready(function ($) {
@@ -93,6 +92,24 @@ jQuery(document).ready(function ($) {
     $("body").toggleClass("drawer-open");
   });
 });
+window.addEventListener("scroll", function () {
+  var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+  var element = document.querySelector(".p-floating");
+
+  if (window.innerWidth <= 768) {
+    // 768px以下のデバイスでのみ動作
+    if (scrollPosition > 200) {
+      element.style.opacity = "1";
+      element.style.visibility = "visible";
+    } else {
+      element.style.opacity = "0";
+      element.style.visibility = "hidden";
+    }
+  }
+});
+
+let scrollPosition = 0;
+
 window.onload = function () {
   document.body.classList.add("fade-in");
 };

@@ -121,7 +121,9 @@
             </div>
         </div>
     </div>
-    <?php get_template_part('includes/floating'); ?>
+    <?php if (!is_page('contact')) : ?>
+        <?php get_template_part('includes/floating'); ?>
+    <?php endif; ?>
 </footer>
 <?php wp_footer(); ?>
 </body>
