@@ -194,7 +194,12 @@
     font-size: rem(16);
     color: #fff;
     line-height: calc(28 / 16);
+    transition: 0.3s ease-in-out;
   }
+}
+.p-footer__privacy:hover {
+  color: #ffff00;
+  opacity: 1;
 }
 .p-footer__icon-link--youtube {
   pointer-events: none;

@@ -112,7 +112,7 @@
                         </li>
                         <li class="p-header__list">
                             <a href="<?php echo esc_url(home_url('/search')); ?>" class="p-header__link--btn">
-                                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/header_btn.png" alt="教室を探す" width="270" height="80">
+                                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/header_btn.webp" alt="教室を探す" width="270" height="80">
                             </a>
                         </li>
                     </ul>

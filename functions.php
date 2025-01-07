@@ -357,7 +357,8 @@ function custom_hiragana_validation_filter($result, $tag)
 	if ('your-hiragana-field' == $tag->name) {
 		$value = isset($_POST[$tag->name]) ? trim(wp_unslash(strtr((string)$_POST[$tag->name], "\n", " "))) : '';
 
-		if (!preg_match("/^[ぁ-ん]+$/u", $value)) {
+		// Update the regex to exclude spaces
+		if (!preg_match("/^[ぁ-ん]+$/u", str_replace([' ', '　'], '', $value))) {
 			$result->invalidate($tag, "ひらがなで入力してください。");
 		}
 	}

@@ -134,8 +134,34 @@
   border-radius: rem(10);
   height: rem(50);
   width: rem(220);
+  transition: 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
   @include mq(md) {
     width: initial;
+  }
+}
+.p-search__tel-link::before {
+  animation: 4s 0s shine linear infinite;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.7) 100%
+  );
+  content: "";
+  height: 100%;
+  left: -100%;
+  position: absolute;
+  top: 0;
+  transform: skewX(-25deg);
+  width: 50%;
+}
+@keyframes shine {
+  20% {
+    left: 150%;
+  }
+  100% {
+    left: 150%;
   }
 }
 .p-search__tel-link svg {

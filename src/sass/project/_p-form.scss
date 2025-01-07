@@ -462,3 +462,42 @@
   transform: translateY(-50%);
   z-index: 1;
 }
+.p-form__line {
+  padding-bottom: rem(8);
+  border-bottom: 1px solid #ccc;
+}
+.p-form__btn-effect {
+  transition: 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  width: rem(250);
+/*   padding-right: rem(3); */
+  padding-bottom: rem(3);
+  @include mq(md) {
+    width: rem(304);
+  }
+}
+.p-form__btn-effect::before {
+  animation: 4s 0s shine linear infinite;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.7) 100%
+  );
+  content: "";
+  height: 100%;
+  left: -100%;
+  position: absolute;
+  top: 0;
+  transform: skewX(-25deg);
+  width: 50%;
+  z-index: 99;
+}
+@keyframes shine {
+  20% {
+    left: 150%;
+  }
+  100% {
+    left: 150%;
+  }
+}
