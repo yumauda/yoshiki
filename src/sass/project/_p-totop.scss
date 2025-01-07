@@ -27,7 +27,9 @@
   display: inline-block;
   width: rem(70);
   height: rem(70);
+  transition: 0.3s ease-in-out;
 }
+
 .p-totop__link img {
   aspect-ratio: 70 / 70;
   object-fit: cover;
