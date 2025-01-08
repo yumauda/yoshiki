@@ -13,7 +13,6 @@
         <meta property="og:title" content="甲賀市・湖南市・日野町の学習/進学塾 服部塾よしき塾" />
         <meta property="og:type" content="website">
         <meta property="og:url" content="">
-        <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/images/common/ogp.jpg" />
         <meta property="og:site_name" content="甲賀市・湖南市・日野町の学習/進学塾 服部塾よしき塾" />
         <meta property="og:description" content="勉強の量だけおいかけてどうすんねんと。結果を出してナンボ. 合格指導実績. 【国公立大学】" />
     <?php elseif (is_page('adult')) : ?>
@@ -23,7 +22,6 @@
         <meta property="og:title" content="大人の矯正｜大倉山ファミリア矯正歯科（横浜市港北区）" />
         <meta property="og:type" content="article">
         <meta property="og:url" content="https://familiar-kyousei.com/adult">
-        <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/images/common/ogp.jpg" />
         <meta property="og:site_name" content="大倉山ファミリア矯正歯科（横浜市港北区）" />
         <meta property="og:description" content="横浜市大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザラン)なども子供から大人まで安心の定額制です。" />
     <?php elseif (is_page((array('contact', 'confirm')))) : ?>
@@ -33,7 +31,6 @@
         <meta property="og:title" content="お問い合わせ｜大倉山ファミリア矯正歯科（横浜市港北区）" />
         <meta property="og:type" content="article">
         <meta property="og:url" content="https://familiar-kyousei.com/contact">
-        <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/images/common/ogp.jpg" />
         <meta property="og:site_name" content="大倉山ファミリア矯正歯科（横浜市港北区）" />
         <meta property="og:description" content="横浜市大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザラン)なども子供から大人まで安心の定額制です。" />
     <?php elseif (is_page('thanks')) : ?>
@@ -43,7 +40,6 @@
         <meta property="og:title" content="送信完了｜大倉山ファミリア矯正歯科（横浜市港北区）" />
         <meta property="og:type" content="article">
         <meta property="og:url" content="https://familiar-kyousei.com/thanks">
-        <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/images/common/ogp.jpg" />
         <meta property="og:site_name" content="大倉山ファミリア矯正歯科（横浜市港北区）" />
         <meta property="og:description" content="横浜市大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザラン)なども子供から大人まで安心の定額制です。" />
     <?php elseif (is_single()) : ?>
@@ -53,13 +49,12 @@
         <meta property="og:title" content="<?php the_title() ?>｜大倉山ファミリア矯正歯科（横浜市港北区）" />
         <meta property="og:type" content="article">
         <meta property="og:url" content="https://familiar-kyousei.com/adult">
-        <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/images/common/ogp.jpg" />
         <meta property="og:site_name" content="大倉山ファミリア矯正歯科（横浜市港北区）" />
         <meta property="og:description" content="横浜市大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザラン)なども子供から大人まで安心の定額制です。" />
 
     <?php endif; ?>
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="<?php echo get_template_directory_uri() ?>/images/common/ogp.jpg">
+    <meta name="twitter:image" content="<?php echo get_template_directory_uri() ?>/images/common/OGP.png">
 
     <!-- ogp -->
     <!-- ファビコン -->
@@ -100,7 +95,7 @@
                         <li class="p-header__list">
                             <a href="<?php echo esc_url(home_url('/course')); ?>" class="p-header__link">
                                 <p class="p-header__link-text">各コースの料金と詳細</p>
-                                <p class="p-header__link-text--hover">COURSE</p>
+                                <p class="p-header__link-text--hover">PRICE</p>
                             </a>
                         </li>
                         <li class="p-header__list">

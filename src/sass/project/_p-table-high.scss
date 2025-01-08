@@ -58,7 +58,7 @@
 .p-table-high__detail-text {
   font-size: rem(16);
   font-weight: 400;
-  line-height: calc(28 / 16);
+  line-height: 1;
 }
 
 .p-table-high__detail-text--red {
@@ -67,6 +67,7 @@
 .p-table-high__detail-text--red span {
   font-weight: 700;
   font-size: rem(24);
+  line-height: 1.75;
 }
 .h135 {
   height: rem(135);

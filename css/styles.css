@@ -5087,7 +5087,7 @@ tbody {
   font-size: 16px;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.75;
+  line-height: 1;
 }
 
 .p-table-high__detail-text--red {
@@ -5098,6 +5098,7 @@ tbody {
   font-weight: 700;
   font-size: 24px;
   font-size: 1.5rem;
+  line-height: 1.75;
 }
 
 .h135 {
@@ -5191,7 +5192,7 @@ tbody {
   font-size: 16px;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.75;
+  line-height: 1;
 }
 
 .p-table__detail-text--red {
@@ -5202,6 +5203,7 @@ tbody {
   font-weight: 700;
   font-size: 24px;
   font-size: 1.5rem;
+  line-height: 1.75;
 }
 
 .p-table__tbody {

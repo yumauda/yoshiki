@@ -21,7 +21,7 @@
 .p-table__detail-text {
   font-size: rem(16);
   font-weight: 400;
-  line-height: 1.75;
+  line-height: 1;
 }
 
 .p-table__detail-text--red {
@@ -30,6 +30,7 @@
 .p-table__detail-text--red span {
   font-weight: 700;
   font-size: rem(24);
+  line-height: 1.75;
 }
 .p-table__tbody {
   background: #fff !important;
