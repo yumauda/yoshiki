@@ -30,7 +30,9 @@
 .p-table__detail-text--red span {
   font-weight: 700;
   font-size: rem(24);
-  line-height: 1.75;
+  margin-top: rem(8);
+  line-height: 1;
+  display: inline-block;
 }
 .p-table__tbody {
   background: #fff !important;
