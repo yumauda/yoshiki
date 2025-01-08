@@ -740,6 +740,10 @@ select::-ms-expand {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .p-block__cardBtn-icon svg {
@@ -760,6 +764,45 @@ select::-ms-expand {
      object-fit: cover;
   -o-object-position: center center;
      object-position: center center;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.p-block__cardBtn-icon::after {
+  -webkit-animation: 4s 0s shine linear infinite;
+          animation: 4s 0s shine linear infinite;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, .7)));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .7) 100%);
+  content: "";
+  height: 100%;
+  left: -100%;
+  position: absolute;
+  top: 0;
+  -webkit-transform: skewX(-25deg);
+          transform: skewX(-25deg);
+  width: 50%;
+}
+
+@-webkit-keyframes shine {
+  20% {
+    left: 150%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+
+@keyframes shine {
+  20% {
+    left: 150%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+.p-block__cardBtn:hover .p-block__cardBtn-icon svg {
+  -webkit-transform: translateX(0.3125rem);
+          transform: translateX(0.3125rem);
 }
 
 .p-breadcrumbs {
@@ -1240,15 +1283,6 @@ select::-ms-expand {
   -webkit-transform: skewX(-25deg);
           transform: skewX(-25deg);
   width: 50%;
-}
-
-@-webkit-keyframes shine {
-  20% {
-    left: 150%;
-  }
-  100% {
-    left: 150%;
-  }
 }
 
 @keyframes shine {
@@ -3006,16 +3040,12 @@ select::-ms-expand {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: min(40px, 2.7777777778vw);
-  gap: min(2.5rem, 2.7777777778vw);
+  gap: min(36px, 2.5vw);
+  gap: min(2.25rem, 2.5vw);
   height: inherit;
 }
 
 .p-header__list {
-  height: inherit;
-}
-
-.p-header__link {
   height: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3026,6 +3056,36 @@ select::-ms-expand {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .p-header__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: hidden;
+    height: 1.5em;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .p-header__link {
+    height: 1.2em;
+  }
+}
+
+.p-header__link-text {
   font-size: min(16px, 1.1111111111vw);
   font-size: min(1rem, 1.1111111111vw);
   font-weight: 700;
@@ -3033,10 +3093,39 @@ select::-ms-expand {
   line-height: 1.25;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
 }
 
-.p-header__link:hover {
-  color: #d00303;
+.p-header__link:hover .p-header__link-text {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+@media screen and (min-width: 768px) {
+  .p-header__link-text--hover {
+    font-size: min(1rem, 1.1111111111vw);
+    font-weight: 700;
+    color: #000;
+    line-height: 1.25;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-header__link:hover .p-header__link-text--hover {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+}
+@media screen and (min-width: 1250px) {
+  .p-header__link:hover .p-header__link-text--hover {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
 }
 
 .p-header__link--btn {

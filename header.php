@@ -87,27 +87,32 @@
                     <ul class="p-header__lists">
                         <li class="p-header__list">
                             <a href="<?php echo esc_url(home_url('/')); ?>" class="p-header__link">
-                                トップページ
+                                <p class="p-header__link-text">トップページ</p>
+                                <p class="p-header__link-text--hover">TOP</p>
                             </a>
                         </li>
                         <li class="p-header__list">
                             <a href="<?php echo esc_url(home_url('/feature')); ?>" class="p-header__link">
-                                服部塾・よしき塾の特長
+                                <p class="p-header__link-text">服部塾・よしき塾の特長</p>
+                                <p class="p-header__link-text--hover">FEATURES</p>
                             </a>
                         </li>
                         <li class="p-header__list">
                             <a href="<?php echo esc_url(home_url('/course')); ?>" class="p-header__link">
-                                各コースの料金と詳細
+                                <p class="p-header__link-text">各コースの料金と詳細</p>
+                                <p class="p-header__link-text--hover">COURSE</p>
                             </a>
                         </li>
                         <li class="p-header__list">
                             <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-header__link">
-                                お知らせ
+                                <p class="p-header__link-text">お知らせ</p>
+                                <p class="p-header__link-text--hover">NEWS</p>
                             </a>
                         </li>
                         <li class="p-header__list">
                             <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-header__link">
-                                お問合せ
+                                <p class="p-header__link-text">お問合せ</p>
+                                <p class="p-header__link-text--hover">CONTACT</p>
                             </a>
                         </li>
                         <li class="p-header__list">

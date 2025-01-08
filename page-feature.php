@@ -11,14 +11,14 @@
           <div class="p-block-top">
             <div class="p-block-top__top">
               <div class="p-block-top__title-wrapper">
-                <div class="p-block-top__title-logo">
+                <div class="p-block-top__title-logo js-feature-logos">
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/block_face1.svg" alt="集団授業" width="31" height="39">
                 </div>
-                <h3 class="p-block-top__title">
+                <h3 class="p-block-top__title js-feature-logos">
                   集団授業
                 </h3>
               </div>
-              <h4 class="p-block-top__subTitle">競い合いながら勉強することで<br class="u-mobile">互いに刺激を与え合う</h4>
+              <h4 class="p-block-top__subTitle js-feature-logos">競い合いながら勉強することで<br class="u-mobile">互いに刺激を与え合う</h4>
             </div>
             <ul class="p-block__lists">
               <li class="p-block__list js-feature-cards">
@@ -58,18 +58,18 @@
             </ul>
           </div>
         </div>
-        <div class="p-feature__block p-block p-block--white">
+        <div class="p-feature__block p-block p-block--white js-second-timing">
           <div class="p-block-top">
             <div class="p-block-top__top">
               <div class="p-block-top__title-wrapper">
-                <div class="p-block-top__title-logo">
+                <div class="p-block-top__title-logo js-logo2">
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/block_face2.svg" alt="個別指導" width="31" height="39">
                 </div>
-                <h3 class="p-block-top__title">
+                <h3 class="p-block-top__title js-logo2">
                   個別指導
                 </h3>
               </div>
-              <h4 class="p-block-top__subTitle">勉強に集中できる環境が手に入ります。</h4>
+              <h4 class="p-block-top__subTitle js-logo2">勉強に集中できる環境が手に入ります。</h4>
             </div>
             <ul class="p-block__cards">
               <li class="p-block__card js-block-cards">
@@ -137,14 +137,14 @@
           <div class="p-block-top">
             <div class="p-block-top__top">
               <div class="p-block-top__title-wrapper">
-                <div class="p-block-top__title-logo">
+                <div class="p-block-top__title-logo js-logo3">
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/block_face3.svg" alt="小学校から高校まで一貫して通える" width="31" height="39">
                 </div>
-                <h3 class="p-block-top__title">
+                <h3 class="p-block-top__title js-logo3">
                   小学校から高校まで一貫して通える
                 </h3>
               </div>
-              <h4 class="p-block-top__subTitle">信頼関係が生まれやすい環境による安心感</h4>
+              <h4 class="p-block-top__subTitle js-logo3">信頼関係が生まれやすい環境による安心感</h4>
             </div>
             <figure class="p-block__arrow-img js-consistent">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/block_arrow.png" alt="小学校から高校まで一貫して通える" width="680" height="166">

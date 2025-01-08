@@ -179,6 +179,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
 }
 .p-block__cardBtn-icon svg {
   max-width: rem(12);
@@ -189,4 +192,31 @@
   height: 100%;
   object-fit: cover;
   object-position: center center;
+  transition: 0.3s ease-in-out;
+}
+.p-block__cardBtn-icon::after {
+  animation: 4s 0s shine linear infinite;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.7) 100%
+  );
+  content: "";
+  height: 100%;
+  left: -100%;
+  position: absolute;
+  top: 0;
+  transform: skewX(-25deg);
+  width: 50%;
+}
+@keyframes shine {
+  20% {
+    left: 150%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+.p-block__cardBtn:hover .p-block__cardBtn-icon svg {
+  transform: translateX(rem(5));
 }

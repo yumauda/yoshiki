@@ -7,7 +7,6 @@ window.addEventListener("DOMContentLoaded", function () {
     {
       opacity: 0,
       x: -50,
-    
     },
     {
       duration: 1.5,
@@ -22,7 +21,25 @@ window.addEventListener("DOMContentLoaded", function () {
       ease: "power3.out",
     }
   );
-  
+  gsap.fromTo(
+    ".js-feature-logos",
+    {
+      opacity: 0,
+    },
+    {
+      duration: 1.5,
+      opacity: 1,
+      x: 0,
+      stagger: 0.15,
+      delay: 0.3,
+      scrollTrigger: {
+        trigger: ".p-feature",
+        start: "0% 50%",
+      },
+      ease: "power3.out",
+    }
+  );
+
   gsap.fromTo(
     ".js-feature-cards",
     {
@@ -44,7 +61,7 @@ window.addEventListener("DOMContentLoaded", function () {
       ease: "power3.out",
     }
   );
-  
+
   gsap.fromTo(
     ".js-block-cards",
     {
@@ -59,8 +76,42 @@ window.addEventListener("DOMContentLoaded", function () {
       y: 0,
       stagger: 0.3,
       scrollTrigger: {
-        trigger: ".p-block--white",
-        start: "0% 70%",
+        trigger: ".js-second-timing",
+        start: "0% 50%",
+      },
+      ease: "power3.out",
+    }
+  );
+  gsap.fromTo(
+    ".js-logo2",
+    {
+      opacity: 0,
+    },
+    {
+      duration: 0.5,
+      opacity: 1,
+      y: 0,
+      stagger: 0.3,
+      scrollTrigger: {
+        trigger: ".js-second-timing",
+        start: "0% 50%",
+      },
+      ease: "power3.out",
+    }
+  );
+  gsap.fromTo(
+    ".js-logo3",
+    {
+      opacity: 0,
+    },
+    {
+      duration: 0.5,
+      opacity: 1,
+      y: 0,
+      stagger: 0.3,
+      scrollTrigger: {
+        trigger: ".js-consistent-timing",
+        start: "0% 50%",
       },
       ease: "power3.out",
     }
@@ -85,5 +136,4 @@ window.addEventListener("DOMContentLoaded", function () {
       ease: "power3.out",
     }
   );
-  
 });
