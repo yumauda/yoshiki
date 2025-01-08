@@ -34,9 +34,10 @@ window.addEventListener(
 
 const createSwiper = () => {
   swiper = new Swiper(".swiper", {
-    loop: false, // ループさせる
+    loop: true, // ループさせる
     spaceBetween: 20,
-    slidesPerView: 1.1,
+    slidesPerView: 1.2,
+    centeredSlides: true,
     speed: 300, // 少しゆっくり(デフォルトは300)
     // ページネーション
     pagination: {
