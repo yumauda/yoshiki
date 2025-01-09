@@ -788,8 +788,5 @@
       </div>
     </div>
   </section>
-  <?php get_template_part('includes/totop'); ?>
-
-
 </main>
 <?php get_footer() ?>

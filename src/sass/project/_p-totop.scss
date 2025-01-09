@@ -3,11 +3,25 @@
 .p-totop {
   display: none;
   @include mq(md) {
-    position: fixed;
-    z-index: 9999;
-    right: rem(63);
-    bottom: rem(63);
     display: block;
+    position: absolute;
+    top: rem(110);
+    right: rem(67);
+    z-index: 9999;
+  }
+}
+.p-totop--search {
+  @include mq(md) {
+    bottom: rem(-30);
+    top: initial;
+    right: rem(67);
+  }
+}
+.p-totop--contact {
+  @include mq(md) {
+    bottom: rem(24);
+    top: initial;
+    right: rem(67);
   }
 }
 .p-totop--sp {

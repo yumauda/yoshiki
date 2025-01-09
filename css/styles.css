@@ -6296,11 +6296,29 @@ tbody {
 }
 @media screen and (min-width: 768px) {
   .p-totop {
-    position: fixed;
-    z-index: 9999;
-    right: 3.9375rem;
-    bottom: 3.9375rem;
     display: block;
+    position: absolute;
+    top: 6.875rem;
+    right: 4.1875rem;
+    z-index: 9999;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-totop--search {
+    bottom: -1.875rem;
+    top: auto;
+    top: initial;
+    right: 4.1875rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-totop--contact {
+    bottom: 1.5rem;
+    top: auto;
+    top: initial;
+    right: 4.1875rem;
   }
 }
 

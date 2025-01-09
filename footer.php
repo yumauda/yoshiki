@@ -1,5 +1,6 @@
 <?php if (is_page('contact')) : ?>
     <div class="p-top-contact__wrapper">
+        <?php get_template_part('includes/totop'); ?>
         <figure class="p-top-contact">
             <picture>
                 <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/contact_bottom.png" media="(min-width: 768px)" width="1238" height="570" />
@@ -16,6 +17,7 @@
 <footer class="l-footer p-footer p-footer--down">
     <?php if (!is_front_page() && !is_page('search') && !is_page('contact')) : ?>
         <div class="p-top-future__wrapper">
+            <?php get_template_part('includes/totop'); ?>
             <figure class="p-top-future">
                 <picture>
                     <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/footer_top.png" media="(min-width: 768px)" width="1440" height="196" />
@@ -32,6 +34,7 @@
     <?php endif; ?>
     <?php if (is_page('search')) : ?>
         <div class="p-top-search__wrapper">
+            <?php get_template_part('includes/totop'); ?>
             <figure class="p-top-future">
                 <picture>
                     <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/top_future_search.png" media="(min-width: 768px)" width="1238" height="570" />

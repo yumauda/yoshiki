@@ -3,13 +3,11 @@ jQuery(function ($) {
   $("#zipcode1").on("blur", function () {
     AjaxZip3.zip2addr("zipcode1", "", "address1", "address1");
   });
-  var topBtn = $(".p-totop");
+  /* var topBtn = $(".p-totop");
   topBtn.hide();
 
-  // 関数を定義して、PC時のみスクロールイベントを設定
   function handleScroll() {
     if ($(window).width() >= 768) {
-      // PC時の条件
       $(window).on("scroll", function () {
         if ($(this).scrollTop() > 70) {
           topBtn.fadeIn();
@@ -18,11 +16,10 @@ jQuery(function ($) {
         }
       });
     } else {
-      // スクロールイベントを解除してボタンを非表示
       $(window).off("scroll");
       topBtn.hide();
     }
-  }
+  } */
 
   // 初期化時に実行
   handleScroll();
@@ -51,22 +48,6 @@ jQuery(function ($) {
   $("#drawer a[href]").on("click", function (event) {
     $(".p-drawer-icon").trigger("click");
   });
-
-/*   let scrollPosition = 0;  */
-
-  /* $(window).on("scroll", function () {
-    var scrollTop = $(this).scrollTop();
-
- 
-    var windowWidth = $(this).width();
-
-    if (windowWidth <= 767 && scrollTop >= 200) {
-      $(".p-floating").addClass("is-active");
-      scrollPosition = scrollTop;
-    } else {
-      $(".p-floating").removeClass("is-active");
-    }
-  }); */
 });
 
 jQuery(document).ready(function ($) {
