@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 <main>
+  <?php get_template_part('includes/submit'); ?>
   <section class="p-privacy">
     <div class="p-privacy__breadcrumbs">
       <?php get_template_part('includes/breadcrumbs'); ?>

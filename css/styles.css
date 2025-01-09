@@ -4885,7 +4885,7 @@ tbody {
     position: fixed;
     bottom: 1.25rem;
     right: 1.25rem;
-    z-index: 9999;
+    z-index: 99999;
     -webkit-transition: opacity 0.5s ease, visibility 0.5s ease;
     transition: opacity 0.5s ease, visibility 0.5s ease;
     opacity: 1;
@@ -6369,6 +6369,7 @@ tbody {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
   background: #fff;
+  opacity: 1;
 }
 
 .p-totop__arrow {

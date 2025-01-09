@@ -968,6 +968,7 @@
     </div>
   </section>
   <div class="p-top-top__wrapper">
+    <?php get_template_part('includes/totop'); ?>
     <figure class="p-top-future js-top-future">
       <picture>
         <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/top_future.png" media="(min-width: 768px)" width="1238" height="570" />

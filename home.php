@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 <main>
+  <?php get_template_part('includes/submit'); ?>
+
   <section class="p-news">
     <div class="p-news__breadcrumbs">
       <?php get_template_part('includes/breadcrumbs'); ?>
