@@ -1250,9 +1250,8 @@ select::-ms-expand {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  top: 250px;
+  top: 15.625rem;
   z-index: 9999;
   width: 100%;
 }
@@ -1260,6 +1259,11 @@ select::-ms-expand {
   .p-detail__swiper-button {
     display: none;
   }
+}
+
+.p-detail__swiper-button--middle {
+  top: 308px;
+  top: 19.25rem;
 }
 
 .p-detail__swiper-button > .swiper-button-prev,
@@ -4607,6 +4611,11 @@ tbody {
           transform: skewX(-25deg);
   width: 50%;
 }
+@media screen and (min-width: 768px) {
+  .p-search__tel-link::before {
+    display: none;
+  }
+}
 
 @keyframes shine {
   20% {
@@ -4654,8 +4663,35 @@ tbody {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
 }
 
+.p-search__line-btn::before {
+  -webkit-animation: 4s 0s shine linear infinite;
+          animation: 4s 0s shine linear infinite;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, .7)));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .7) 100%);
+  content: "";
+  height: 100%;
+  left: -100%;
+  position: absolute;
+  top: 0;
+  -webkit-transform: skewX(-25deg);
+          transform: skewX(-25deg);
+  width: 50%;
+}
+
+@keyframes shine {
+  20% {
+    left: 150%;
+  }
+  100% {
+    left: 150%;
+  }
+}
 .p-search__line-text {
   display: none;
 }

@@ -155,6 +155,9 @@
   top: 0;
   transform: skewX(-25deg);
   width: 50%;
+  @include mq(md) {
+    display: none;
+  }
 }
 @keyframes shine {
   20% {
@@ -187,8 +190,33 @@
   justify-content: center;
   height: rem(50);
   flex: 1;
+  transition: 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
 }
-
+.p-search__line-btn::before {
+  animation: 4s 0s shine linear infinite;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.7) 100%
+  );
+  content: "";
+  height: 100%;
+  left: -100%;
+  position: absolute;
+  top: 0;
+  transform: skewX(-25deg);
+  width: 50%;
+}
+@keyframes shine {
+  20% {
+    left: 150%;
+  }
+  100% {
+    left: 150%;
+  }
+}
 .p-search__line-text {
   display: none;
   @include mq(md) {

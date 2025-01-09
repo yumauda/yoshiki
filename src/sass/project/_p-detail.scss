@@ -120,13 +120,15 @@
   display: flex;
   justify-content: space-between;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: rem(250);
   z-index: 9999;
   width: 100%;
   @include mq(md) {
     display: none;
   }
+}
+.p-detail__swiper-button--middle {
+  top: rem(308);
 }
 .p-detail__swiper-button > .swiper-button-prev,
 .p-detail__swiper-button > .swiper-button-next {

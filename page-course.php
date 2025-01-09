@@ -459,7 +459,7 @@
                   </div>
 
                 </div>
-                <div class="p-detail__swiper-button">
+                <div class="p-detail__swiper-button p-detail__swiper-button--middle">
                   <div class="swiper-button-prev">
                     <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/course_swiper_prev.svg" alt="" width="50" height="50">
                   </div>
