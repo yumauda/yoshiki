@@ -21,18 +21,18 @@ jQuery(function ($) {
     }
   } */
 
-  // 初期化時に実行
-  handleScroll();
+  /*   handleScroll(); */
 
   // ウィンドウのリサイズ時に再評価
-  $(window).resize(function () {
+  /* $(window).resize(function () {
     handleScroll();
-  });
+  }); */
   $(document).ready(function ($) {
     $(".p-submit__cancel").on("click", function () {
       $(".p-submit").addClass("fade-out");
     });
   });
+  var topBtn = $(".p-totop");
   // ボタンをクリックしたらスクロールして上に戻る
   topBtn.click(function () {
     $("body,html").animate(
