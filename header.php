@@ -7,7 +7,7 @@
     <meta name="format-detection" content="telephone=no" />
     <!-- meta情報 -->
     <?php if (is_home() || is_front_page()) : ?>
-        <title>甲賀市・湖南市・日野町の学習/進学塾 服部塾よしき塾</title>
+        <title>【甲賀市・湖南市・日野町】服部塾 よしき塾｜中学生・高校生の学習塾</title>
         <meta name="description" content="勉強の量だけおいかけてどうすんねんと。結果を出してナンボ. 合格指導実績. 【国公立大学】" />
         <meta name="keywords" content="" />
         <meta property="og:title" content="甲賀市・湖南市・日野町の学習/進学塾 服部塾よしき塾" />

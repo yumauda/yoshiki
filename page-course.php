@@ -9,7 +9,7 @@
         <h2 class="c-main-title">
           各コースの料金と詳細
         </h2>
-        <p class="p-course__sub">週1回1科目から受講OK<br>自習室も利用可能</p>
+        <p class="p-course__sub">1科目から受講OK<br>自習室も利用可能</p>
       </div>
       <div class="p-course__content">
         <ul class="p-course__pageLinks">
@@ -116,7 +116,7 @@
               <table class="p-table p-table--secondary">
                 <tbody class="p-table__tbody">
                   <tr>
-                    <td class="p-table__text">各2教科</td>
+                    <td class="p-table__text">2教科</td>
                   </tr>
                   <tr>
                     <?php
@@ -193,7 +193,7 @@
                       </figure>
                       <div class="p-detail__block">
                         <p class="p-detail__title">小６算数コース</p>
-                        <p class="p-detail__text">小学校の”算数”は中学校の”数学”の基礎となるので、小学校の算数ができないと中学校の「数学」を理解することが難しくなってしまいます。服部塾・よしき塾の小６算数コースでは、中学校の数学にスムーズに対応できるように、教科書内容の予習だけでなく小学算数の重要事項（計算や文章問題）の復習にも力を入れています。</p>
+                        <p class="p-detail__text">小学校の"算数”は中学校の"数学”の基礎となるので、小学校の算数ができないと中学校の「数学」を理解することが難しくなってしまいます。服部塾・よしき塾の小６算数コースでは、中学校の数学にスムーズに対応できるように、教科書内容の予習だけでなく小学算数の重要事項（計算や文章問題）の復習にも力を入れています。</p>
                       </div>
                     </div>
                     <div class="swiper-slide">
@@ -202,7 +202,7 @@
                       </figure>
                       <div class="p-detail__block">
                         <p class="p-detail__title">小６英語コース</p>
-                        <p class="p-detail__text">小学校で学習する英語と中学校で学習する英語には大きな違いがあることをご存知でしょうか。小学校の英語は”聞く”ことと”話す”ことが中心ですが、中学校の英語は”読む”ことと”書く”ことが中心です。したがって、小学校では英語ができたのに、中学校では英語が全くできなくなるという生徒がたくさんいます。服部塾・よしき塾の小６英語コースでは、”読む”ことと”書く”ことに重点を置いて指導し、中学校で英語につまずかないように授業します。</p>
+                        <p class="p-detail__text">小学校で学習する英語と中学校で学習する英語には大きな違いがあることをご存知でしょうか。小学校の英語は"聞く”ことと"話す”ことが中心ですが、中学校の英語は"読む”ことと"書く”ことが中心です。したがって、小学校では英語ができたのに、中学校では英語が全くできなくなるという生徒がたくさんいます。服部塾・よしき塾の小６英語コースでは、"読む”ことと"書く”ことに重点を置いて指導し、中学校の英語につなげます。</p>
                       </div>
                     </div>
                     <div class="swiper-slide">
@@ -220,7 +220,7 @@
                       </figure>
                       <div class="p-detail__block">
                         <p class="p-detail__title">個別指導コース</p>
-                        <p class="p-detail__text">小学校の進度に合わせた予習型の授業や、中学受験対策の授業など、さまざまなニーズにお応えします。強化担当制で原則１つの教科は同じ講師が担当します。</p>
+                        <p class="p-detail__text">小学校の進度に合わせた予習型の授業や、中学受験対策の授業など、さまざまなニーズにお応えします。教科担当制で原則１つの教科は同じ講師が担当します。</p>
                       </div>
                     </div>
                   </div>
@@ -264,7 +264,7 @@
                             <td class="p-table-high__text">1教科</td>
                             <td class="p-table-high__text">2教科</td>
                             <td class="p-table-high__text">3教科</td>
-                            <td class="p-table-high__text">4教科</td>
+                            <td class="p-table-high__text">全教科</td>
                           </tr>
                           <?php
                           $middle_group = get_field('middle_group');
@@ -427,9 +427,9 @@
                   <!-- Additional required wrapper -->
                   <div class="swiper-wrapper swiper-wrapper--secondary">
                     <!-- Slides -->
-                    <div class="swiper-slide">
+                  <div class="swiper-slide">
                       <figure class="p-detail__img">
-                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/course_swiper5.jpg" alt="小6数コース" width="250" height="175">
+                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/course_swiper5.jpg" alt="集団指導コース" width="250" height="175">
                       </figure>
                       <div class="p-detail__block">
                         <p class="p-detail__title">集団指導コース</p>
@@ -439,11 +439,11 @@
 
                     <div class="swiper-slide p-detail__slider-bg">
                       <figure class="p-detail__img">
-                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/course_swiper6.jpg" alt="小６県立中受験コース" width="250" height="175">
+                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/course_swiper6.jpg" alt="無料のテスト対策" width="250" height="175">
                       </figure>
                       <div class="p-detail__block">
                         <p class="p-detail__title p-detail__title--red">無料のテスト対策</p>
-                        <p class="p-detail__text">定期テスト前の休日には、無料のテスト対策授業（集団授業）を受けていただくことができます。テスト対策授業ではテスト頻出の重要単元の復習や過去問の演習を行い、高得点を目指します。個別指導コースを受講の方も集団授業のテスト対策に無料でご参加いただけます。</p>
+                        <p class="p-detail__text">定期テスト前の休日には、無料のテスト対策授業（集団授業）を受けることができます。テスト対策授業ではテスト頻出の重要単元の復習や過去問の演習を行い、高得点を目指します。個別指導コースを受講の方も集団授業のテスト対策に無料で参加できます。</p>
                       </div>
                       <div class="p-detail__test">
                         <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/detail_test.svg" alt="テスト対策授業のご案内" width="250" height="175">
@@ -671,34 +671,34 @@
                     <!-- Slides -->
                     <div class="swiper-slide">
                       <figure class="p-detail__img">
-                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/course_swiper8.jpg" alt="小6数コース" width="250" height="175">
+                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/course_swiper8.jpg" alt="集団指導コース(高1・高2)" width="250" height="175">
                       </figure>
                       <div class="p-detail__block">
-                        <p class="p-detail__title">集団指導コース(高1・高2)</p>
+                        <p class="p-detail__title">集団指導コース(高１・高２)</p>
                         <p class="p-detail__text">高校で習う内容をより深く理解することはもちろん、大学入試を念頭に数学と英語の授業を行います。数学では定期テストだけでなく大学入試頻出の重要単元の演習を、英語は高２から共通テストや大学入試の過去問の演習にも取り組むことで、高３生になる前から受験に向けたアドバンテージをつくります。<br>また、定期テスト前には無料でテスト対策授業も行います。</p>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <figure class="p-detail__img">
-                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/course_swiper9.jpg" alt="小6英語コース" width="250" height="175">
+                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/course_swiper9.jpg" alt="集団指導コース(高3・高卒)" width="250" height="175">
                       </figure>
                       <div class="p-detail__block">
-                        <p class="p-detail__title">集団指導コース(高3・高卒)</p>
+                        <p class="p-detail__title">集団指導コース(高３・高卒)</p>
                         <p class="p-detail__text">大学入試共通テストや私立大学入試対策の授業を行います。大学入試に精通した精鋭の講師による、最新の入試問題の傾向をふまえた授業で志望校合格を目指します。映像授業ではなくライブ授業なので映像を見ながら寝てしまったり、分からないところが質問できなかったり、といったことはありません。</p>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <figure class="p-detail__img">
-                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/course_swiper10.jpg" alt="小６県立中受験コース" width="250" height="175">
+                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/course_swiper10.jpg" alt="個別指導コース" width="250" height="175">
                       </figure>
                       <div class="p-detail__block">
                         <p class="p-detail__title">個別指導コース</p>
-                        <p class="p-detail__text">高校の進度に合わせた授業や、大学入試に受けた過去問の演習など、さまざまなニーズにお応えします。授業では問題の解説だけでなく、定期テストや大学入試に向けた日頃の勉強法などのアドバイスもさせていただきます。</p>
+                        <p class="p-detail__text">高校の進度に合わせた授業や、大学入試に受けた過去問の演習など、さまざまなニーズにお応えします。授業では問題の解説だけでなく、定期テストや大学入試に向けた日頃の勉強法などのアドバイスもしています。</p>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <figure class="p-detail__img">
-                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/course_swiper11.jpg" alt="個別指導コース" width="250" height="175">
+                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/course_swiper11.jpg" alt="土日も使える自習室" width="250" height="175">
                       </figure>
                       <div class="p-detail__block">
                         <p class="p-detail__title">土日も使える自習室</p>
@@ -754,7 +754,7 @@
             </figure>
             <div class="p-flow__detail">
               <h3 class="p-flow__subTitle">体験授業</h3>
-              <p class="p-flow__text">集団指導、個別指導共に体験授業を実施しています。塾の雰囲気や授業スピード、教え方などをご理解いただくためにも、積極的な参加をおすすめしています。</p>
+              <p class="p-flow__text">集団授業、個別指導ともに体験授業を実施しています。塾の雰囲気や授業スピード、教え方などをご理解いただくためにも、積極的な参加をおすすめしています。</p>
             </div>
           </li>
           <li class="p-flow__list js-flow">
@@ -766,7 +766,7 @@
             </figure>
             <div class="p-flow__detail">
               <h3 class="p-flow__subTitle">説明</h3>
-              <p class="p-flow__text">服部塾の教育方針やカリキュラム、料金などについてご説明いたします。</p>
+              <p class="p-flow__text">当塾教育方針やカリキュラム、料金などについてご説明いたします。</p>
             </div>
           </li>
           <li class="p-flow__list js-flow">

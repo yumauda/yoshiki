@@ -44,6 +44,22 @@ jQuery(function ($) {
     );
     return false;
   });
+  $(".p-course__pageLink-link").click(function (e) {
+    e.preventDefault(); // Prevent the default anchor click behavior
+
+    var targetId = $(this).attr("href"); // Get the href attribute value
+    var targetElement = $(targetId); // Find the target element by ID
+
+    if (targetElement.length) {
+      $("html, body").animate(
+        {
+          scrollTop: targetElement.offset().top - 100,
+        },
+        300, // Duration of the animation
+        "swing" // Easing function
+      );
+    }
+  });
 
   $("#drawer a[href]").on("click", function (event) {
     $(".p-drawer-icon").trigger("click");

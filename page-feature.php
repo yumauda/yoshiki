@@ -47,10 +47,10 @@
               </li>
               <li class="p-block__list js-feature-cards">
                 <figure class="p-block__img">
-                  <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/block_list_img3.png" alt="適切な勉強ペース" width="150" height="150">
+                  <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/block_list_img3.png" alt="適切な勉強スケジュール" width="150" height="150">
                 </figure>
                 <div class="p-block__detail">
-                  <p class="p-block__detail-title">適切な勉強ペース</p>
+                  <p class="p-block__detail-title">適切な勉強スケジュール</p>
                   <p class="p-block__explain">
                     集団授業の場合、講師は定期テストに向けた指導や入試に必要な指導など、適切な時期に適切なカリキュラムを組み、授業を進めます。生徒の反応を見ながら微調整を行いますが、必要最低限の内容をきっちり学ぶ機会を設けるため、マイペースになりすぎることはありません。
                   </p>
@@ -70,7 +70,7 @@
                   個別指導
                 </h3>
               </div>
-              <h4 class="p-block-top__subTitle">勉強に集中できる環境が手に入ります。</h4>
+              <h4 class="p-block-top__subTitle">集中した環境で勉強できる</h4>
             </div>
             <ul class="p-block__cards">
               <li class="p-block__card js-block-cards">
@@ -80,8 +80,7 @@
                 <div class="p-block__cardDetail">
                   <p class="p-block__cardDetail-title">1：1または1：2だからこその特長</p>
                   <p class="p-block__cardDetail-explain">
-                    1人の講師で、3人以上の生徒を見る場合、「問題が出来たのに自分の番が回ってこない」など、待ち時間が多くなります。
-                    当塾では、講師1人に付き、生徒は1人または2人なので、効率の良い学習ができます。
+                    1人の講師で3人以上の生徒を見る場合、「問題が出来たのに自分の番が回ってこない」など、待ち時間が多くなります。 当塾では講師1人につき生徒は1人または2人なので、効率の良い学習ができます。
                   </p>
                 </div>
               </li>
@@ -92,8 +91,8 @@
                 <div class="p-block__cardDetail">
                   <p class="p-block__cardDetail-title">生徒一人ひとりに合った<br class="u-mobile">個別のニーズに対応</p>
                   <p class="p-block__cardDetail-explain">
-                    個別の授業は、集団授業とは違いその生徒様のペースに合わせて授業ができます。<br>
-                    「学校より早くどんどん進みたい」や「前の学年に戻って学習したい」などの生徒様にお勧めです。<br>
+                    個別の授業は、集団授業とは違いその生徒のペースに合わせて授業ができます。<br>
+                    「学校より早くどんどん進みたい」や「前の学年に戻って学習したい」などの生徒にお勧めです。<br>
                     また、入試対策や英検対策など、さまざまな要望に合わせた授業を行うこともできます。
                   </p>
                 </div>
@@ -103,9 +102,9 @@
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/block_card3.jpg" alt="個別と集団授業を自由に組み合わせて個別のニーズに対応" width="480" height="350">
                 </figure>
                 <div class="p-block__cardDetail">
-                  <p class="p-block__cardDetail-title">個別と集団授業を自由に組み合わせて<br class="u-mobile">個別のニーズに対応</p>
+                  <p class="p-block__cardDetail-title">個別指導と集団授業の併用が可能</p>
                   <p class="p-block__cardDetail-explain">
-                    得意な教科は集団授業で受講し、苦手な教科は個別授業で受講するなど、教科によって変更できます。生徒様一人ひとりに合った最適な組み合わせで受講できます。
+                    得意な教科は集団授業で受講し、苦手な教科は個別授業で受講するなど、教科によって変更できます。生徒一人ひとりに合った最適な組み合わせで受講できます。
                   </p>
                 </div>
                 <div class="p-block__cardBtn-wrapper">
@@ -126,8 +125,8 @@
                 <div class="p-block__cardDetail">
                   <p class="p-block__cardDetail-title">講師が担任制だから安心</p>
                   <p class="p-block__cardDetail-explain">
-                    毎回同じ講師が担当させていただく「担任制」を採用しておりますので、生徒様の苦手分野を把握し、適切な指導をさせていただきます。<br>
-                    そのため、質問もしやすく保護者の方や生徒様から高評価をいただいております。
+                    毎回同じ講師が担当する「担任制」を採用しているので、生徒の苦手分野を把握し、適切な指導ができます。<br>
+                    そのため、質問もしやすく保護者の方や生徒から高評価をいただいております。
                   </p>
                 </div>
               </li>
@@ -178,7 +177,7 @@
                       <p class="p-point__title">成長を見守る環境</p>
                     </div>
                     <div class="p-point__detail">
-                      <p class="p-point__text">小学生の頃は勉強に集中できなかった子も、学年が上がるにつれて集中して勉強するようになった、など子どもたちの成長に触れる機会も多いものです。子どもたちひとりひとりの性格や個性を把握することで、教え方や伝え方にも反映させています。</p>
+                      <p class="p-point__text">小学生の頃は勉強に集中できなかった子も、学年が上がるにつれて集中して勉強するようになった、など子どもたちの成長に触れる機会も多いものです。長い期間接することで子どもたち一人ひとりの性格や個性を把握し、教え方や伝え方にも反映させています。</p>
                     </div>
                   </div>
                 </div>

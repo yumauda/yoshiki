@@ -72,7 +72,7 @@
       <div class="p-top-news__content">
         <div class="p-top-news__title js-news-title">
           <h3 class="c-main-title">
-            当教室からのお知らせ
+            お知らせ
           </h3>
         </div>
         <ul class="p-top-news__lists">
@@ -835,7 +835,6 @@
             </figure>
             <div class="p-top-choose__detail">
               <h4 class="p-top-choose__list-title">小学生</h4>
-              <p class="p-top-choose__text">メリハリのある授業で楽しく成績アップ！</p>
               <div class="p-top-choose__btn-wrapper">
                 <a href="<?php echo esc_url(home_url('/course/#elementary')); ?>" class="p-top-choose__btn">詳しくはこちら</a>
               </div>
@@ -850,7 +849,6 @@
             </figure>
             <div class="p-top-choose__detail">
               <h4 class="p-top-choose__list-title">中学生</h4>
-              <p class="p-top-choose__text">県内の中学校データや判断で適切な指導を</p>
               <div class="p-top-choose__btn-wrapper">
                 <a href="<?php echo esc_url(home_url('/course/#middle')); ?>" class="p-top-choose__btn">詳しくはこちら</a>
               </div>
@@ -865,7 +863,6 @@
             </figure>
             <div class="p-top-choose__detail">
               <h4 class="p-top-choose__list-title">高校生</h4>
-              <p class="p-top-choose__text">一人ひとりとじっくり向き合った進路指導を</p>
               <div class="p-top-choose__btn-wrapper">
                 <a href="<?php echo esc_url(home_url('/course/#high')); ?>" class="p-top-choose__btn">詳しくはこちら</a>
               </div>

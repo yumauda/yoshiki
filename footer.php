@@ -114,7 +114,7 @@
                         <span class="p-footer__line">｜</span>
                     </li>
                     <li class="p-footer__list">
-                        <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-footer__link">お問い合わせ</a>
+                        <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-footer__link">お問合せ</a>
                     </li>
                 </ul>
                 <div class="p-footer__small">
