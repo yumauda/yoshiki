@@ -55,9 +55,9 @@
 }
 
 .p-footer__tel {
-  display: none;
+  display: block;
+  margin-top: rem(10);
   @include mq(md) {
-    display: block;
     margin-top: rem(2);
   }
 }
@@ -76,18 +76,22 @@
   object-position: center center;
 }
 .p-footer__number {
+  color: #fff;
+  font-weight: 700;
+  font-size: rem(40);
   @include mq(md) {
     font-size: rem(50);
-    color: #fff;
-    font-weight: 700;
   }
 }
 
 .p-footer__time {
   margin-top: rem(4);
   color: #fff;
-  font-size: rem(16);
   line-height: calc(28 / 16);
+  font-size: rem(12);
+  @include mq(md) {
+    font-size: rem(16);
+  }
 }
 
 .p-footer__icon-lists {

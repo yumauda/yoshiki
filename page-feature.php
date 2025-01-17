@@ -80,7 +80,7 @@
                 <div class="p-block__cardDetail">
                   <p class="p-block__cardDetail-title">1：1または1：2だからこその特長</p>
                   <p class="p-block__cardDetail-explain">
-                    1人の講師で3人以上の生徒を見る場合、「問題が出来たのに自分の番が回ってこない」など、待ち時間が多くなります。 当塾では講師1人につき生徒は1人または2人なので、効率の良い学習ができます。
+                    1人の講師で3人以上の生徒を見る場合、「問題が出来たのに自分の番が回ってこない」など、待ち時間が多くなります。当塾では講師1人につき生徒は1人または2人なので、効率の良い学習ができます。
                   </p>
                 </div>
               </li>
@@ -91,9 +91,7 @@
                 <div class="p-block__cardDetail">
                   <p class="p-block__cardDetail-title">生徒一人ひとりに合った<br class="u-mobile">個別のニーズに対応</p>
                   <p class="p-block__cardDetail-explain">
-                    個別の授業は、集団授業とは違いその生徒のペースに合わせて授業ができます。<br>
-                    「学校より早くどんどん進みたい」や「前の学年に戻って学習したい」などの生徒にお勧めです。<br>
-                    また、入試対策や英検対策など、さまざまな要望に合わせた授業を行うこともできます。
+                    個別の授業は、集団授業とは違いその生徒のペースに合わせて授業ができます。「学校より早くどんどん進みたい」や「前の学年に戻って学習したい」などの生徒にお勧めです。また、入試対策や英検対策など、さまざまな要望に合わせた授業を行うこともできます。
                   </p>
                 </div>
               </li>
@@ -107,16 +105,6 @@
                     得意な教科は集団授業で受講し、苦手な教科は個別授業で受講するなど、教科によって変更できます。生徒一人ひとりに合った最適な組み合わせで受講できます。
                   </p>
                 </div>
-                <div class="p-block__cardBtn-wrapper">
-                  <a href="<?php echo esc_url(home_url('/course')); ?>" class="p-block__cardBtn">
-                    <p class="p-block__cardText">各コースの料金表を見る</p>
-                    <span class="p-block__cardBtn-icon">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="12.385" height="13.033" viewBox="0 0 12.385 13.033">
-                        <path d="M5.868,0,4.836,1.032,9.591,5.787H0V7.246H9.591L4.836,12l1.032,1.032,6.517-6.517Z" transform="translate(0 0)" />
-                      </svg>
-                    </span>
-                  </a>
-                </div>
               </li>
               <li class="p-block__card js-block-cards">
                 <figure class="p-block__cardImg">
@@ -125,7 +113,7 @@
                 <div class="p-block__cardDetail">
                   <p class="p-block__cardDetail-title">講師が担任制だから安心</p>
                   <p class="p-block__cardDetail-explain">
-                    毎回同じ講師が担当する「担任制」を採用しているので、生徒の苦手分野を把握し、適切な指導ができます。<br>
+                    毎回同じ講師が担当する「担任制」を採用しているので、生徒の苦手分野を把握し、適切な指導ができます。
                     そのため、質問もしやすく保護者の方や生徒から高評価をいただいております。
                   </p>
                 </div>

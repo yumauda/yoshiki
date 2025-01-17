@@ -1951,11 +1951,12 @@ select::-ms-expand {
 }
 
 .p-footer__tel {
-  display: none;
+  display: block;
+  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 @media screen and (min-width: 768px) {
   .p-footer__tel {
-    display: block;
     margin-top: 0.125rem;
   }
 }
@@ -1985,11 +1986,15 @@ select::-ms-expand {
      object-position: center center;
 }
 
+.p-footer__number {
+  color: #fff;
+  font-weight: 700;
+  font-size: 40px;
+  font-size: 2.5rem;
+}
 @media screen and (min-width: 768px) {
   .p-footer__number {
     font-size: 3.125rem;
-    color: #fff;
-    font-weight: 700;
   }
 }
 
@@ -1997,9 +2002,14 @@ select::-ms-expand {
   margin-top: 4px;
   margin-top: 0.25rem;
   color: #fff;
-  font-size: 16px;
-  font-size: 1rem;
   line-height: 1.75;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .p-footer__time {
+    font-size: 1rem;
+  }
 }
 
 .p-footer__icon-lists {
@@ -5363,6 +5373,10 @@ tbody {
 }
 @media screen and (min-width: 768px) {
   .p-top-achieve__row {
+    max-width: 58.125rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5536,14 +5550,6 @@ tbody {
 @media screen and (min-width: 768px) {
   .p-top-achieve__name {
     font-size: min(0.9375rem, 1.0416666667vw);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .p-top-achieve__high {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
 }
 
