@@ -57,6 +57,9 @@
                 </div>
               </li>
             </ul>
+            <div class="p-block__btn-wrapper js-feature-cards">
+              <a href="<?php echo esc_url(home_url('/course')); ?>" class="p-block__btn">各コースの料金表を見る</a>
+            </div>
           </div>
         </div>
         <div class="p-feature__block p-block p-block--white js-second-timing">
@@ -119,6 +122,9 @@
                 </div>
               </li>
             </ul>
+            <div class="p-block__btn-wrapper js-block-cards">
+              <a href="<?php echo esc_url(home_url('/course')); ?>" class="p-block__btn">各コースの料金表を見る</a>
+            </div>
           </div>
         </div>
         <div class="p-feature__block p-block p-block--white js-consistent-timing">

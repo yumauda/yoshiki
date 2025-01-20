@@ -805,6 +805,73 @@ select::-ms-expand {
           transform: translateX(0.3125rem);
 }
 
+.p-block__btn-wrapper {
+  text-align: center;
+}
+
+.p-block__btn {
+  display: inline-block;
+  background: #ffff00;
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="0" /><feOffset dx="4" dy="4" result="offsetblur" /><feFlood flood-color="rgba(216,216,216,1)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
+  -webkit-filter: drop-shadow(3px 3px 0px #d8d8d8);
+          filter: drop-shadow(3px 3px 0px #d8d8d8);
+  text-align: center;
+  font-size: 16px;
+  font-size: 1rem;
+  color: #000;
+  line-height: 1.75;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  margin-top: 90px;
+  margin-top: 5.625rem;
+  width: 250px;
+  width: 15.625rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 13px;
+  padding-top: 0.8125rem;
+  padding-bottom: 13px;
+  padding-bottom: 0.8125rem;
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .p-block__btn {
+    padding-top: 1.125rem;
+    padding-bottom: 1.125rem;
+    margin-top: 3.875rem;
+    width: 45rem;
+  }
+}
+
+.p-block__btn::after {
+  -webkit-animation: 4s 0s shine linear infinite;
+          animation: 4s 0s shine linear infinite;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, .7)));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .7) 100%);
+  content: "";
+  height: 100%;
+  left: -100%;
+  position: absolute;
+  top: 0;
+  -webkit-transform: skewX(-25deg);
+          transform: skewX(-25deg);
+  width: 50%;
+}
+
+@keyframes shine {
+  20% {
+    left: 150%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+.p-block__btn:hover {
+  background: #d00303;
+  color: #fff;
+}
+
 .p-breadcrumbs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2942,6 +3009,12 @@ select::-ms-expand {
     left: 150%;
   }
 }
+.wpcf7-not-valid-tip {
+  font-size: 12px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
 .p-header {
   background: #fff;
   position: fixed;

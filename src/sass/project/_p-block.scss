@@ -220,3 +220,58 @@
 .p-block__cardBtn:hover .p-block__cardBtn-icon svg {
   transform: translateX(rem(5));
 }
+.p-block__btn-wrapper {
+  text-align: center;
+}
+.p-block__btn {
+  display: inline-block;
+  background: #ffff00;
+  filter: drop-shadow(3px 3px 0px rgba(#d8d8d8, 1));
+  text-align: center;
+  font-size: rem(16);
+  color: #000;
+  line-height: calc(28 / 16);
+  transition: 0.3s ease-in-out;
+  margin-top: rem(90);
+  width: rem(250);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: rem(13);
+  padding-bottom: rem(13);
+  position: relative;
+  overflow: hidden;
+  @include mq(md) {
+    padding-top: rem(18);
+    padding-bottom: rem(18);
+    margin-top: rem(62);
+    width: rem(720);
+  }
+}
+.p-block__btn::after {
+  animation: 4s 0s shine linear infinite;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.7) 100%
+  );
+  content: "";
+  height: 100%;
+  left: -100%;
+  position: absolute;
+  top: 0;
+  transform: skewX(-25deg);
+  width: 50%;
+}
+@keyframes shine {
+  20% {
+    left: 150%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+
+.p-block__btn:hover {
+  background: #d00303;
+  color: #fff;
+}

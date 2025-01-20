@@ -349,6 +349,23 @@ function exclude_multiple_categories_from_homepage($query)
 }
 add_action('pre_get_posts', 'exclude_multiple_categories_from_homepage');
 
+/* add_filter('wpcf7_validate_text', 'custom_hiragana_validation_filter', 20, 2);
+add_filter('wpcf7_validate_text*', 'custom_hiragana_validation_filter', 20, 2);
+
+function custom_hiragana_validation_filter($result, $tag)
+{
+	if ('your-hiragana-field' == $tag->name) {
+		$value = isset($_POST[$tag->name]) ? trim(wp_unslash(strtr((string)$_POST[$tag->name], "\n", " "))) : '';
+
+	
+		if (!preg_match("/^[ぁ-ん]+$/u", str_replace([' ', '　'], '', $value))) {
+			$result->invalidate($tag, "ひらがなで入力してください。");
+		}
+	}
+
+	return $result;
+} */
+
 add_filter('wpcf7_validate_text', 'custom_hiragana_validation_filter', 20, 2);
 add_filter('wpcf7_validate_text*', 'custom_hiragana_validation_filter', 20, 2);
 
@@ -363,9 +380,18 @@ function custom_hiragana_validation_filter($result, $tag)
 		}
 	}
 
+	// Add validation for zipcode1 field
+	if ('zipcode1' == $tag->name) {
+		$value = isset($_POST[$tag->name]) ? trim(wp_unslash((string)$_POST[$tag->name])) : '';
+
+		// Check if the value contains only half-width digits
+		if (!preg_match("/^[0-9]+$/", $value)) {
+			$result->invalidate($tag, "半角数字で入力してください。");
+		}
+	}
+
 	return $result;
 }
-
 
 add_filter('body_class', function ($classes) {
 	if (is_front_page()) {
