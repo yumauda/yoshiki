@@ -1371,8 +1371,8 @@ select::-ms-expand {
   transition: 0.3s;
   width: 70px;
   width: 4.375rem;
-  height: 50px;
-  height: 3.125rem;
+  height: 57px;
+  height: 3.5625rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3023,8 +3023,8 @@ select::-ms-expand {
   top: 0;
   left: 0;
   right: 0;
-  height: 50px;
-  height: 3.125rem;
+  height: 57px;
+  height: 3.5625rem;
 }
 @media screen and (min-width: 768px) {
   .p-header {

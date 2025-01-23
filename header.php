@@ -6,51 +6,79 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
     <!-- meta情報 -->
-    <?php if (is_home() || is_front_page()) : ?>
+    <meta name="keywords" content="甲賀市,湖南市,日野町,学習塾,成績アップ,集団授業,個別指導,無料体験授業" />
+    <?php if (is_front_page()) : ?>
         <title>【甲賀市・湖南市・日野町】服部塾 よしき塾｜中学生・高校生の学習塾</title>
-        <meta name="description" content="勉強の量だけおいかけてどうすんねんと。結果を出してナンボ. 合格指導実績. 【国公立大学】" />
-        <meta name="keywords" content="" />
-        <meta property="og:title" content="甲賀市・湖南市・日野町の学習/進学塾 服部塾よしき塾" />
+        <meta name="description" content="集団授業・個別指導の無料体験授業申し込み受付中。滋賀県甲賀市・湖南市・日野町で、成績アップ！小学生から高校生まで、経験豊富な講師が指導します！" />
+        <meta property="og:title" content="【甲賀市・湖南市・日野町】服部塾 よしき塾｜中学生・高校生の学習塾" />
         <meta property="og:type" content="website">
         <meta property="og:url" content="">
-        <meta property="og:site_name" content="甲賀市・湖南市・日野町の学習/進学塾 服部塾よしき塾" />
-        <meta property="og:description" content="勉強の量だけおいかけてどうすんねんと。結果を出してナンボ. 合格指導実績. 【国公立大学】" />
-    <?php elseif (is_page('adult')) : ?>
-        <title>大人の矯正・成人矯正｜大倉山ファミリア矯正歯科（横浜市港北区）</title>
-        <meta name="description" content="横浜市港北区大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザライン)なども子供から大人まで安心の定額制です。" />
-        <meta name="keywords" content="矯正歯科,港北区,大倉山" />
-        <meta property="og:title" content="大人の矯正｜大倉山ファミリア矯正歯科（横浜市港北区）" />
+        <meta property="og:site_name" content="【甲賀市・湖南市・日野町】服部塾 よしき塾｜中学生・高校生の学習塾" />
+        <meta property="og:description" content="集団授業・個別指導の無料体験授業申し込み受付中。滋賀県甲賀市・湖南市・日野町で、成績アップ！小学生から高校生まで、経験豊富な講師が指導します！" />
+    <?php elseif (is_page('feature')) : ?>
+        <title>服部塾・よしき塾の特長｜服部塾 よしき塾</title>
+        <meta name="description" content="服部塾 よしき塾の特長ページです。集団授業、個別指導など各コースの説明や、服部塾・よしき塾が選ばれる理由をご紹介します。" />
+        <meta property="og:title" content="服部塾・よしき塾の特長｜服部塾 よしき塾" />
         <meta property="og:type" content="article">
-        <meta property="og:url" content="https://familiar-kyousei.com/adult">
-        <meta property="og:site_name" content="大倉山ファミリア矯正歯科（横浜市港北区）" />
-        <meta property="og:description" content="横浜市大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザラン)なども子供から大人まで安心の定額制です。" />
+        <meta property="og:url" content="">
+        <meta property="og:site_name" content="服部塾・よしき塾の特長｜服部塾 よしき塾" />
+        <meta property="og:description" content="服部塾 よしき塾の特長ページです。集団授業、個別指導など各コースの説明や、服部塾・よしき塾が選ばれる理由をご紹介します。" />
+    <?php elseif (is_page('course')) : ?>
+        <title>各コースの料金と詳細｜服部塾 よしき塾</title>
+        <meta name="description" content="各コースの料金と詳細ページです。受験対策や予習型授業など、さまざまなニーズにお応えし、生徒に合ったプランをご用意します。" />
+        <meta property="og:title" content="各コースの料金と詳細｜服部塾 よしき塾" />
+        <meta property="og:type" content="article">
+        <meta property="og:url" content="">
+        <meta property="og:site_name" content="各コースの料金と詳細｜服部塾 よしき塾" />
+        <meta property="og:description" content="各コースの料金と詳細ページです。受験対策や予習型授業など、さまざまなニーズにお応えし、生徒に合ったプランをご用意します。" />
+    <?php elseif (is_page('search')) : ?>
+        <title>教室を探す｜服部塾 よしき塾</title>
+        <meta name="description" content="教室を探すページです。服部塾 よしき塾では小学校から高校まで一貫して通える、滋賀県の甲賀市, 湖南市, 日野町の学習塾です。" />
+        <meta property="og:title" content="教室を探す｜服部塾 よしき塾" />
+        <meta property="og:type" content="article">
+        <meta property="og:url" content="">
+        <meta property="og:site_name" content="教室を探す｜服部塾 よしき塾" />
+        <meta property="og:description" content="教室を探すページです。服部塾 よしき塾では小学校から高校まで一貫して通える、滋賀県の甲賀市, 湖南市, 日野町の学習塾です。" />
+    <?php elseif (is_page('privacy')) : ?>
+        <title>プライバシーポリシー｜服部塾 よしき塾</title>
+        <meta name="description" content="服部塾 よしき塾の個人情報保護に関する基本方針などをご案内しています。" />
+        <meta property="og:title" content="プライバシーポリシー｜服部塾 よしき塾" />
+        <meta property="og:type" content="article">
+        <meta property="og:url" content="">
+        <meta property="og:site_name" content="プライバシーポリシー｜服部塾 よしき塾" />
+        <meta property="og:description" content="服部塾 よしき塾の個人情報保護に関する基本方針などをご案内しています。" />
+    <?php elseif (is_home()) : ?>
+        <title>お知らせ｜服部塾 よしき塾</title>
+        <meta name="description" content="お知らせページです。服部塾 よしき塾に関する最新情報や、季節ごとの講習に関するお知らせなどをお届けします。" />
+        <meta property="og:title" content="お知らせ｜服部塾 よしき塾" />
+        <meta property="og:type" content="article">
+        <meta property="og:url" content="">
+        <meta property="og:site_name" content="お知らせ｜服部塾 よしき塾" />
+        <meta property="og:description" content="お知らせページです。服部塾 よしき塾に関する最新情報や、季節ごとの講習に関するお知らせなどをお届けします。" />
     <?php elseif (is_page((array('contact', 'confirm')))) : ?>
-        <title>お問い合わせ｜大倉山ファミリア矯正歯科（横浜市港北区）</title>
-        <meta name="description" content="横浜市港北区大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザライン)なども子供から大人まで安心の定額制です。" />
-        <meta name="keywords" content="矯正歯科,港北区,大倉山" />
-        <meta property="og:title" content="お問い合わせ｜大倉山ファミリア矯正歯科（横浜市港北区）" />
+        <title>お問合せ｜服部塾 よしき塾</title>
+        <meta name="description" content="お問合せページです。入塾申込み, 講習会受講申し込み, 無料体験申込み, テスト対策無料体験申込み, 資料請求などお気軽にご相談ください。" />
+        <meta property="og:title" content="お問合せ｜服部塾 よしき塾" />
         <meta property="og:type" content="article">
-        <meta property="og:url" content="https://familiar-kyousei.com/contact">
-        <meta property="og:site_name" content="大倉山ファミリア矯正歯科（横浜市港北区）" />
-        <meta property="og:description" content="横浜市大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザラン)なども子供から大人まで安心の定額制です。" />
+        <meta property="og:url" content="">
+        <meta property="og:site_name" content="お問合せ｜服部塾 よしき塾" />
+        <meta property="og:description" content="お問合せページです。入塾申込み, 講習会受講申し込み, 無料体験申込み, テスト対策無料体験申込み, 資料請求などお気軽にご相談ください。" />
     <?php elseif (is_page('thanks')) : ?>
-        <title>送信完了｜大倉山ファミリア矯正歯科（横浜市港北区）</title>
-        <meta name="description" content="横浜市港北区大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザライン)なども子供から大人まで安心の定額制です。" />
-        <meta name="keywords" content="矯正歯科,港北区,大倉山" />
-        <meta property="og:title" content="送信完了｜大倉山ファミリア矯正歯科（横浜市港北区）" />
+        <title>送信完了｜服部塾 よしき塾</title>
+        <meta name="description" content="送信完了ページです。お問合せいただいた内容を確認し、ご連絡させていただきます。" />
+        <meta property="og:title" content="送信完了｜服部塾 よしき塾" />
         <meta property="og:type" content="article">
-        <meta property="og:url" content="https://familiar-kyousei.com/thanks">
-        <meta property="og:site_name" content="大倉山ファミリア矯正歯科（横浜市港北区）" />
-        <meta property="og:description" content="横浜市大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザラン)なども子供から大人まで安心の定額制です。" />
+        <meta property="og:url" content="">
+        <meta property="og:site_name" content="送信完了｜服部塾 よしき塾" />
+        <meta property="og:description" content="送信完了ページです。お問合せいただいた内容を確認し、ご連絡させていただきます。" />
     <?php elseif (is_single()) : ?>
-        <title><?php the_title() ?>｜大倉山ファミリア矯正歯科（横浜市港北区）</title>
-        <meta name="description" content="横浜市港北区大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザライン)なども子供から大人まで安心の定額制です。" />
-        <meta name="keywords" content="矯正歯科,港北区,大倉山" />
-        <meta property="og:title" content="<?php the_title() ?>｜大倉山ファミリア矯正歯科（横浜市港北区）" />
+        <title><?php the_title() ?>｜服部塾 よしき塾</title>
+        <meta name="description" content="服部塾 よしき塾のお知らせページです。服部塾 よしき塾に関する最新情報や、季節ごとの講習に関するお知らせなどをお届けします。" />
+        <meta property="og:title" content="<?php the_title() ?>｜服部塾 よしき塾" />
         <meta property="og:type" content="article">
-        <meta property="og:url" content="https://familiar-kyousei.com/adult">
-        <meta property="og:site_name" content="大倉山ファミリア矯正歯科（横浜市港北区）" />
-        <meta property="og:description" content="横浜市大倉山の、痛くない・目立たない矯正専門歯科。マウスピース矯正(インビザラン)なども子供から大人まで安心の定額制です。" />
+        <meta property="og:url" content="">
+        <meta property="og:site_name" content="<?php the_title() ?>｜服部塾 よしき塾" />
+        <meta property="og:description" content="服部塾 よしき塾のお知らせページです。服部塾 よしき塾に関する最新情報や、季節ごとの講習に関するお知らせなどをお届けします。" />
 
     <?php endif; ?>
     <meta name="twitter:card" content="summary_large_image">

@@ -9,7 +9,7 @@
         <h2 class="c-main-title">
           各コースの料金と詳細
         </h2>
-        <p class="p-course__sub">1科目から受講OK<br>自習室も利用可能</p>
+        <p class="p-course__sub">1教科から受講OK<br>自習室も利用可能</p>
       </div>
       <div class="p-course__content">
         <ul class="p-course__pageLinks">
@@ -193,7 +193,7 @@
                       </figure>
                       <div class="p-detail__block">
                         <p class="p-detail__title">小６算数コース</p>
-                        <p class="p-detail__text">小学校の"算数”は中学校の"数学”の基礎となるので、小学校の算数ができないと中学校の「数学」を理解することが難しくなってしまいます。服部塾・よしき塾の小６算数コースでは、中学校の数学にスムーズに対応できるように、教科書内容の予習だけでなく小学算数の重要事項（計算や文章問題）の復習にも力を入れています。</p>
+                        <p class="p-detail__text">小学校の“算数“は中学校の“数学“の基礎となるので、小学校の算数ができないと中学校の「数学」を理解することが難しくなってしまいます。服部塾・よしき塾の小６算数コースでは、中学校の数学にスムーズに対応できるように、教科書内容の予習だけでなく小学算数の重要事項（計算や文章問題）の復習にも力を入れています。</p>
                       </div>
                     </div>
                     <div class="swiper-slide">
@@ -202,7 +202,7 @@
                       </figure>
                       <div class="p-detail__block">
                         <p class="p-detail__title">小６英語コース</p>
-                        <p class="p-detail__text">小学校で学習する英語と中学校で学習する英語には大きな違いがあることをご存知でしょうか。小学校の英語は"聞く”ことと"話す”ことが中心ですが、中学校の英語は"読む”ことと"書く”ことが中心です。したがって、小学校では英語ができたのに、中学校では英語が全くできなくなるという生徒がたくさんいます。服部塾・よしき塾の小６英語コースでは、"読む”ことと"書く”ことに重点を置いて指導し、中学校の英語につなげます。</p>
+                        <p class="p-detail__text">小学校で学習する英語と中学校で学習する英語には大きな違いがあることをご存知でしょうか。小学校の英語は“聞く“ことと“話す“ことが中心ですが、中学校の英語は“読む“ことと“書く“ことが中心です。したがって、小学校では英語ができたのに、中学校では英語が全くできなくなるという生徒がたくさんいます。服部塾・よしき塾の小６英語コースでは、“読む“ことと“書く“ことに重点を置いて指導し、中学校の英語につなげます。</p>
                       </div>
                     </div>
                     <div class="swiper-slide">
@@ -211,7 +211,7 @@
                       </figure>
                       <div class="p-detail__block">
                         <p class="p-detail__title">小６県立中受験コース</p>
-                        <p class="p-detail__text">水口東中や守山中などの県立中受検対応のコースです。週２回の授業で適性検査対策と作文の指導を行います。受検前には過去問の演習だけでなく面接練習も行い、合格を目指します。</p>
+                        <p class="p-detail__text">水口東中や守山中などの県立中受験対応のコースです。週２回の授業で適性検査対策と作文の指導を行います。受験前には過去問の演習だけでなく面接練習も行い、合格を目指します。</p>
                       </div>
                     </div>
                     <div class="swiper-slide">
@@ -323,7 +323,7 @@
                           </tr>
                           <tr>
                             <td class="p-table-high__text">3教科</td>
-                            <td class="p-table-high__text">4教科</td>
+                            <td class="p-table-high__text">全教科</td>
                           </tr>
                           <tr>
                             <td class="p-table-high__text">
@@ -493,7 +493,7 @@
                   <table class="p-table-high__table">
                     <tbody>
                       <tr>
-                        <td class="p-table-high__text" colspan="2">高1、高2</td>
+                        <td class="p-table-high__text" colspan="2">高１・高２</td>
                       </tr>
 
                       <tr>
@@ -572,7 +572,7 @@
                   <table class="p-table-high__table">
                     <tbody>
                       <tr>
-                        <td class="p-table-high__text" colspan="2">高1、高2</td>
+                        <td class="p-table-high__text" colspan="2">高１・高２</td>
                       </tr>
                       <tr>
                         <td class="p-table-high__text">1教科</td>
@@ -675,7 +675,7 @@
                       </figure>
                       <div class="p-detail__block">
                         <p class="p-detail__title">集団指導コース(高１・高２)</p>
-                        <p class="p-detail__text">高校で習う内容をより深く理解することはもちろん、大学入試を念頭に数学と英語の授業を行います。数学では定期テストだけでなく大学入試頻出の重要単元の演習を、英語は高２から共通テストや大学入試の過去問の演習にも取り組むことで、高３生になる前から受験に向けたアドバンテージをつくります。<br>また、定期テスト前には無料でテスト対策授業も行います。</p>
+                        <p class="p-detail__text">高校で習う内容をより深く理解することはもちろん、大学入試を念頭に数学と英語の授業を行います。数学では定期テストだけでなく大学入試頻出の重要単元の演習を、英語は高２から共通テストや大学入試の過去問の演習にも取り組むことで、高３生になる前から受験に向けたアドバンテージをつくります。また、定期テスト前には無料でテスト対策授業も行います。</p>
                       </div>
                     </div>
                     <div class="swiper-slide">
@@ -693,7 +693,7 @@
                       </figure>
                       <div class="p-detail__block">
                         <p class="p-detail__title">個別指導コース</p>
-                        <p class="p-detail__text">高校の進度に合わせた授業や、大学入試に受けた過去問の演習など、さまざまなニーズにお応えします。授業では問題の解説だけでなく、定期テストや大学入試に向けた日頃の勉強法などのアドバイスもしています。</p>
+                        <p class="p-detail__text">高校の進度に合わせた授業や、大学入試に向けた過去問の演習など、さまざまなニーズにお応えします。授業では問題の解説だけでなく、定期テストや大学入試に向けた日頃の勉強法などのアドバイスもしています。</p>
                       </div>
                     </div>
                     <div class="swiper-slide">
@@ -702,7 +702,7 @@
                       </figure>
                       <div class="p-detail__block">
                         <p class="p-detail__title">土日も使える自習室</p>
-                        <p class="p-detail__text">水口校・甲西駅前校は土日も自習室が使えます。「家では集中できない」「一人だとなかなか自分から勉強できない」といった生徒さんからも好評です。主な大学の赤本も揃っており、コピー機も使えるなど勉強できる環境が整っています。</p>
+                        <p class="p-detail__text">水口校・甲西駅前校は土日も自習室が使えます。「家では集中できない」「一人だとなかなか自分から勉強できない」といった生徒からも好評です。主な大学の赤本も揃っており、コピー機も使えるなど勉強できる環境が整っています。</p>
                       </div>
                     </div>
                   </div>
@@ -766,7 +766,7 @@
             </figure>
             <div class="p-flow__detail">
               <h3 class="p-flow__subTitle">説明</h3>
-              <p class="p-flow__text">当塾教育方針やカリキュラム、料金などについてご説明いたします。</p>
+              <p class="p-flow__text">当塾の教育方針やカリキュラム、料金などについてご説明いたします。</p>
             </div>
           </li>
           <li class="p-flow__list js-flow">

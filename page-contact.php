@@ -10,8 +10,9 @@
           <h2 class="c-main-title">お問合せ</h2>
         </div>
         <div class="p-contact__attention">
-          <p class="p-contact__attention-text">無料体験をお申し込みの方は、<br class="u-mobile">お問合せフォームの<br class="u-desktop">
-            お問合せ項目より<br class="u-mobile">「無料体験申し込み」をお選びください。</p>
+          <p class="p-contact__attention-text">無料体験をお申し込みの方は、<br>
+            「お問合せ項目」より<br class="u-mobile">「無料体験申し込み」をお選びください。</p>
+          
         </div>
         <?php the_content(); ?>
       </div>
@@ -111,7 +112,7 @@
                   <p class="p-line__how-boxText">学年</p>
                   <p class="p-line__how-boxText">お問合せ内容</p>
                 </div>
-                <p class="p-line__how-small p-line__how-small--bottom">※上記、コピーしてご利用ください</p>
+                <p class="p-line__how-small p-line__how-small--bottom">※上記をコピーしてご利用ください。</p>
               </div>
             </div>
           </div>

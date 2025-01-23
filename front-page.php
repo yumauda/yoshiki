@@ -841,7 +841,7 @@
                 </div>
               </div>
               <div class="p-top-achieve__special">
-                <p class="p-top-achieve__univ-title">高校専門学校</p>
+                <p class="p-top-achieve__univ-title">高等専門学校</p>
                 <div class="p-top-achieve__univ-wrapper">
                   <div class="p-top-achieve__univ-row p-top-achieve__univ-row--special">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18.778" height="17.89" viewBox="0 0 18.778 17.89">
@@ -909,7 +909,7 @@
                         <path d="M84.065,34.974c-.325-.071-1.152-.289-1.152-.289a.307.307,0,0,1-.161-.494s.541-.663.762-.911a.333.333,0,0,0-.04-.535,4.57,4.57,0,0,0-6.6,3.63,4.569,4.569,0,0,0,7.474-.944.332.332,0,0,0-.282-.456" transform="translate(-65.595 -27.523)" fill="#d00303" />
                       </g>
                     </svg>
-                    <p class="p-top-achieve__name">石川高専専門学校</p>
+                    <p class="p-top-achieve__name">石川高等専門学校</p>
                   </div>
                 </div>
               </div>

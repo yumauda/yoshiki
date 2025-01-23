@@ -8,7 +8,7 @@
   top: 0;
   left: 0;
   right: 0;
-  height: rem(50);
+  height: rem(57);
   @include mq(md) {
     height: min(rem(80), calc(80 / 1440) * 100vw);
   }

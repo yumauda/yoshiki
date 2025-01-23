@@ -392,6 +392,27 @@ function custom_hiragana_validation_filter($result, $tag)
 
 	return $result;
 }
+/****************************/
+/** Contact Form 7 確認用のメールアドレスに一致チェック機能を付加 **/
+/****************************/
+add_filter('wpcf7_validate_email', 'wpcf7_validate_email_filter_confrim', 11, 2);
+add_filter('wpcf7_validate_email*', 'wpcf7_validate_email_filter_confrim', 11, 2);
+function wpcf7_validate_email_filter_confrim($result, $tag)
+{
+	$type = $tag['type'];
+	$name = $tag['name'];
+	if ('email' == $type || 'email*' == $type) {
+		if (preg_match('/(.*)_confirm$/', $name, $matches)) { //確認用メールアドレス入力フォーム名を ○○○_confirm とする
+			$target_name = $matches[1];
+			$posted_value = trim((string) $_POST[$name]); //前後空白の削除
+			$posted_target_value = trim((string) $_POST[$target_name]); //前後空白の削除
+			if ($posted_value != $posted_target_value) {
+				$result->invalidate($tag, "確認用のメールアドレスが一致していません");
+			}
+		}
+	}
+	return $result;
+}
 
 add_filter('body_class', function ($classes) {
 	if (is_front_page()) {
