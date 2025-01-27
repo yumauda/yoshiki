@@ -522,11 +522,21 @@ select::-ms-expand {
 
 .p-block--white {
   background: transparent;
-  margin-top: 94px;
-  margin-top: 5.875rem;
+  margin-top: 62px;
+  margin-top: 3.875rem;
 }
 @media screen and (min-width: 768px) {
   .p-block--white {
+    margin-top: 9.375rem;
+  }
+}
+
+.p-block--end {
+  margin-top: 62px;
+  margin-top: 3.875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-block--end {
     margin-top: 9.375rem;
   }
 }
@@ -2941,6 +2951,7 @@ select::-ms-expand {
 
 .p-form__description--select {
   position: relative;
+  cursor: pointer;
 }
 
 .p-form__description--select::before {
@@ -3593,7 +3604,6 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-mv {
-    height: 100vh;
     margin-top: 0;
     margin-top: initial;
   }
@@ -3608,7 +3618,6 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .p-mv__img video {
     aspect-ratio: 1440/900;
-    height: 100vh;
   }
 }
 
@@ -4062,7 +4071,7 @@ select::-ms-expand {
 }
 
 .p-point__row {
-  background: #fff;
+  background: #f8f8f8;
   padding-top: 14px;
   padding-top: 0.875rem;
   padding-bottom: 17px;
@@ -4135,7 +4144,7 @@ select::-ms-expand {
 }
 
 .p-point__detail {
-  background: #f8f8f8;
+  background: #fff;
   padding: 13px 3px;
   padding: 0.8125rem 0.1875rem;
   margin-top: 8px;
@@ -5169,6 +5178,8 @@ tbody {
   padding-bottom: 1rem;
   width: 123px;
   width: 7.6875rem;
+  height: 90px;
+  height: 5.625rem;
 }
 
 .p-table-high__text:nth-child(2),

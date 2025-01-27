@@ -3,7 +3,6 @@
 .p-mv {
   margin-top: rem(50);
   @include mq(md) {
-    height: 100vh;
     margin-top: initial;
   }
 }
@@ -14,6 +13,5 @@
   aspect-ratio: 375 / 557;
   @include mq(md) {
     aspect-ratio: 1440 / 900;
-    height: 100vh;
   }
 }

@@ -118,7 +118,7 @@
                     </li>
                 </ul>
                 <div class="p-footer__small">
-                    <small>＠2024 hattorijyuku.yoshikijyuku.</small>
+                    <small>＠2025 hattorijyuku.yoshikijyuku.</small>
                     <a href="<?php echo esc_url(home_url('/privacy')); ?>" class="p-footer__privacy">PRIVACY POLICY</a>
                 </div>
             </div>

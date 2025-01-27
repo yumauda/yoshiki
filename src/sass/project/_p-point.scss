@@ -1,13 +1,8 @@
 @use "global" as *;
 
-.p-point {
-}
-
-.p-point__content {
-}
 
 .p-point__row {
-  background: #fff;
+  background: #f8f8f8;
   padding-top: rem(14);
   padding-bottom: rem(17);
   padding-left: rem(11);
@@ -57,7 +52,7 @@
 }
 
 .p-point__detail {
-  background: #f8f8f8;
+  background: #fff;
   padding: rem(13) rem(3);
   margin-top: rem(8);
   @include mq(md) {

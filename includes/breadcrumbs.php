@@ -116,7 +116,7 @@
         </li>
         <li class="p-breadcrumbs__list">
             <p class="p-breadcrumbs__now">
-                お問い合わせフォーム
+                お問合せフォーム
             </p>
         </li>
     </ul>
@@ -136,7 +136,7 @@
         </li>
         <li class="p-breadcrumbs__list">
             <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-breadcrumbs__link">
-                お問い合わせフォーム
+                お問合せフォーム
             </a>
         </li>
         <li class="p-breadcrumbs__list">

@@ -126,7 +126,7 @@
             </div>
           </div>
         </div>
-        <div class="p-feature__block p-block p-block--white js-consistent-timing">
+        <div class="p-feature__block p-block p-block--end js-consistent-timing">
           <div class="p-block-top">
             <div class="p-block-top__top js-logo3">
               <div class="p-block-top__title-wrapper">

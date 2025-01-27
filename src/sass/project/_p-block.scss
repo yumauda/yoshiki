@@ -18,7 +18,13 @@
 }
 .p-block--white {
   background: transparent;
-  margin-top: rem(94);
+  margin-top: rem(62);
+  @include mq(md) {
+    margin-top: rem(150);
+  }
+}
+.p-block--end {
+  margin-top: rem(62);
   @include mq(md) {
     margin-top: rem(150);
   }
